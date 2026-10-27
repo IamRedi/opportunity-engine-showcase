@@ -12,7 +12,6 @@ Eine persönliche Arbeitsfläche für Jobs und Freelance: aus überprüften Prof
 
 **[English](README.en.md)** · **[Lokal ausprobieren](#lokal-ausprobieren)** · **[Prüfprotokoll](EVIDENCE.md)** · **[Architektur](docs/ARCHITECTURE.md)**
 
-
 > **Nachweisstand und Grenzen:** Entwickelter Prototyp mit ausschließlich fiktiver, offline ausführbarer Demonstration. Öffentliche Registrierung, produktive Vermittlung und automatischer Bewerbungsversand sind nicht Bestandteil dieser Freigabe; die dokumentierten Tests verwenden keine realen Bewerberdaten. [Prüfprotokoll (EN)](EVIDENCE.md).
 
 ## Was das Produkt löst
