@@ -1,0 +1,209 @@
+{% extends "base.html" %}
+{% import "_macros.html" as m %}
+{% block title %}{{ _('Mundësitë ·') }} {{ APP_NAME }}{% endblock %}
+{% block content %}
+
+<div class="workspace-intro"><div><p class="eyebrow">{{ _('HAPI YT I ARDHSHËM') }}</p><h1>{{ _('Mundësi që të çojnë përpara.') }}</h1><p class="sub">{{ _('Gjej përputhjen tënde. Kupto arsyen. Hidh hapin tjetër.') }}</p></div><a class="quiet-link" href="/profile">{{ _('Përmirëso përputhjet') }} {{ m.icon('arrow') }}</a></div>
+<div class="workspace-layout">
+<aside class="workspace-rail" aria-label="{{ _('Hapësira e kërkimit') }}"><p class="eyebrow">{{ _('EKSPLORO') }}</p>
+<nav class="mode-nav" aria-label="{{ _('Lloji i mundësive') }}">
+{% for value, label, symbol in [('jobs', _('Punë profesionale'), 'briefcase'), ('freelance', 'Freelance', 'spark'), ('products', 'Klientë për produktet e mia', 'box'), ('local', 'Lokale / Mini', 'pin'), ('all', _('Të gjitha'), 'layers')] %}
+<a href="/?mode={{ value }}" class="{{ 'on' if params.mode == value }}" {% if params.mode == value %}aria-current="page"{% endif %}>{{ m.icon(symbol) }}<span>{{ _(label) }}</span>{% if params.mode == value %}<span class="nav-dot"></span>{% endif %}</a>
+{% endfor %}</nav>
+<div class="rail-bottom"><p class="eyebrow">{{ _('NDËRTO AVANTAZHIN TËND') }}</p><a href="/profile#cv">{{ m.icon('file') }} {{ _('CV & dëshmi') }}</a><a href="/profile#produkte">{{ m.icon('box') }} {{ _('Produktet e mia') }}</a><p class="rail-note">{{ _('Përputhje të shpjegueshme.') }}<br>{{ _('Vendimi mbetet i yti.') }}</p></div></aside>
+<div class="workspace-content">
+<section class="ws-head">
+  <form class="searchbar" method="get" action="/" id="searchform" role="search">
+    <input type="hidden" name="mode" value="{{ params.mode }}">
+    {{ m.icon('search') }}
+    <input aria-label="{{ _('Kërko në mundësitë e ruajtura') }}" id="q" type="search" name="q" value="{{ params.q }}"
+           placeholder="{{ _('Kërko punë, aftësi, kompani ose mundësi…') }}" autocomplete="off">
+    <kbd>/</kbd><button class="btn primary" type="submit">{{ _('Kërko') }} {{ m.icon("arrow") }}</button>
+  </form>
+
+  <div class="ws-actions">
+    <div class="ws-buttons">
+      <select id="orch-profile" aria-label="{{ _('Profili i kërkimit') }}">
+        <option value="ai">{{ _('Sipas profilit · AI') }}</option><option value="">{{ _('Eksploro oferta') }}</option>
+        {% for p in search_profiles if p.active %}
+        <option value="{{ p.id }}">{{ p.name }}</option>
+        {% endfor %}
+      </select>
+      <button id="btn-find" class="btn primary" type="button">
+        {{ m.icon('spark') }} {{ _('Gjej mundësi') }}
+      </button>
+      <a class="btn ghost" href="/discover?kind={{ {'freelance':'freelance','products':'product_lead','local':'local_job'}.get(params.mode,'job') }}">{{ m.icon('search') }} {{ _('Kërkim i zgjeruar') }}</a>
+      <div class="popwrap">
+        <button class="btn ghost" type="button" id="btn-profiles" aria-haspopup="true" aria-expanded="false">
+          {{ _('Kërkime të ruajtura') }} {{ m.icon('chevron') }}
+        </button>
+        <div class="popover popover-w" id="profiles-pop" aria-label="{{ _('Kërkime të ruajtura') }}" hidden><div class="pop-heading"><strong>{{ _('Kërkimet e tua') }}</strong><p class="sub">{{ _('Zgjidh, përshtat ose planifiko.') }}</p></div>
+          {% for p in search_profiles %}
+          <div class="prof-row{{ ' off' if not p.active }}" data-row="{{ p.id }}">
+            <div class="prof-main">
+              <a class="prof-name" href="/?{{ p.apply_query }}" title="{{ _('Apliko filtrat në hapësirë') }}">{{ p.name }}</a>
+              <span class="sub">{{ p.kinds|map('kind_label')|join(' · ') }}{% if p.min_match %} · ≥ {{ p.min_match }}%{% endif %}{% if p.sources %} · {{ p.sources|length }} {{ _('burime') }}{% endif %}</span>
+            </div>
+            <label class="switch" title="{{ _('Aktiv') if p.active else _('Joaktiv') }}">
+              <input type="checkbox" aria-label="{{ _('Aktivizo') }} {{ p.name }}" class="js-prof-active" data-id="{{ p.id }}" {{ 'checked' if p.active }}>
+              <span aria-hidden="true"></span>
+            </label>
+            <button class="iconbtn js-prof-edit" data-id="{{ p.id }}" type="button" aria-label="{{ _('Ndrysho') }} {{ p.name }}" title="{{ _('Ndrysho') }}">{{ m.icon('sliders') }}</button>
+            <button class="btn tiny js-prof-run" data-id="{{ p.id }}" type="button">{{ _('Kërko') }}</button>
+          </div>
+          {% endfor %}
+          <div class="popfoot">
+            <button class="btn small ghost js-prof-new" type="button">{{ m.icon('plus') }} {{ _('Profil i ri') }}</button>
+          </div>
+        </div>
+      </div>
+      <div class="popwrap">
+        <button class="btn ghost" type="button" id="btn-sources" aria-haspopup="true" aria-expanded="false">
+          {{ _('Burimet') }} {{ m.icon('chevron') }}
+        </button>
+        <div class="popover" id="sources-pop" hidden>
+          {% for s in all_sources %}
+          <div class="src-row">
+            <div class="src-info">
+              <strong>{{ _(s.name) }}</strong>
+              <span class="sub">{{ _(s.note) }}</span>
+              {% if s.id in last_runs %}
+              {% set lr = last_runs[s.id] %}
+              <span class="sub lastrun {{ 'err' if lr.status != 'ok' }}">
+                {{ _('+{n} të reja', n=lr.new_count) if lr.status == 'ok' else _('gabim') }} · {{ ui(lr.ago) }}
+              </span>
+              {% endif %}
+            </div>
+            {% if not s.ok %}
+            <a class="btn tiny ghost" href="/profile#{{ 'lokale' if s.id == 'local_feed' else 'burimet' }}">{{ _('Konfiguro') }}</a>
+            {% else %}
+            <button class="btn tiny js-src-fetch" data-src="{{ s.id }}" type="button">{{ _('Kërko') }}</button>
+            {% endif %}
+          </div>
+          {% endfor %}
+          <p class="popnote">{{ _('Mundësitë nga burime të tjera mund t’i shtosh edhe manualisht.') }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% if profile_empty %}
+<div class="hint-line">
+  {{ _('Plotëso') }} <a href="/profile#profili">{{ _('profilin') }}</a> {{ _('(aftësi, gjuhë, vendndodhje) — pikët e përputhjes llogariten nga të dhënat që jep ti.') }}
+</div>
+{% endif %}
+
+<nav class="statusstrip" aria-label="{{ _('Statuset') }}">
+  <a class="schip {{ 'on' if not params.status else '' }}" href="/?mode={{ params.mode }}">
+    <span>{{ _('Të gjitha') }}</span><b>{{ total }}</b>
+  </a>
+  {% for s in strip %}
+  <a data-status="{{ s.key }}" class="schip {{ 'on' if params.status == s.key else '' }}"
+     href="/?mode={{ params.mode }}&amp;status={{ s.key|replace(' ', '+') }}">
+    <span>{{ _(s.label) }}</span><b>{{ s.count }}</b>
+  </a>
+  {% endfor %}
+  {% if run_ok or run_err %}
+  <span class="run-status" role="status">{{ _('Kërkimet e fundit:') }} {{ _('{n} burime OK', n=run_ok) }}{% if run_err %} · {{ _('{n} me gabim', n=run_err) }}{% endif %}</span>
+  {% endif %}
+</nav>
+
+{% if top_matches %}
+<section class="top-matches" aria-labelledby="top-matches-heading">
+  <div class="results-head">
+    <h2 id="top-matches-heading">{{ _('Më të mirat tani') }} <span class="count">{{ top_matches|length }}</span></h2>
+    <span class="sub">{{ _('Më të përputhshmet sipas profilit tënd.') }}</span>
+  </div>
+  <ul class="rows top-rows" id="top-matches">
+    {% for j in top_matches %}{{ m.job_row(j, best=(j.score >= 70)) }}{% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+<button class="btn filter-mobile" id="filter-mobile" type="button" aria-expanded="false" aria-controls="filterform">{{ m.icon("sliders") }} {{ _('Filtrat') }}{% if chips %} · {{ chips|length }}{% endif %}</button>
+<form class="filterrow" method="get" action="/" id="filterform">
+  <input type="hidden" name="mode" value="{{ params.mode }}">
+  <input type="hidden" name="q" value="{{ params.q }}"><input type="hidden" name="status" value="{{ params.status }}">
+  <select name="remote" aria-label="{{ _('Mënyra e punës') }}" onchange="this.form.requestSubmit()">
+    <option value="">{{ _('Çdo lloj') }}</option>
+    <option value="remote" {{ 'selected' if params.remote == 'remote' }}>{{ _('Remote') }}</option>
+    <option value="onsite" {{ 'selected' if params.remote == 'onsite' }}>{{ _('Në zyrë / hybrid') }}</option>
+  </select>
+  <select name="mins" aria-label="{{ _('Përputhja minimale') }}" onchange="this.form.requestSubmit()">
+    <option value="">{{ _('Përputhja: çdo') }}</option>
+    {% if params.mins and params.mins not in [50,70] %}<option value="{{ params.mins }}" selected>≥ {{ params.mins }}%</option>{% endif %}
+    <option value="50" {{ 'selected' if params.mins == 50 }}>≥ 50%</option>
+    <option value="70" {{ 'selected' if params.mins == 70 }}>≥ 70%</option>
+  </select>
+  <select name="days" aria-label="{{ _('Data e postimit') }}" onchange="this.form.requestSubmit()">
+    <option value="">{{ _('Data: çdo') }}</option>
+    <option value="7" {{ 'selected' if params.days == 7 }}>{{ _('< 7 ditë') }}</option>
+    <option value="30" {{ 'selected' if params.days == 30 }}>{{ _('< 30 ditë') }}</option>
+  </select>
+  <select name="source" aria-label="{{ _('Burimi') }}" onchange="this.form.requestSubmit()">
+    <option value="">{{ _('Burimi: të gjitha') }}</option>
+    {% for s in sources %}<option value="{{ s }}" {{ 'selected' if params.source == s }}>{{ source_label(s) }}</option>{% endfor %}
+  </select>
+  <button class="btn ghost small" type="button" id="more-toggle" aria-controls="morefilters" aria-expanded="{{ 'true' if params.loc or params.salary else 'false' }}">{{ _('Më shumë filtra') }}</button>
+  <div class="morefilters" id="morefilters" {% if not params.loc and not params.salary %}hidden{% endif %}>
+    <input aria-label="{{ _('Vendndodhja') }}" type="text" name="loc" value="{{ params.loc }}" placeholder="{{ _('Vendndodhja…') }}">
+    <input aria-label="{{ _('Paga minimale vjetore') }}" type="number" name="salary" value="{{ params.salary or '' }}" min="0" step="1000" placeholder="{{ _('Paga min. €/vit') }}">
+    <button class="btn small" type="submit">{{ _('Apliko') }}</button>
+  </div>
+</form>
+
+{% if chips %}
+<div class="chips">
+  {% for c in chips %}
+  <a class="chip" href="{{ c.url }}" title="{{ _('Hiq filtrin') }}">{{ c.label }} {{ m.icon('x', 'chipx') }}</a>
+  {% endfor %}
+  <a class="chip clearall" href="/?mode={{ params.mode }}">{{ _('Pastro') }}</a>
+</div>
+{% endif %}
+
+<section class="results">
+  <div class="results-head">
+    <h2>
+      {% if params.mode == 'freelance' %}{{ _('Projekte freelance') }}
+      {% elif params.mode == 'products' %}{{ _('Klientë për produktet e mia') }}
+      {% elif params.mode == 'local' %}{{ _('Mundësi pranë teje') }}
+      {% elif params.mode == 'all' %}{{ _('Punë & mundësi') }}
+      {% else %}{{ _('Punë') }}{% endif %}
+      <span class="count">{{ jobs|length }}{{ "+" if jobs|length == 300 }}</span>
+    </h2>
+    <div class="results-tools">
+      <select name="sort" form="filterform" aria-label="{{ _('Renditja') }}"
+              onchange="document.getElementById('filterform').requestSubmit()">
+        <option value="match" {{ 'selected' if sort == 'match' }}>{{ _('Më të përputhshmet') }}</option>
+        <option value="new" {{ 'selected' if sort == 'new' }}>{{ _('Më të rejat') }}</option>
+      </select>
+      <a class="btn ghost small" href="/jobs/add?kind={{ {'freelance':'freelance', 'products':'product_lead', 'local':'local_job'}.get(params.mode, 'job') }}">
+        {{ m.icon('plus') }} {{ _('Shto manualisht') }}
+      </a>
+    </div>
+  </div>
+
+  {% if feed_jobs %}
+  <p class="results-note">{{ _('Më të përputhshmet shfaqen të parat.') if sort == 'match' else _('Renditur sipas freskisë.') }} {{ _('Pikët shpjegohen te detajet.') }}</p>
+  <ul class="rows" id="opportunity-list">
+    {% for j in feed_jobs %}{{ m.job_row(j, best=(sort == 'match' and j.score >= 70)) }}{% endfor %}
+  </ul>
+  <div class="results-footer"><span id="result-range" class="sub">{{ jobs|length }} {{ _('rezultate') }}</span><button class="btn" id="load-more" type="button" hidden>{{ _('Shfaq më shumë') }} {{ m.icon('chevron') }}</button></div>
+  {% if jobs|length == 300 %}<p class="sub">{{ _('Shfaqen deri në 300 rezultate. Ngushto kërkimin me filtra për mundësi të tjera.') }}</p>{% endif %}
+  {% else %}
+  <div class="empty">
+    {{ m.icon('inbox') }}
+    <h3>{{ _('Hapi tjetër fillon me një kërkim.') }}</h3>
+    <p class="sub">{{ _('Nuk ka rezultate për këtë përzgjedhje. Ndrysho filtrat,') }}<br>{{ _('kërko në burime ose shto një mundësi që ke gjetur.') }}</p>
+    <div class="empty-actions"><a class="btn" href="/?mode={{ params.mode }}">{{ _('Pastro filtrat') }}</a><a class="btn primary" href="/jobs/add?kind={{ {'freelance':'freelance', 'products':'product_lead', 'local':'local_job'}.get(params.mode, 'job') }}">{{ _('Shto mundësi') }}</a></div>
+  </div>
+  {% endif %}
+</section>
+
+<details id="adjacent-opportunities" class="adjacent-opportunities" data-mode="{{ params.mode }}" hidden>
+  <summary>{{ _('Sugjerime jashtë kërkimit kryesor') }} <span class="count" id="adjacent-count"></span></summary>
+  <div class="adjacent-grid" id="adjacent-grid"></div>
+</details>
+</div></div>
+{% endblock %}

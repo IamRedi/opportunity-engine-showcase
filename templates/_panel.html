@@ -1,0 +1,211 @@
+{% import "_macros.html" as m %}
+<div class="panelroot" data-job="{{ j.id }}">
+  <p class="eyebrow">{{ _(KIND_LABELS.get(j.kind, j.kind)) }} · {{ source_label(j.source) }}</p>
+  <div class="panel-scorewrap">
+    {% if j.kd.get('verification_status') == 'search_preview' %}<span class="statuspill">{{ _('Për t’u verifikuar') }}</span>{% else %}{{ m.score(j.score, 'big') }}{% endif %}
+    <div class="panel-headtext">
+      <h2 class="panel-title"><a href="{{ j.source_url }}" target="_blank" rel="noopener">{{ j.title }}</a></h2>
+      <div class="panel-sub">
+        {%- if j.org_name %}<span>{{ j.org_name }}</span><i>·</i>{% endif %}
+        {%- if j.location %}<span>{{ j.location }}</span><i>·</i>{% endif %}
+        {%- if j.remote %}<span class="wm">{{ _('Remote') }}</span><i>·</i>{% endif %}
+        {%- if j.salary_display %}<span>{{ j.salary_display }}</span>{% endif %}
+      </div>
+    </div>
+  </div>
+
+  <div class="panel-actions">
+    <button type="button" class="btn primary js-go-application">{{ _('Përgatit') }} {{ _("propozimin") if j.kind in ["freelance","product_lead"] else _("aplikimin") }} {{ m.icon("arrow") }}</button>
+    <a class="btn ghost" href="{{ j.source_url }}" target="_blank" rel="noopener">{{ _('Hap origjinalin') }} {{ m.icon('external') }}</a>
+    <div class="quick">
+      {% for s, label in quick %}
+      <button class="btn ghost js-status{{ ' on' if j.status == s }}" data-status="{{ s }}" type="button">{{ _(label) }}</button>
+      {% endfor %}
+      <select class="js-status-select" aria-label="{{ _('Ndrysho statusin') }}">
+        {% for s in statuses %}<option value="{{ s }}" {{ 'selected' if j.status == s }}>{{ _(STATUS_LABELS.get(s, s)) }}</option>{% endfor %}
+      </select>
+    </div>
+  </div>
+
+  {% if j.kd.get('verification_status') == 'search_preview' %}
+  <p class="sub web-preview-notice"><strong>{{ _('Rezultat nga kërkimi në web') }}{% if j.kd.get('source_domain') %} · {{ j.kd.source_domain }}{% endif %}</strong><br>{{ _('Kemi vetëm fragmentin e indeksuar. Kontrollo ofertën, vendndodhjen dhe disponueshmërinë te origjinali.') }}</p>
+  {% endif %}
+  {% if not DEMO_MODE or listing_summary %}<section class="opportunity-summary">
+    <h3>{{ _('Në pak fjalë') }}</h3>
+    {% if listing_summary %}
+      <p class="summary-overview">{{ listing_summary.overview }}</p>
+      {% for key, label in [('tasks', _('Çfarë do të bësh')), ('requirements', _('Çfarë kërkohet')), ('conditions', _('Kushtet kryesore'))] %}
+        {% if listing_summary[key] %}
+        <div class="summary-group"><strong>{{ label }}</strong><ul>{% for item in listing_summary[key] %}<li>{{ item }}</li>{% endfor %}</ul></div>
+        {% endif %}
+      {% endfor %}
+      <p class="summary-note">{{ _('Përmbledhje e krijuar me AI në {language} dhe e ruajtur për këtë njoftim.', language=summary_language) }}</p>
+    {% elif j.description %}
+      <p>{{ _('Krijo një shpjegim të shkurtër me pika në {language}. AI përdor vetëm tekstin e njoftimit dhe rezultati ruhet që të mos paguhet përsëri.', language=summary_language) }}</p>
+      <button class="btn small ghost js-job-summary" data-job="{{ j.id }}" type="button">{{ m.icon('spark') }} {{ _('Shpjegoje me AI') }}</button>
+    {% else %}
+      <p>{{ _('Burimi nuk ka dhënë përshkrim. Kontrollo kërkesat në njoftimin origjinal.') }}</p>
+    {% endif %}
+  </section>{% endif %}
+  {% if j.description %}
+  <details class="desc"><summary>{{ _('Fragmenti nga burimi') if j.kd.get('verification_status') == 'search_preview' else _('Përshkrimi i plotë & kërkesat') }}</summary>
+    <div class="desc-body">{{ j.description }}</div>
+  </details>
+  {% endif %}
+
+  {% if j.kind == 'local_job' %}
+  <section class="why localinfo">
+    <h3>{{ _('Të dhënat lokale') }}</h3>
+    <div class="sub">
+      {% if j.distance_km is not none %}{{ _('Distanca:') }} {{ j.distance_km }} {{ _('km ·') }} {% endif %}
+      {% if j.kd.get('postcode') %}{{ _('Kodi postar:') }} {{ j.kd.postcode }} · {% endif %}
+      {% if j.hourly_rate %}{{ j.hourly_rate }} {{ _('€/orë ·') }} {% endif %}
+      {% if j.schedule %}{{ _('Orari:') }} {{ j.schedule }}{% endif %}
+    </div>
+    {% if j.worth %}
+    <div class="pfit-row">
+      <span class="pfit-score">{{ j.worth.worth_score if j.worth.worth_score is not none else '—' }}</span>
+      <div class="sub">
+        <strong>{{ _('Vlen udhëtimin?') }}</strong>
+        {% for r in j.worth.reasons %}{{ ui(r) }}{% if not loop.last %} · {% endif %}{% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </section>
+  {% endif %}
+
+  <section class="why">
+    <h3>{{ _('Përse përputhet') }}</h3><p class="sub">{{ _('Bazuar në profilin tënd dhe të dhënat e mundësisë.') }}</p>
+    <details class="match-details"><summary>{{ _('Shiko faktorët e përputhjes') }}</summary>
+    {% for f in breakdown.factors %}
+    <div class="factor {{ f.status }}">
+      <span class="f-label">{{ _(f.label) }}</span>
+      <div class="f-bar">
+        {% if f.value is not none %}<div class="f-fill {{ 'hi' if f.value >= 70 else ('mid' if f.value >= 40 else 'lo') }}" style="width: {{ f.value }}%"></div>{% endif %}
+      </div>
+      <span class="f-val">{% if f.value is not none %}{{ f.value }}%{% else %}—{% endif %}</span>
+      <span class="f-note">{{ ui(f.evidence) }}</span>
+    </div>
+    {% endfor %}
+    </details>
+    {% if breakdown.exclusions %}
+    <div class="why-chips"><span class="tchip miss">{{ _('përjashtuar:') }} {{ breakdown.exclusions|join(', ') }}</span></div>
+    {% endif %}
+    {% if breakdown.matched %}
+    <div class="why-chips">
+      {% for t in breakdown.matched[:6] %}<span class="tchip ok">{{ ui(t) }}</span>{% endfor %}
+    </div>
+    {% else %}
+    <p class="sub">{{ _('Nuk ka dëshmi të mjaftueshme për të renditur aftësi të përputhura. Rishiko faktorët dhe') }} <a href="/profile#strukture">{{ _('profilin tënd') }}</a>.</p>
+    {% endif %}
+  </section>
+
+  <details class="notes"><summary>{{ _('Shënimet e mia') }}</summary>
+    <textarea rows="4" aria-label="{{ _('Shënimet e mia') }}" placeholder="{{ _('Kontakt, data aplikimit, përgjigje…') }}" data-autosave>{{ j.notes }}</textarea>
+    <span class="savehint" aria-live="polite">{{ _('Ruhen kur largohesh nga fusha.') }}</span>
+  </details>
+
+  {% if product_fit and product_fit.candidates %}
+  <section class="why pfit">
+    <h3>{{ _('Mundësi produkti') }}</h3>
+    {% for c in product_fit.candidates[:3] %}
+    <div class="pfit-row">
+      <span class="pfit-score">{{ c.fit_score if c.fit_score is not none else '—' }}%</span>
+      <div>
+        <strong>{{ c.product_name }}</strong>
+        {% if c.hard_mismatch %}<span class="tchip miss">{{ _('hard mismatch') }}</span>{% endif %}
+        <div class="sub">
+          {% if c.matched %}{{ _('Mbulon:') }} {{ c.matched|map('capability_label')|join(' · ') }}{% endif %}
+          {% if c.missing %}{% if c.matched %} · {% endif %}{{ _('Mungon:') }} {{ c.missing|map('capability_label')|join(' · ') }}{% endif %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {% if product_fit and not product_fit.candidates %}<section class="why pfit"><h3>{{ _('Mundësi produkti') }}</h3><p class="sub">{{ _("Shto një produkt aktiv për të krahasuar aftësitë me këtë mundësi.") if product_fit.catalog_empty else _("Nuk ka sinjale të mjaftueshme për të vlerësuar përshtatjen e produktit.") }}</p>{% if product_fit.catalog_empty %}<a href="/profile#produkte">{{ _('Plotëso katalogun →') }}</a>{% endif %}</section>{% endif %}
+
+  <details class="apps" id="apps-section" {% if applications %}open{% endif %}><summary>{{ _('Aplikimi / Propozimi') }}</summary><p class="sub">{{ _('Krijo, rishiko dhe aprovo. Dërgimin e bën vetë në platformën origjinale.') }}</p>
+    <div class="genrow">
+      <select class="js-app-lang" aria-label="{{ _('Gjuha') }}">
+        <option value="sq" {{ 'selected' if ui_locale() == 'sq' }}>{{ _('SQ') }}</option><option value="en" {{ 'selected' if ui_locale() == 'en' }}>{{ _('EN') }}</option><option value="de" {{ 'selected' if ui_locale() == 'de' }}>{{ _('DE') }}</option>
+      </select>
+      <select class="js-app-tone" aria-label="{{ _('Toni') }}">
+        <option value="professional">{{ _('Profesional') }}</option>
+        <option value="concise">{{ _('I përmbledhur') }}</option>
+        <option value="friendly">{{ _('Miqësor') }}</option>
+      </select>
+      <button class="btn small js-app-generate" data-job="{{ j.id }}"
+              {{ 'disabled' if DEMO_MODE }}
+              {% if applications %}data-app="{{ applications[0].id }}" {{ "disabled" if applications[0].status in ["submitted", "archived"] }}{% endif %} type="button">
+        {{ m.icon("spark") }} {{ _('Gjenero me AI') }}
+      </button>
+    </div>
+    <p class="sub gen-help">{{ _('Shembull i redaktueshëm nga fakte fiktive. AI live është i çaktivizuar.') if DEMO_MODE else _('Gjuha dhe toni përdoren për AI. Kur AI nuk është aktiv, krijohet draft bazë në shqip që mund ta redaktosh.') }}</p>
+    {% if applications %}
+      {% for app in applications %}
+      <div class="appcard" data-app="{{ app.id }}">
+        <div class="appcard-head">
+          <span class="statuspill st-applied">{{ _(app.status_label) }}</span>
+          <span class="sub">{{ _('v') }}{{ app.latest_version }} · {{ {"job_application":_("Aplikim pune"),"freelance_proposal":_("Propozim freelance"),"product_outreach":_("Prezantim produkti"),"local_message":_("Mesazh për punë lokale")}.get(app.application_type, app.application_type) }}{% if app.platform %} · {{ app.platform }}{% endif %}</span>
+        </div>
+        <input {{ "readonly" if app.status in ["submitted","archived"] }} class="app-subject" value="{{ app.subject }}" aria-label="{{ _('Tema') }}">
+        <textarea {{ "readonly" if app.status in ["submitted","archived"] }} aria-label="{{ _('Përmbajtja e aplikimit') }}" class="app-content" rows="10">{{ app.latest_content }}</textarea>
+        <p class="edit-state sub" aria-live="polite">{{ _("Version final i aprovuar") if app.latest_kind == "final" else (_("Redaktuar nga ti") if app.latest_kind == "edited" else _("Përmbajtje e gjeneruar")) }} {{ _('· v') }}{{ app.latest_version }} {{ _('· e ruajtur') }}</p>
+        <div class="app-actions"><button type="button" class="btn small ghost js-app-profile-learn" data-app="{{ app.id }}">{{ _('Kontrollo plotësime për profilin') }}</button>
+          <button {{ "disabled" if app.status in ["submitted","archived"] }} class="btn small js-app-save" data-app="{{ app.id }}" type="button">{{ _('Ruaj') }}</button>
+          {% if app.status in ('draft', 'edited') %}
+          <button class="btn small primary js-app-approve" data-app="{{ app.id }}" type="button">{{ _('Aprovo') }}</button>
+          {% endif %}
+          {% if app.status == 'approved' %}
+          <button class="btn small js-app-submitted" data-app="{{ app.id }}" type="button">{{ _('Shëno të dërguar') }}</button>
+          {% endif %}
+          <button {{ "disabled" if DEMO_MODE or app.status in ["submitted","archived"] }} class="btn small ghost js-app-regen" data-app="{{ app.id }}" type="button">{{ _('Rigjenero') }}</button>
+          <button {{ "disabled" if app.status == "archived" }} class="btn small ghost js-app-archive" data-app="{{ app.id }}" type="button">{{ _('Arkivo') }}</button>
+        </div>
+        {% if app.generator.missing_context %}
+        <div class="why-chips">
+          {% for m in app.generator.missing_context %}<span class="tchip miss">{{ _('mungon:') }} {{ ui(m) }}</span>{% endfor %}
+        </div>
+        {% endif %}
+        {% if app.generator.kind %}
+        <div class="sub genmeta">
+          {% if app.generator.kind == 'showcase_fixture' %}{{ _('Shembull demo i shkruar') }}
+          {% elif app.generator.kind == 'ai' %}{{ _('AI:') }} {{ app.generator.provider }}/{{ app.generator.model }} · {{ app.generator.style }} · {{ app.generator.tone }}
+          {% else %}{{ _('template') }}{% if app.generator.fallback_reason %} ({{ ui(app.generator.fallback_reason) }}){% endif %}{% endif %}
+        </div>
+        {% endif %}
+        {% if app.versions %}
+        <details class="app-versions">
+          <summary class="sub">{{ _('Rishikimet (') }}{{ app.versions|length }})</summary>
+          <ul>
+            {% for v in app.versions %}
+            <li><details class="revision" data-version="{{ v.version_number }}"><summary>{{ _('v') }}{{ v.version_number }} · {{ enum_label(v.kind) }} · {{ v.created_at }}</summary><pre class="version-content" aria-live="polite">{{ _('Hap për të lexuar këtë version.') }}</pre></details></li>
+            {% endfor %}
+          </ul>
+        </details>
+        {% endif %}
+      </div>
+      {% endfor %}
+    {% else %}
+    <div class="appcreate">
+      <p class="sub">{{ _('Krijo draft aplikimi/propozimi (nga faktet e profilit — e redakton pastaj vetë).') }}</p>
+      <div class="row">
+        <select class="js-app-type" aria-label="{{ _('Lloji i aplikimit') }}">
+          {% for t in app_types %}
+          <option value="{{ t }}" {{ 'selected' if t == app_default_type }}>{{ {"job_application":_("Aplikim pune"),"freelance_proposal":_("Propozim freelance"),"product_outreach":_("Prezantim produkti"),"local_message":_("Mesazh për punë lokale")}.get(t,t) }}</option>
+          {% endfor %}
+        </select>
+        <button class="btn small primary js-app-create" data-job="{{ j.id }}" type="button">{{ _('Krijo draft') }}</button>
+      </div>
+    </div>
+    {% endif %}
+  </details>
+
+  <footer class="panel-foot">
+    <span>{{ source_label(j.source) }} · {{ _('Data e postimit nuk është verifikuar') if j.kd.get('verification_status') == 'search_preview' else ui(j.ago) }}</span>
+    {% if j.opportunity_type %}<span class="wm">{{ ui(j.opportunity_type) }}</span>{% endif %}
+    <button class="linklike js-delete" data-job="{{ j.id }}" type="button">{{ _('Fshi') }}</button>
+  </footer>
+</div>

@@ -1,0 +1,77 @@
+{# Komponente të ripërdorshme: ikona, pikë përputhjeje, pill statusi, rresht rezultati #}
+
+{% macro icon(name, cls='') -%}
+<svg class="ic {{ cls }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+{%- if name == 'arrow' -%}<path d="M5 12h14m-5-5 5 5-5 5"/>
+{%- elif name == 'briefcase' -%}<rect x="3" y="7" width="18" height="14" rx="3"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12a25 25 0 0 0 18 0M12 11v4"/>
+{%- elif name == 'box' -%}<path d="m12 3 9 5v9l-9 5-9-5V8l9-5zm0 10v9M3 8l9 5 9-5M7.5 5.5l9 5"/>
+{%- elif name == 'pin' -%}<path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 0 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/>
+{%- elif name == 'file' -%}<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm0 0v6h6M8 13h8M8 17h5"/>
+{%- elif name == 'layers' -%}<path d="m12 3 10 5-10 5L2 8l10-5ZM2 12l10 5 10-5M2 16l10 5 10-5"/>
+{%- elif name == 'bookmark' -%}<path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16l-6-4-6 4Z"/>
+{%- elif name == 'search' -%}
+<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>
+{%- elif name == 'sliders' -%}
+<path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/>
+{%- elif name == 'x' -%}
+<path d="M18 6 6 18M6 6l12 12"/>
+{%- elif name == 'external' -%}
+<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/>
+{%- elif name == 'spark' -%}
+<path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8L12 3z"/><path d="M19 15l.9 2.4 2.4.9-2.4.9-.9 2.4-.9-2.4-2.4-.9 2.4-.9.9-2.4z"/>
+{%- elif name == 'plus' -%}
+<path d="M12 5v14M5 12h14"/>
+{%- elif name == 'inbox' -%}
+<path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/>
+{%- elif name == 'chevron' -%}
+<path d="m6 9 6 6 6-6"/>
+{%- elif name == 'clock' -%}
+<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>
+{%- elif name == 'check' -%}
+<path d="M20 6 9 17l-5-5"/>
+{%- elif name == 'leaf' -%}<path d="M20 4C8 2 2 10 6 17s14 1 14-13Z"/><path d="m4 21 12-12"/>
+{%- elif name == 'user' -%}<circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/>
+{%- elif name == 'trash' -%}
+<path d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2m3 0v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6h14"/>
+{%- endif -%}
+</svg>
+{%- endmacro %}
+
+{% macro score(pct, size='') -%}
+{% set tier = 'hi' if pct >= 70 else ('mid' if pct >= 45 else 'lo') %}
+<span class="score {{ size }} {{ tier }}" title="{{ _('Përputhja:') }} {{ pct }}%">{{ pct }}<small>%</small></span>
+{%- endmacro %}
+
+{% macro status_pill(s) -%}
+<span class="statuspill st-{{ s }}">{{ _(STATUS_LABELS.get(s, s)) }}</span>
+{%- endmacro %}
+
+{% macro job_row(j, best=False) -%}
+{% set preview = j.get('kd', {}).get('verification_status') == 'search_preview' %}
+{% set best = best and not preview %}
+<li class="row opportunity-row kind-{{ j.kind }}{{ ' best' if best }}" data-id="{{ j.id }}" data-status="{{ j.status }}">
+  <div class="org-avatar" aria-hidden="true">{{ (j.org_name or j.title)[:1]|upper }}</div>
+  <div class="row-main">
+    <div class="row-eyebrow"><span>{{ j.org_name or _('Kompania nuk është deklaruar') }}</span>{% if best %}<span class="best-label">{{ _('Përputhje e fortë') }}</span>{% endif %}</div>
+    <a class="row-title" href="/jobs/{{ j.id }}" data-drawer="{{ j.id }}">{{ j.title }}</a>
+    <div class="row-sub"><span>{{ j.location or _('Vendndodhja nuk është deklaruar') }}</span>{% if j.remote %}<span class="wm">{{ _('Remote') }}</span>{% endif %}
+      {% if j.kind != 'job' %}<span>{{ _(KIND_LABELS.get(j.kind, j.kind)) }}</span>{% endif %}
+      {% if j.opportunity_type and j.kind != 'local_job' %}<span>{{ ui(j.opportunity_type) }}</span>{% endif %}
+      {% for lens in j.get('lenses', []) if lens != j.kind %}<span>{{ _(KIND_LABELS.get(lens, lens)) }}</span>{% endfor %}
+    </div>
+    <div class="row-facts">
+      {% if j.kind == 'local_job' %}
+        <strong>{{ (j.hourly_rate|string + _(' €/orë')) if j.hourly_rate else _('Pagesa e padeklaruar') }}</strong>
+        {% if j.distance_km is not none %}<span>{{ j.distance_km }} {{ _('km larg') }}</span>{% endif %}
+        {% if j.worth and j.worth.worth_score is not none %}<span class="worth-label">{{ _('Vlera e udhëtimit ·') }} {{ j.worth.worth_score }}%</span>{% endif %}
+        {% if j.category_label %}<span>{{ _(j.category_label) }}</span>{% endif %}
+      {% else %}<strong>{{ j.salary_display or (_('Buxheti i padeklaruar') if j.kind in ['freelance','product_lead'] else _('Paga e padeklaruar')) }}</strong>{% endif %}
+      {% for t in j.tags_list[:3] %}<span class="skill-tag">{{ t }}</span>{% endfor %}
+    </div>
+    <div class="row-meta">{{ source_label(j.source) }} <span aria-hidden="true">·</span> {{ _('Data e postimit nuk është verifikuar') if preview else ui(j.ago) }} {{ status_pill(j.status) }}</div>
+  </div>
+  <div class="row-side"><div class="match-label">{% if preview %}<span class="statuspill">{{ _('Për t’u verifikuar') }}</span>{% else %}{{ score(j.score) }}<small>{{ _('përputhje') }}</small>{% endif %}</div>
+    {% if j.kind in ['job','local_job','freelance'] and j.status in ['new','saved','lead_saved'] %}<button type="button" class="iconbtn js-quick-save{{ ' on' if j.status != 'new' }}" data-id="{{ j.id }}" data-save="{{ 'lead_saved' if j.kind == 'freelance' else 'saved' }}" aria-label="{{ _('Ruaj:') }} {{ j.title }}" aria-pressed="{{ 'true' if j.status != 'new' else 'false' }}">{{ icon('bookmark') }}</button>{% endif %}
+  </div>
+</li>
+{%- endmacro %}

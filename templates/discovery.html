@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% import '_macros.html' as m %}
+{% block title %}{{ _('Kërkim i zgjeruar') }} · {{ APP_NAME }}{% endblock %}
+{% block content %}
+<div class="workspace-intro"><div><p class="eyebrow">{{ _('MË SHUMË BURIME, MË SHUMË MUNDËSI') }}</p><h1>{{ _('Kërko për hapin tënd të ardhshëm.') }}</h1><p class="sub">{{ _('Punë, freelance, minijob ose kërkesa që mund t’i zgjidhësh me produktet e tua.') }}</p></div><a class="quiet-link" href="/">{{ _('Shiko ofertat e punës') }} ↗</a></div>
+<div class="discovery-layout"><section class="discovery-card"><form id="discovery-form" class="form">
+<div class="grid2"><label>{{ _('Çfarë mundësie kërkon?') }}<select name="kind"><option value="job" {{ 'selected' if kind=='job' }}>{{ _('Punë profesionale') }}</option><option value="freelance" {{ 'selected' if kind=='freelance' }}>{{ _('Freelance') }}</option><option value="local_job" {{ 'selected' if kind=='local_job' }}>{{ _('Lokale / Mini') }}</option><option value="product_lead" {{ 'selected' if kind=='product_lead' }}>{{ _('Klientë për produktet e mia') }}</option></select></label>
+<label>{{ _('Produktet dhe projektet e mia') }}<select name="product_id"><option value="">{{ _('Pa produkt të zgjedhur') }}</option>{% for p in products %}<option value="{{ p.choice_id }}">{{ p.name }}</option>{% endfor %}</select></label></div>
+<fieldset id="local-discovery" class="local-discovery" {% if kind!='local_job' %}hidden{% endif %}>
+<legend>{{ _('Çfarë do të bësh pranë teje?') }}</legend>
+<p class="sub">{{ _('Zgjidh deri në 3 kategori për kërkim.') }} {{ _('Preferencat e ruajtura janë zgjedhur paraprakisht; ky kërkim nuk ndryshon profilin.') }}</p>
+<div class="local-category-grid">{% for cid,label in local_categories.items() %}<label class="local-category"><input type="checkbox" name="categories" value="{{ cid }}" {% if cid in (local_prefs.get('categories',[]) or [])[:3] %}checked{% endif %}><span>{{ _(label) }}</span></label>{% endfor %}</div>
+<p class="sub">{{ _('Distanca, pagesa dhe përvoja vlerësohen kur oferta ka të dhëna. Interesi nuk është kualifikim.') }} <a href="/profile#lokale">{{ _('Preferencat e kërkimit') }} ↗</a></p>
+</fieldset>
+<label>{{ _('Profesion, aftësi ose zgjidhje që ofron') }}<input name="what" maxlength="250" placeholder="{{ profile.title or _('p.sh. Software Developer') }}"></label>
+<div class="grid2"><label>{{ _('Vendndodhja') }}<input name="where" value="{{ (local_prefs.get('base_location') or local_prefs.get('postcode') or profile.location or '') if kind=='local_job' else (profile.location or '') }}" maxlength="150"></label><label>{{ _('Vendi') }}<select name="country">{% for key,label in countries.items() %}<option value="{{ key }}">{{ _(label) }}</option>{% endfor %}</select></label></div>
+<label>{{ _('Ku dëshiron të kërkosh?') }}<select name="web_target">
+<option value="">{{ _('Të gjitha burimet e lidhura') }}</option>
+<option value="*">{{ _('Vetëm web · rezultate brenda aplikacionit') }}</option>
+{% for p in external_platforms if p.site %}<option value="{{ p.site }}" data-target-kinds="{{ p.kinds|join(' ') }}" data-target-countries="{{ p.countries|join(' ') }}">{{ p.name }}</option>{% endfor %}
+</select></label>
+<p class="sub">{{ _('Google ose Brave sjell njoftimet e indeksuara këtu. Nevojitet një çelës te Burimet; nuk kërkohen të dy.') }} <a href="/profile#burimet">{{ _('Lidh burimin') }} ↗</a></p>
+<p class="sub">{{ _('Burimet zgjidhen sipas llojit të mundësisë. Profili yt përdoret për renditjen; kushtet e punëdhënësit duhen kontrolluar.') }}</p>
+<button class="btn primary" type="submit">{{ m.icon('search') }} {{ _('Kërko në burimet e lidhura') }}</button></form>
+<div id="discovery-progress" class="work-progress" role="status" aria-live="polite"></div><div class="work-actions"><button id="discovery-cancel" class="btn ghost" type="button" hidden>{{ _('Anulo') }}</button><button id="discovery-retry" class="btn ghost" type="button" hidden>{{ _('Provo përsëri') }}</button><a id="discovery-results" class="btn primary" hidden href="/">{{ _('Shiko rezultatet') }} ↗</a></div>
+</section><aside class="discovery-card"><h2>{{ _('Mbulimi i kërkimit') }}</h2><p class="sub">{{ _('Aktive do të thotë të konfiguruara; rezultati i secilit burim shfaqet pas kërkimit.') }}</p><ul class="discovery-sources">{% for s in sources %}<li data-source-kinds="{{ source_kinds[s.id] }}" {% if kind not in source_kinds[s.id].split() %}hidden{% endif %}><strong>{{ _(s.name) }}</strong><span class="statuspill">{{ _('Gati për kërkim') if s.ok else _('Kërkon konfigurim') }}</span></li>{% endfor %}</ul><a class="quiet-link" href="/profile#burimet">{{ _('Lidh Google Jobs dhe kërkimin në web') }} ↗</a><p class="sub">{{ _('Rezultatet nga web janë pista për verifikim. LinkedIn dhe Fiverr nuk janë lidhje direkte aktive.') }}</p></aside></div>
+<section id="external-platforms" class="discovery-card local-platforms">
+<h2>{{ _('Kërko edhe në platforma të tjera') }}</h2>
+<p class="sub">{{ _('Zgjidh kërkim brenda aplikacionit për njoftime të indeksuara, ose hap platformën drejtpërdrejt. Google dhe Brave nuk garantojnë gjithë katalogun.') }}</p>
+<p class="sub">{{ _('Butoni «Kërko në Google» hap Google jashtë aplikacionit. Butoni «Kërko brenda aplikacionit» përdor burimin e lidhur dhe ruan rezultatet këtu.') }}</p>
+<script id="external-search-terms" type="application/json">{{ external_terms|tojson }}</script>
+<p><a id="external-web" class="quiet-link" href="https://www.google.com/search?q=jobs" target="_blank" rel="noopener noreferrer">{{ _('Kërko në gjithë web-in') }} ↗</a></p>
+<div class="local-platform-grid">
+{% for p in external_platforms %}
+<article class="external-platform" data-platform-kinds="{{ p.kinds|join(' ') }}" data-platform-countries="{{ p.countries|join(' ') }}" {% if kind not in p.kinds or (p.countries and 'de' not in p.countries) %}hidden{% endif %}>
+<strong>{{ p.name }}</strong><p class="sub">{{ _(p.note) }}</p>
+<div class="external-platform-actions">
+<a href="{{ p.url }}" target="_blank" rel="noopener noreferrer">{{ _('Hap platformën') }} ↗</a>
+{% if p.site %}<a class="external-google" data-site="{{ p.site }}" href="https://www.google.com/search?q=site%3A{{ p.site|urlencode }}" target="_blank" rel="noopener noreferrer">{{ _('Kërko në Google') }} ↗</a>{% endif %}
+{% if p.site %}<button class="btn small ghost js-select-platform" type="button" data-site="{{ p.site }}">{{ _('Kërko brenda aplikacionit') }}</button>{% endif %}
+</div></article>
+{% endfor %}
+</div></section>
+<details class="discovery-card employer-config"><summary>{{ _('Shto faqet e kompanive që të interesojnë') }}</summary><p class="sub">{{ _('Shkruaj identifikuesit e faqeve të kompanive, të ndarë me presje. Deri në 8 për burim. Ruhen vetëm për përdoruesin aktual.') }}</p><form method="post" action="/profile/source-boards" class="form"><div class="grid2">{% for provider in ['greenhouse','lever','ashby'] %}<label>{{ provider|title }}<input name="{{ provider }}" value="{{ boards|selectattr('provider','equalto',provider)|map(attribute='board')|join(', ') }}" placeholder="{{ _('Identifikuesit e kompanive') }}"></label>{% endfor %}</div><button class="btn" type="submit">{{ _('Ruaj burimet') }}</button></form></details>
+{% endblock %}

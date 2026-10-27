@@ -1,0 +1,322 @@
+{% extends "base.html" %}
+{% block title %}{{ _('Profili ·') }} {{ APP_NAME }}{% endblock %}
+{% block content %}
+<div class="page-head"><p class="eyebrow">{{ _('PROFILI YT, AVANTAZHI YT') }}</p><h1>{{ _('Le të njohim atë që di të bësh.') }}</h1><p class="sub">{{ _('Fillo me CV-në ose plotëso vetë. Ti vendos çfarë bëhet pjesë e profilit.') }}</p></div>
+<div class="profile-layout"><aside class="profile-nav"><nav aria-label="{{ _('Seksionet e profilit') }}">
+{% for key,label in [('pamja','Profili im'),('nis','Ndërto profilin'),('profili','Rreth teje'),('cv','CV & rishikimi'),('strukture',_('Aftësi & përvojë')),('produkte',_('Produkte & aftësi')),('gaps',_('Boshllëqe & kufizime')),('preferencat',_('Preferencat e kërkimit')),('lokale',_('Punë pranë teje')),('email','Njoftimet'),('perdorimi','Përdorimi'),('burimet','Burimet'),('te-dhenat',_('Të dhënat'))] %}<a href="#{{ key }}">{{ _(label) }}</a>{% endfor %}
+</nav><div class="completion-card" id="profile-completion">
+<div class="profile-orbit" role="progressbar" aria-label="{{ _('Plotësimi i profilit') }}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><svg viewBox="0 0 120 120" aria-hidden="true"><circle class="orbit-track" cx="60" cy="60" r="54"/><circle class="orbit-progress" cx="60" cy="60" r="54" pathLength="100"/></svg><a class="orbit-face" href="#pamja" aria-label="{{ _('Shiko profilin tim') }}">{% if portrait.get('version') %}<img class="js-portrait" src="/api/profile/photo?v={{ portrait.version }}" alt="{{ _('Fotoja e profilit') }}">{% else %}<span class="portrait-initials">{{ (profile.name or '?')[:1] }}</span>{% endif %}</a><span class="orbit-star" aria-hidden="true">✦</span><span class="orbit-value">0%</span></div>
+<strong class="orbit-name">{{ profile.name or _('Profili yt') }}</strong><p class="orbit-caption">{{ _('Çdo detaj i dobishëm hap më shumë mundësi.') }}</p>
+<label for="completion-mode">{{ _('Gati për çfarë?') }}</label><select id="completion-mode"><option value="job">{{ _('Punë profesionale') }}</option><option value="freelance">{{ _('Freelance') }}</option><option value="product_lead">{{ _('Klientë për produktet e mia') }}</option><option value="local_job">{{ _('Lokale / Mini') }}</option></select><div id="completion-content" aria-live="polite">{{ _('Po ngarkohet profili…') }}</div><div class="orbit-skills">{% for s in profile_context.skills[:5] %}<span>{{ s.name }}</span>{% endfor %}</div></div></aside><div class="profile-content">
+{% include "_profile_overview.html" %}
+{% include "_profile_setup.html" %}
+<section id="profili" class="psect">
+  <p class="eyebrow">{{ _('01 / RRETH TEJE') }}</p><h2>{{ _('Si dëshiron të prezantohesh?') }}</h2>
+  <form method="post" action="/profile" class="form">
+    <div class="grid2">
+      <label>{{ _('Emri') }}<input name="name" value="{{ profile['name'] }}"></label>
+      <label>{{ _('Titulli profesional') }}<input name="title" value="{{ profile['title'] }}" placeholder="{{ _('p.sh. Software Developer') }}"></label>
+      <label>{{ _('Email') }}<input name="email" value="{{ profile['email'] }}"></label>
+      <label>{{ _('Telefon') }}<input name="phone" value="{{ profile['phone'] }}"></label>
+      <label>{{ _('Vendndodhja') }}<input name="location" value="{{ profile['location'] }}" placeholder="{{ _('p.sh. Essen, Gjermani') }}"></label>
+    </div>
+    <label>{{ _('Përmbledhje (summary)') }}<textarea name="summary" rows="3">{{ profile['summary'] }}</textarea></label>
+    <details class="legacy-profile"><summary>{{ _('Aftësitë') }} & {{ _('përmbledhjet e kërkimit') }}</summary><p class="sub">{{ _('Këto përmbledhje përdoren nga kërkimi. Për nivele, dëshmi dhe zëra të detajuar hap “Aftësi & përvojë”.') }}</p>
+    <div class="grid2">
+      <label>{{ _('Aftësi (një për rresht)') }}<textarea name="skills" rows="6" placeholder="{{ _('Python SQL Git') }}">{{ skills_text }}</textarea></label>
+      <label>{{ _('Gjuhët (Gjuhë – nivel)') }}<textarea name="languages" rows="6" placeholder="{{ _('Gjermanisht – B2 Anglisht – C1 Shqip – amtare') }}">{{ languages_text }}</textarea></label>
+    </div>
+    <label>{{ _('Eksperienca (tekst i lirë)') }}<textarea name="experience" rows="5">{{ profile['experience'] }}</textarea></label>
+    <label>{{ _('Aftësitë që ofron si shërbim (një për rresht)') }}
+      <textarea name="products" rows="5" placeholder="{{ _('Zhvillim websites BusinessSite RC SaaS white-label Automatizime AI Alate interne të personalizuar') }}">{{ products_text }}</textarea></label>
+    </details>
+    <div class="form-foot"><button class="btn primary" type="submit">{{ _('Ruaj profilin') }}</button></div>
+  </form>
+</section>
+
+<section id="preferencat" class="psect">
+  <h2>{{ _('Preferencat e kërkimit') }}</h2>
+  <form method="post" action="/filters" class="form">
+    <div class="grid2">
+      <label>{{ _('Fjalë kyçe të përfshira (një për rresht)') }}<textarea name="keywords" rows="5" placeholder="{{ _('developer backend data analyst') }}">{{ keywords_text }}</textarea></label>
+      <label>{{ _('Fjalë kyçe për të përjashtuar (një për rresht)') }}<textarea name="exclude_keywords" rows="5" placeholder="{{ _('senior unpaid praktikum') }}">{{ exclude_text }}</textarea></label>
+      <label>{{ _('Vendndodhjet e interesit (një për rresht)') }}<textarea name="locations" rows="4" placeholder="{{ _('Berlin Essen Remote') }}">{{ locations_text }}</textarea></label>
+      <div class="stack">
+        <label class="check"><input type="checkbox" name="remote_ok" {% if filters['remote_ok'] %}checked{% endif %}> {{ _('Pranoj remote') }}</label>
+        <label class="check"><input type="checkbox" name="onsite_ok" {% if filters['onsite_ok'] %}checked{% endif %}> {{ _('Pranoj në zyrë') }}</label>
+        <label class="check"><input type="checkbox" name="hybrid_ok" {% if filters['hybrid_ok'] %}checked{% endif %}> {{ _('Pranoj hybrid') }}</label>
+        <label>{{ _('Paga minimale vjetore brutto €') }}<input type="number" name="salary_min" value="{{ filters['salary_min'] }}" min="0" step="1000"></label>
+      </div>
+    </div>
+    <div class="form-foot"><button class="btn primary" type="submit">{{ _('Ruaj preferencat') }}</button></div>
+  </form>
+</section>
+
+<section id="lokale" class="psect">
+  <h2>{{ _('Preferencat lokale / mini-punë') }}</h2>
+  <p class="sub">{{ _('Përdoren për distancën, kategorinë, pagën minimale dhe kufizimet e transportit te mundësitë lokale. Feed-et publike lokale (RSS/Atom, një URL për rresht ose me presje) kërkohen nga profili') }} <em>{{ _('Lokale / Mini') }}</em>.</p>
+  <form method="post" action="/profile/local" class="form">
+    <div class="grid2">
+      <label>{{ _('Baza / vendi') }}<input name="base_location" value="{{ local_prefs.get('base_location', '') }}" placeholder="{{ _('p.sh. Essen') }}"></label>
+      <label>{{ _('Kodi postar') }}<input name="postcode" value="{{ local_prefs.get('postcode', '') }}" placeholder="{{ _('p.sh. 45127') }}"></label>
+      <label>{{ _('Rrezja (km)') }}<input type="number" name="radius_km" min="0" value="{{ local_prefs.get('radius_km', '') }}"></label>
+      <label>{{ _('Transporti') }}
+        <select name="transport_mode">
+          <option value="">—</option>
+          {% for m in ['walking', 'bicycle', 'public transport', 'car'] %}
+          <option value="{{ m }}" {{ 'selected' if local_prefs.get('transport_mode') == m }}>{{ enum_label(m) }}</option>
+          {% endfor %}
+        </select>
+      </label>
+      <label>{{ _('Udhëtim max (min)') }}<input type="number" name="max_travel_min" min="0" value="{{ local_prefs.get('max_travel_min', '') }}"></label>
+      <label>{{ _('Paga min €/orë') }}<input type="number" step="0.5" min="0" name="min_hourly_rate" value="{{ local_prefs.get('min_hourly_rate', '') }}"></label>
+      <label>{{ _('Ditët/orari i disponueshëm') }}<input name="available_days" value="{{ local_prefs.get('available_days', '') }}" placeholder="{{ _('p.sh. fundjave') }}"></label>
+      {% if not cloud_pilot() %}<label>{{ _('Feed-et lokale (RSS/Atom, me presje)') }}<input name="local_feed_urls" value="{{ settings.get('local_feed_urls', '') }}" placeholder="{{ _('https://…/feed.xml') }}"></label>{% endif %}
+    </div>
+    <label class="check"><input type="checkbox" name="no_car" {{ 'checked' if local_prefs.get('no_car') }}> {{ _('Pa makinë (puna që kërkon makinë përjashtohet)') }}</label>
+    <label>{{ _('Kategoritë e preferuara') }}</label>
+    <div class="check-grid">
+      {% for cid, lbl in local_categories.items() %}
+      <label class="check"><input type="checkbox" name="categories" value="{{ cid }}" {{ 'checked' if cid in local_prefs.get('categories', []) }}> {{ _(lbl) }}</label>
+      {% endfor %}
+    </div>
+    <button class="btn primary small" type="submit">{{ _('Ruaj preferencat lokale') }}</button>
+  </form>
+</section>
+
+<section id="produkte" class="psect">
+  <p class="eyebrow">{{ _('ZGJIDHJET QË OFRON') }}</p><h2>{{ _('Produktet e tua.') }}</h2>
+  <p class="sub">{{ _('Trego çfarë zgjidh çdo produkt. Kërkesat e klientëve krahasohen me aftësitë e produkteve aktive.') }}</p>
+
+  {% if products %}
+  <ul class="prodlist">
+    {% for pr in products %}
+    <li class="prodrow {{ 'archived' if pr.status == 'archived' }}">
+      <div class="prodmain">
+        <strong>{{ pr.name }}</strong>
+        <span class="sub">{{ pr.type }} · {{ enum_label(pr.status) }} {{ _('· Prioritet') }} {{ pr.idx + 1 }}
+          {% if pr.white_label %} {{ _('· white-label') }}{% endif %}</span>
+        {% if pr.short_description %}<div class="sub">{{ pr.short_description }}</div>{% endif %}
+        {% if pr.capabilities %}<div class="row-tags">{% for c in pr.capabilities %}<span>{{ c }}</span>{% endfor %}</div>{% endif %}
+      </div>
+      <div class="prodacts">
+        <a class="btn tiny ghost" href="/profile?edit_product={{ pr.idx }}#produkte">{{ _('Ndrysho') }}</a>
+        {% if pr.status == 'active' %}
+        <form method="post" action="/profile/products/action"><input type="hidden" name="idx" value="{{ pr.idx }}"><input type="hidden" name="action" value="archive"><button class="btn tiny ghost" type="submit">{{ _('Arkivo') }}</button></form>
+        {% else %}
+        <form method="post" action="/profile/products/action"><input type="hidden" name="idx" value="{{ pr.idx }}"><input type="hidden" name="action" value="reactivate"><button class="btn tiny ghost" type="submit">{{ _('Riaktivizo') }}</button></form>
+        {% endif %}
+        <form method="post" action="/profile/products/action"><input type="hidden" name="idx" value="{{ pr.idx }}"><input type="hidden" name="action" value="up"><button class="btn tiny ghost" type="submit" title="{{ _('Ngjiti prioritetin') }}">↑</button></form>
+        <form method="post" action="/profile/products/action"><input type="hidden" name="idx" value="{{ pr.idx }}"><input type="hidden" name="action" value="down"><button class="btn tiny ghost" type="submit" title="{{ _('Ul prioritetin') }}">↓</button></form>
+        <form method="post" action="/profile/products/action" data-confirm="{{ _('Të fshihet produkti?') }}"><input type="hidden" name="idx" value="{{ pr.idx }}"><input type="hidden" name="action" value="delete"><button class="btn tiny ghost" type="submit">{{ _('Fshi') }}</button></form>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="sub">{{ _('Ende asnjë produkt. Shto një zgjidhje që ofron, çfarë zgjidh dhe aftësitë e saj. Product Fit do të ketë një bazë për krahasim.') }}</p>
+  {% endif %}
+
+  {% if edit_product %}
+  <h3 class="sub">{{ _('Po ndryshon:') }} {{ edit_product.name }}</h3>
+  {% endif %}
+  <form method="post" action="/profile/products" class="form">
+    <h3>{{ _("Ndrysho produktin") if edit_product else _("Shto një produkt ose aftësi") }}</h3><input type="hidden" name="idx" value="{{ edit_product.idx if edit_product else '' }}">
+    <div class="grid2">
+      <label>{{ _('Emri *') }}<input name="name" required value="{{ edit_product.name if edit_product else '' }}"></label>
+      <label>{{ _('Lloji') }}<input name="type" value="{{ edit_product.type if edit_product else '' }}" placeholder="{{ _('white-label / saas / toolkit…') }}"></label>
+    </div>
+    <label>{{ _('Përshkrimi i shkurtër') }}<input name="short_description" value="{{ edit_product.short_description if edit_product else '' }}"></label>
+    <label>{{ _('Përshkrimi i detajuar') }}<textarea name="description" rows="3">{{ edit_product.description if edit_product else '' }}</textarea></label>
+    <div class="grid2">
+      <label>{{ _('Aftësi/features (me presje)') }}<input name="capabilities" value="{{ edit_product.capabilities|join(', ') if edit_product else '' }}" placeholder="{{ _('website, booking, crm') }}"></label>
+      <label>{{ _('Teknologjitë (me presje)') }}<input name="technologies" value="{{ edit_product.technologies|join(', ') if edit_product else '' }}"></label>
+      <label>{{ _('Industritë (me presje)') }}<input name="industries" value="{{ edit_product.industries|join(', ') if edit_product else '' }}"></label>
+      <label>{{ _('Gjuhët e ndërfaqes (me presje)') }}<input name="languages" value="{{ edit_product.languages|join(', ') if edit_product else '' }}"></label>
+      <label>{{ _('Modeli i dërgesës') }}<input name="delivery_model" value="{{ edit_product.delivery_model if edit_product else '' }}" placeholder="{{ _('SaaS / self-hosted') }}"></label>
+      <label>{{ _('Deployment') }}<input name="deployment_model" value="{{ edit_product.deployment_model if edit_product else '' }}" placeholder="{{ _('cloud / on-premise') }}"></label>
+      <label>{{ _('Demo URL') }}<input name="demo_url" value="{{ edit_product.demo_url if edit_product else '' }}"></label>
+      <label>{{ _('Faqja') }}<input name="website_url" value="{{ edit_product.website_url if edit_product else '' }}"></label>
+      <label>{{ _('Repo / referenca') }}<input name="repo_url" value="{{ edit_product.repo_url if edit_product else '' }}"></label>
+      <label>{{ _('Status') }}
+        <select name="status">
+          {% for st in ['active', 'draft', 'archived'] %}
+          <option value="{{ st }}" {{ 'selected' if edit_product and edit_product.status == st }}>{{ enum_label(st) }}</option>
+          {% endfor %}
+        </select>
+      </label>
+      <label>{{ _('Shënime komerciale') }}<input name="pricing_notes" value="{{ edit_product.pricing_notes if edit_product else '' }}"></label>
+    </div>
+    <label class="check"><input type="checkbox" name="white_label" {{ 'checked' if edit_product and edit_product.white_label }}> {{ _('White-label i disponueshëm') }}</label>
+    <button class="btn primary small" type="submit">{{ _('Ruaj ndryshimet') if edit_product else _('Shto produkt') }}</button>
+  </form>
+</section>
+
+<section id="strukture" class="psect"><p class="eyebrow">{{ _('02 / AFTËSI TË KONFIRMUARA') }}</p><h2>{{ _('Çfarë sjell me vete?') }}</h2><p class="sub">{{ _('Shto aftësi, përvojë dhe punë që tregojnë çfarë mund të bësh. Ruhen vetëm të dhënat që konfirmon.') }}</p>
+<div id="section-editors">
+{% for key,label in [('skills',_('Aftësi & teknologji')),('languages',_('Gjuhët')),('experience',_('Përvoja e punës')),('education','Edukimi'),('certifications','Certifikimet'),('portfolio','Portfolio'),('projects','Projektet'),('interests','Hobi & interesa'),('preferences','Çfarë kërkon'),('personal','Të dhëna personale · opsionale')] %}
+<details class="section-editor" data-section="{{ key }}" {% if loop.first %}open{% endif %}><summary>{{ _(label) }}<span class="section-count"></span></summary><div class="editor-content"><p class="sub">{{ _('Po ngarkohen të dhënat…') }}</p></div></details>
+{% endfor %}</div><details class="suggestion-box"><summary>{{ _('Ide që mund të të ndihmojnë') }}</summary><p class="sub">{{ _('Këto janë sugjerime sipas rolit, jo fakte të konfirmuara. Shto vetëm ato që të përfaqësojnë.') }}</p><div id="profile-suggestions"></div></details></section>
+<section id="cv" class="psect"><p class="eyebrow">{{ _('NGA CV-JA TE PROFILI') }}</p><h2>{{ _('CV-ja jote. Fjala e fundit, e jotja.') }}</h2><ol class="cv-steps"><li>{{ _('Ngarko CV') }}</li><li>{{ _('Zgjidh mënyrën') }}</li><li>{{ _('Rishiko profilin') }}</li><li>{{ _('Ndrysho kur duhet') }}</li></ol><p class="sub">{{ _('Zgjidh plotësimin automatik ose rishikimin. Fushat ekzistuese ruhen; informacioni që mungon në CV nuk sajohet.') }}</p>
+
+  <div class="cvrow">
+    <div id="cv-status" class="sub">{{ ui(cv_status_text) }}</div>
+    <form method="post" action="/profile/cv" enctype="multipart/form-data" class="cv-upload">
+      <input aria-label="{{ _('Zgjidh CV-në') }}" type="file" name="file" accept=".pdf,.docx,.md,.txt" required>
+      <label>{{ _('Pas ngarkimit') }}<select name="profile_mode"><option value="autofill">{{ _('Plotëso profilin automatikisht') }}</option><option value="review">{{ _('Nxirr vetëm sugjerime për rishikim') }}</option><option value="upload">{{ _('Vetëm ruaj CV-në') }}</option></select></label>
+      <label class="check"><input type="checkbox" name="use_ai" {{ 'checked' if ai_status.enabled else 'disabled' }}> {{ _('Përdor AI për lexim më të plotë') }}</label>
+      <p class="sub">{{ _('Me plotësimin automatik, një foto e përshtatshme nga CV-ja vendoset në profil nëse nuk ke foto. Mund ta ndryshosh më pas.') }}</p>
+      <p class="sub">{{ _('Me AI, teksti i CV-së dërgohet te shërbimi AI i konfiguruar. Pa AI, dokumenti përpunohet në serverin e platformës.') if cloud_pilot() else _('Me AI, teksti i CV-së dërgohet te shërbimi AI i konfiguruar. Pa këtë zgjedhje, lexohet vetëm lokalisht.') }}</p>
+      {% if cloud_pilot() %}<p class="sub">{{ _('Skedari duhet të jetë deri në 4 MB.') }}</p>{% endif %}
+      <button class="btn small primary" type="submit">{{ _('Ngarko CV') }}</button>
+    </form>
+    {% if cv_exists %}
+    <form method="post" action="/profile/cv/parse" class="inline-actions">
+      <label>{{ _('Veprimi për CV-në e ruajtur') }}<select name="profile_mode"><option value="autofill">{{ _('Plotëso profilin automatikisht') }}</option><option value="review">{{ _('Nxirr vetëm sugjerime për rishikim') }}</option></select></label>
+      <label class="check"><input type="checkbox" name="use_ai" {{ 'checked' if ai_status.enabled else 'disabled' }}> {{ _('Përdor AI për lexim më të plotë') }}</label>
+      <button class="btn small primary" type="submit">{{ _('Përpuno CV-në') }}</button>
+      <span class="sub" id="cv-parse-hint">{{ _('ekstrakton tekstin dhe krijon sugjerime për rishikim') }}</span>
+    </form>
+    <div id="cv-suggestions"></div>
+    <div class="cv-next-steps">
+      <h3>{{ _('Vazhdo te profili yt') }}</h3>
+      <p class="sub">{{ _('Të dhënat e pranuara janë ruajtur. Refuzimi i një sugjerimi nuk fshin të dhënat ekzistuese. Kontrollo edhe fushat që kanë mbetur bosh.') }}</p>
+      <div class="inline-actions">
+        <a class="btn small primary" href="/profile#pamja">{{ _('Shiko profilin tim') }}</a>
+        <a class="btn small ghost" href="/profile#strukture">{{ _('Kontrollo aftësitë dhe përvojën') }}</a>
+        <a class="btn small ghost" href="/?mode=jobs">{{ _('Shiko ofertat e punës') }}</a>
+      </div>
+    </div>
+    <form method="post" action="/profile/cv/delete">
+      <button class="btn small ghost" type="submit">{{ _('Fshi CV') }}</button>
+    </form>
+    {% endif %}
+  </div>
+</section>
+
+<section id="gaps" class="psect"><p class="eyebrow">{{ _('QARTËSI MBI KUFIZIMET') }}</p><h2>{{ _('Çfarë duhet të marrim parasysh?') }}</h2><p class="sub">{{ _('Dallo një aftësi që po mëson nga një kusht që nuk mund ta ndryshosh.') }}</p><div id="gap-list"></div><form id="gap-form" class="form"><label>{{ _('Kufizimi ose aftësia') }}<input name="label" required placeholder="{{ _('p.sh. Gjermanisht B2 ose pa makinë') }}"></label><div class="grid2"><label>{{ _('Kategoria') }}<select name="category"><option value="missing_skill">{{ _('Aftësi për të zhvilluar') }}</option><option value="language_gap">{{ _('Gjuha') }}</option><option value="certification_missing">{{ _('Certifikim') }}</option><option value="travel_constraint">{{ _('Transporti') }}</option></select></label><label>{{ _('Rëndësia') }}<select name="severity"><option value="info">{{ _('Informacion') }}</option><option value="soft">{{ _('Preferencë') }}</option><option value="hard">{{ _('Kusht i domosdoshëm') }}</option></select></label><label>{{ _('Gjendja sot') }}<input name="current_state"></label><label>{{ _('Synimi') }}<input name="target_state"></label><label>{{ _('Gatishmëria') }}<select name="willingness"><option value="">{{ _('E papërcaktuar') }}</option><option value="learning">{{ _('Po mësoj') }}</option><option value="willing_to_learn">{{ _('Dua të mësoj') }}</option><option value="willing_to_obtain">{{ _('Dua ta marr') }}</option><option value="not_interested">{{ _('Nuk jam i interesuar') }}</option><option value="unavailable">{{ _('Nuk mund ta ndryshoj') }}</option></select></label></div><label>{{ _('Shënime') }}<textarea name="notes" rows="2"></textarea></label><button type="submit" class="btn primary">{{ _('Shto kufizimin') }}</button></form></section>
+<section id="email" class="psect">
+  <h2>{{ _('Njoftime me email') }}</h2>
+  {% if platform_admin() %}
+  <p class="sub">
+    {% if email_adapter == 'log' %}{{ _('Adapter dev: email-at') }} <strong>{{ _('regjistrohen në log') }}</strong>{{ _(', pa dërgim real.') }}
+    {% elif email_adapter == 'smtp' %}{{ _('Adapter SMTP nga variablat e mjedisit (SMTP_HOST/SMTP_USER/SMTP_PASS).') }}{% endif %}
+    {{ _('Njoftimet in-app mbeten gjithmonë aktive pavarësisht kësaj seksioni.') }}</p>
+  <form method="post" action="/profile/email" class="form">
+    <label class="check"><input type="checkbox" name="email_enabled" {{ 'checked' if email_cfg.enabled }}> {{ _('Aktivizo email-in') }}</label>
+    <div class="grid2">
+      <label>{{ _('Email pranues') }}<input name="recipient" value="{{ email_cfg.recipient }}" placeholder="{{ _('ti@example.com') }}"></label>
+      <label>{{ _('Preferenca') }}
+        <select name="mode">
+          {% for m in ['immediate', 'digest', 'both'] %}
+          <option value="{{ m }}" {{ 'selected' if email_cfg.mode == m }}>{{ m }}</option>
+          {% endfor %}
+        </select>
+      </label>
+      <label>{{ _('Ora e digestit') }}<input name="digest_time" value="{{ email_cfg.digest_time }}" placeholder="08:00"></label>
+      <label>{{ _('Përputhja min. për email') }}<input type="number" min="0" max="100" name="min_match" value="{{ email_cfg.min_match }}"></label>
+      <label>{{ _('Quiet hours nga') }}<input name="quiet_start" value="{{ email_cfg.quiet_start }}" placeholder="22:00"></label>
+      <label>{{ _('Quiet hours deri') }}<input name="quiet_end" value="{{ email_cfg.quiet_end }}" placeholder="07:00"></label>
+    </div>
+    <label>{{ _('Llojet për email (me presje)') }}<input name="kinds" value="{{ email_cfg.kinds|join(', ') }}" placeholder="{{ _('job, freelance, product_lead, local_job') }}"></label>
+    <button class="btn primary small" type="submit">{{ _('Ruaj email-in') }}</button>
+  </form>
+  {% else %}<p class="sub">{{ _('Konfigurimi i shërbimeve menaxhohet nga pronari.') }}</p>{% endif %}
+</section>
+
+<section id="perdorimi" class="psect usage-section">
+  <p class="eyebrow">{{ _('PËRDORIMI KËTË MUAJ') }}</p>
+  <h2>{{ _('Përdorimi dhe limitet') }}</h2>
+  <p class="sub">{{ _('Shiko sa nga limiti mujor është përdorur nga veprimet që kërkojnë një shërbim të jashtëm.') }}</p>
+  <div class="usage-grid">
+    {% for meter in usage_view.meters %}
+    <article class="usage-card usage-{{ meter.status }}">
+      <div class="usage-card-head"><h3>{{ _(meter.label) }}</h3><span>{{ meter.percent }}%</span></div>
+      {% if meter.configured %}
+      <progress value="{{ meter.percent }}" max="100" aria-label="{{ _(meter.label) }}: {{ meter.percent }}%"></progress>
+      <div class="usage-numbers">
+        <div><span>{{ _('Përdorur') }}</span><strong>{{ meter.committed_display }}</strong></div>
+        <div><span>{{ _('Në dispozicion') }}</span><strong>{{ meter.available_display }}</strong></div>
+        <div><span>{{ _('Limiti mujor') }}</span><strong>{{ meter.limit_display }}</strong></div>
+      </div>
+      {% else %}
+      <div class="usage-empty" aria-hidden="true"><span></span></div>
+      {% endif %}
+      <p class="usage-state">{{ _(meter.status_message) }}</p>
+    </article>
+    {% endfor %}
+  </div>
+  <div class="usage-notes">
+    <p>{{ _(usage_view.cache_notice) }}</p>
+    <p>{{ _(usage_view.estimate_notice) }}</p>
+  </div>
+  {% if usage_admin %}
+  <details class="usage-admin">
+    <summary>{{ _('Gjendja e përdorimit për administratorin') }}</summary>
+    <p class="sub">{{ _('Vetëm totalet e platformës shfaqen këtu; nuk shfaqen identitete, kërkesa apo përmbajtje përdoruesish.') }}</p>
+    <div class="usage-admin-grid">
+      <div><span>{{ _('Kontrolli i limiteve') }}</span><strong>{{ _('Aktiv') if usage_admin.enforcement == 'active' else _('Joaktiv') }}</strong></div>
+      <div><span>{{ _('Llogari me limit këtë muaj') }}</span><strong>{{ usage_admin.budget_accounts }}</strong></div>
+      <div><span>{{ _('Kërkesa këtë muaj') }}</span><strong>{{ usage_admin.requests }}</strong></div>
+      <div><span>{{ _('Përfunduar') }}</span><strong>{{ usage_admin.settled }}</strong></div>
+      <div><span>{{ _('Në proces') }}</span><strong>{{ usage_admin.in_progress }}</strong></div>
+      <div><span>{{ _('Në pritje të konfirmimit') }}</span><strong>{{ usage_admin.unresolved }}</strong></div>
+    </div>
+  </details>
+  {% endif %}
+</section>
+
+<section id="burimet" class="psect">
+  <h2>{{ _('Burimet') }}</h2>
+  <div class="why">
+    <h3>{{ _('Asistenti AI') }}</h3>
+    <p><span class="statuspill {{ 'st-new' if ai_status.enabled and not ai_status.requires_key else 'st-rejected' }}">{{ _('AI e aktivizuar') if ai_status.enabled and not ai_status.requires_key else _('AI e çaktivizuar ose e pakonfiguruar') }}</span>
+    {% if ai_status.enabled %} {{ _('Lokale · Ollama') if ai_status.provider == 'ollama' else _('Shërbim i jashtëm') }} · {{ ai_status.model }}{% endif %}</p>
+    <p class="sub">{{ _('Gjeneron vetëm kur e kërkon. Rishiko draftin përpara përdorimit; dërgimin e bën vetë.') }}</p>
+  </div>
+  <ul class="srclist">
+    {% for s in all_sources %}
+    <li>
+      <div class="src-info">
+        <strong>{{ _(s.name) }}</strong>
+        <span class="sub">{{ _(s.note) }}</span>
+      </div>
+      <span class="statuspill {{ 'st-new' if s.ok else 'st-rejected' }}">{{ _('Gati për kërkim') if s.ok else _('Kërkon konfigurim') }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+  <p class="sub">{{ _('Burimet publike ripërdorin përgjigjet e fundit për të shmangur kërkesat e përsëritura. Gjendja e konfigurimit nuk garanton disponueshmërinë e burimit.') }}</p>
+
+  {% if platform_admin() %}<form method="post" action="/settings" class="form">
+    <h3>{{ _('Adzuna (punë DACH)') }}</h3>
+    <ol class="sub help">
+      <li>{{ _('Regjistrohu falas te') }} <a href="https://developer.adzuna.com/signup" target="_blank" rel="noopener">{{ _('developer.adzuna.com/signup') }}</a></li>
+      <li>{{ _('Krijo një "Application" dhe kopjo') }} <em>{{ _('Application ID') }}</em> + <em>{{ _('Key') }}</em></li>
+      <li>{{ _('Çelësat ruhen privatisht në server.') if cloud_pilot() else _('Vendosi këtu — ruhen vetëm lokalisht në jobs.db') }}</li>
+    </ol>
+    <div class="grid2">
+      <label>{{ _('App ID') }}<input name="adzuna_app_id" value="{{ settings.get('adzuna_app_id', '') }}"></label>
+      <label>{{ _('App Key') }}<input type="password" name="adzuna_app_key" autocomplete="new-password" placeholder="{{ _('Lëre bosh për të ruajtur çelësin ekzistues') if settings.get('adzuna_app_key') else '' }}"></label>
+      <label>{{ _('Kërko çfarë (default)') }}<input name="adzuna_what" value="{{ adzuna.what }}" placeholder="{{ _('p.sh. Software Developer') }}"></label>
+      <label>{{ _('Kërko ku (default)') }}<input name="adzuna_where" value="{{ adzuna.where }}" placeholder="{{ _('p.sh. Berlin (bosh = kudo)') }}"></label>
+      <label>{{ _('Vendi') }}
+        <select name="adzuna_country">
+          <option value="de" {{ 'selected' if adzuna.country == 'de' }}>{{ _('Gjermani') }}</option>
+          <option value="at" {{ 'selected' if adzuna.country == 'at' }}>{{ _('Austri') }}</option>
+          <option value="ch" {{ 'selected' if adzuna.country == 'ch' }}>{{ _('Zvicër') }}</option>
+        </select>
+      </label>
+    </div>
+    <div class="form-foot"><button class="btn primary" type="submit">{{ _('Ruaj burimet') }}</button></div>
+  </form>
+  <details class="employer-config"><summary>{{ _('Lidh Google Jobs dhe kërkimin në web') }}</summary><p class="sub">{{ _('Çelësat ruhen në server. Lëri bosh për të mbajtur lidhjen ekzistuese.') }}</p><form method="post" action="/settings/discovery" class="form"><div class="grid2"><label>SerpApi · Google Jobs + Web<input type="password" name="serpapi_key" autocomplete="new-password"></label><label>Brave · Web<input type="password" name="brave_api_key" autocomplete="new-password"></label></div><p><a href="https://serpapi.com/manage-api-key" target="_blank" rel="noopener">SerpApi ↗</a> · <a href="https://api-dashboard.search.brave.com/" target="_blank" rel="noopener">Brave ↗</a></p><button class="btn primary" type="submit">{{ _('Ruaj burimet') }}</button></form></details>
+  {% else %}<p class="sub">{{ _('Konfigurimi i shërbimeve menaxhohet nga pronari.') }}</p>{% endif %}
+  <p><a class="quiet-link" href="/discover">{{ _('Kërkim i zgjeruar') }} ↗</a></p>
+</section>
+
+<section id="te-dhenat" class="psect quiet">
+  <h2>{{ _('Të dhënat') }}</h2>
+  <p class="sub">{{ _('Mundësitë, shënimet dhe profili ruhen në këtë instalim. Për kopje rezervë përdor udhëzimet e instalimit.') }}</p>
+</section>
+</div></div>
+{% endblock %}

@@ -1,0 +1,5322 @@
+{
+  "buxhet kërkesash i ciklit": {
+    "en": "cycle request budget reached",
+    "de": "Anfrage-Budget des Zyklus erreicht"
+  },
+  "klasë MANUAL_ONLY — vetëm manualisht": {
+    "en": "MANUAL_ONLY class — manual runs only",
+    "de": "Klasse MANUAL_ONLY — nur manuell"
+  },
+  "kërkim me pagesë — jashtë politikës (pa opt-in)": {
+    "en": "paid search — outside policy (no opt-in)",
+    "de": "bezahlte Suche — außerhalb der Richtlinie (kein Opt-in)"
+  },
+  "pa konfigurim (çelësa/board)": {
+    "en": "not configured (key/board)",
+    "de": "nicht konfiguriert (Schlüssel/Board)"
+  },
+  "Më të mirat tani": {
+    "en": "Top matches now",
+    "de": "Beste Treffer jetzt"
+  },
+  "Më të përputhshmet sipas profilit tënd.": {
+    "en": "Best matches for your profile.",
+    "de": "Beste Treffer für dein Profil."
+  },
+  "Kërkimet e fundit:": {
+    "en": "Recent searches:",
+    "de": "Letzte Suchen:"
+  },
+  "{n} burime OK": {
+    "en": "{n} sources OK",
+    "de": "{n} Quellen OK"
+  },
+  "{n} me gabim": {
+    "en": "{n} with errors",
+    "de": "{n} mit Fehlern"
+  },
+  "Sugjerime jashtë kërkimit kryesor": {
+    "en": "Suggestions beyond your main search",
+    "de": "Vorschläge jenseits der Hauptsuche"
+  },
+  "Data e postimit nuk është verifikuar": {
+    "en": "Posting date not verified",
+    "de": "Veröffentlichungsdatum nicht verifiziert"
+  },
+  "Lidhja u ndërpre. Kontrollo rezultatet e ruajtura përpara se ta përsërisësh.": {
+    "en": "The connection was interrupted. Check saved results before repeating the search.",
+    "de": "Die Verbindung wurde unterbrochen. Prüfe gespeicherte Ergebnisse, bevor du die Suche wiederholst."
+  },
+  "Kërkimi nuk u përfundua. Kjo nuk do të thotë se nuk ka oferta.": {
+    "en": "The search did not complete. This does not mean there are no listings.",
+    "de": "Die Suche wurde nicht abgeschlossen. Das bedeutet nicht, dass es keine Angebote gibt."
+  },
+  "Butoni «Kërko në Google» hap Google jashtë aplikacionit. Butoni «Kërko brenda aplikacionit» përdor burimin e lidhur dhe ruan rezultatet këtu.": {
+    "en": "“Search on Google” opens Google outside the app. “Search in the app” uses the connected provider and saves results here.",
+    "de": "„Mit Google suchen“ öffnet Google außerhalb der App. „In der App suchen“ nutzt die verbundene Quelle und speichert Ergebnisse hier."
+  },
+  "Zgjidh kërkim brenda aplikacionit për njoftime të indeksuara, ose hap platformën drejtpërdrejt. Google dhe Brave nuk garantojnë gjithë katalogun.": {
+    "en": "Choose in-app search for indexed listings, or open the platform directly. Google and Brave do not guarantee the full catalogue.",
+    "de": "Wähle die Suche in der App für indexierte Anzeigen oder öffne die Plattform direkt. Google und Brave garantieren keinen vollständigen Katalog."
+  },
+  "Ku dëshiron të kërkosh?": {
+    "en": "Where would you like to search?",
+    "de": "Wo möchtest du suchen?"
+  },
+  "Të gjitha burimet e lidhura": {
+    "en": "All connected sources",
+    "de": "Alle verbundenen Quellen"
+  },
+  "Vetëm web · rezultate brenda aplikacionit": {
+    "en": "Web only · results in the app",
+    "de": "Nur Web · Ergebnisse in der App"
+  },
+  "Google ose Brave sjell njoftimet e indeksuara këtu. Nevojitet një çelës te Burimet; nuk kërkohen të dy.": {
+    "en": "Google or Brave brings indexed listings here. Add one API key under Sources; you do not need both.",
+    "de": "Google oder Brave zeigt hier indexierte Anzeigen. Ein API-Schlüssel unter Quellen genügt; du brauchst nicht beide."
+  },
+  "Lidh burimin": {
+    "en": "Connect a source",
+    "de": "Quelle verbinden"
+  },
+  "Kërko brenda aplikacionit": {
+    "en": "Search in the app",
+    "de": "In der App suchen"
+  },
+  "Platforma nuk mbështet këtë lloj kërkimi ose vend.": {
+    "en": "This platform does not support the selected search type or country.",
+    "de": "Diese Plattform unterstützt die gewählte Suchart oder das Land nicht."
+  },
+  "Lidh SerpApi ose Brave te Burimet për rezultate web brenda aplikacionit.": {
+    "en": "Connect SerpApi or Brave under Sources for web results in the app.",
+    "de": "Verbinde SerpApi oder Brave unter Quellen für Web-Ergebnisse in der App."
+  },
+  "Google Web nuk e përfundoi kërkimin. Kontrollo çelësin ose kuotën.": {
+    "en": "Google Web could not complete the search. Check the API key or quota.",
+    "de": "Google Web konnte die Suche nicht abschließen. Prüfe API-Schlüssel oder Kontingent."
+  },
+  "Njoftime të indeksuara në web · kërkon çelës SerpApi": {
+    "en": "Indexed web listings · requires a SerpApi key",
+    "de": "Indexierte Web-Anzeigen · SerpApi-Schlüssel erforderlich"
+  },
+  "Rezultat nga kërkimi në web": {
+    "en": "Web search result",
+    "de": "Web-Suchergebnis"
+  },
+  "Kemi vetëm fragmentin e indeksuar. Kontrollo ofertën, vendndodhjen dhe disponueshmërinë te origjinali.": {
+    "en": "Only the indexed excerpt is available. Check the listing, location and availability on the original page.",
+    "de": "Es liegt nur der indexierte Ausschnitt vor. Prüfe Angebot, Ort und Verfügbarkeit auf der Originalseite."
+  },
+  "Fragmenti nga burimi": {
+    "en": "Source excerpt",
+    "de": "Ausschnitt aus der Quelle"
+  },
+  "Kërko në gjithë web-in": {
+    "en": "Search across the web",
+    "de": "Im gesamten Web suchen"
+  },
+  "Kërko edhe në platforma të tjera": {
+    "en": "Explore more platforms",
+    "de": "Weitere Plattformen durchsuchen"
+  },
+  "Kërkimi në Google përdor fjalët, kategoritë dhe vendndodhjen e formularit. Rezultatet hapen jashtë platformës dhe nuk ruhen automatikisht.": {
+    "en": "Google search uses the keywords, categories and location in this form. Results open externally and are not saved automatically.",
+    "de": "Die Google-Suche nutzt Suchbegriffe, Kategorien und Ort aus diesem Formular. Ergebnisse öffnen sich extern und werden nicht automatisch gespeichert."
+  },
+  "Hap platformën": {
+    "en": "Open platform",
+    "de": "Plattform öffnen"
+  },
+  "Kërko në Google": {
+    "en": "Search on Google",
+    "de": "Mit Google suchen"
+  },
+  "Njoftime pune dhe minijob": {
+    "en": "Job and minijob listings",
+    "de": "Stellenangebote und Minijobs"
+  },
+  "Punë profesionale dhe kontrata": {
+    "en": "Professional jobs and contracts",
+    "de": "Fachstellen und Vertragsarbeit"
+  },
+  "Punësim në sektorin publik": {
+    "en": "Public sector jobs",
+    "de": "Stellen im öffentlichen Dienst"
+  },
+  "Punësim publik dhe tendera": {
+    "en": "Public sector jobs and tenders",
+    "de": "Öffentliche Stellen und Ausschreibungen"
+  },
+  "Projekte për profesionistë dhe agjenci": {
+    "en": "Projects for freelancers and agencies",
+    "de": "Projekte für Freelancer und Agenturen"
+  },
+  "Tendera publikë; kontrollo kushtet e pjesëmarrjes": {
+    "en": "Public tenders; check eligibility requirements",
+    "de": "Öffentliche Ausschreibungen; Teilnahmebedingungen prüfen"
+  },
+  "Mundësitë": {
+    "en": "Opportunities",
+    "de": "Möglichkeiten"
+  },
+  "Mundësitë ·": {
+    "en": "Opportunities ·",
+    "de": "Möglichkeiten ·"
+  },
+  "Profili im": {
+    "en": "My profile",
+    "de": "Mein Profil"
+  },
+  "Profili ·": {
+    "en": "Profile ·",
+    "de": "Profil ·"
+  },
+  "Kalo te përmbajtja": {
+    "en": "Skip to content",
+    "de": "Zum Inhalt springen"
+  },
+  "Navigimi kryesor": {
+    "en": "Main navigation",
+    "de": "Hauptnavigation"
+  },
+  "Njoftime": {
+    "en": "Notifications",
+    "de": "Benachrichtigungen"
+  },
+  "Dil": {
+    "en": "Sign out",
+    "de": "Abmelden"
+  },
+  "Shëno të lexuara": {
+    "en": "Mark all as read",
+    "de": "Alle als gelesen markieren"
+  },
+  "Detajet e mundësisë": {
+    "en": "Opportunity details",
+    "de": "Details zur Möglichkeit"
+  },
+  "Mbyll panelin": {
+    "en": "Close panel",
+    "de": "Ansicht schließen"
+  },
+  "HAPËSIRA JOTE E VEPRIMIT": {
+    "en": "YOUR NEXT MOVE",
+    "de": "DEIN NÄCHSTER SCHRITT"
+  },
+  "HAPI YT I ARDHSHËM": {
+    "en": "YOUR NEXT STEP",
+    "de": "DEIN NÄCHSTER SCHRITT"
+  },
+  "Mundësi që të çojnë përpara.": {
+    "en": "Opportunities that move you forward.",
+    "de": "Möglichkeiten, die dich weiterbringen."
+  },
+  "Gjej përputhjen tënde. Kupto arsyen. Hidh hapin tjetër.": {
+    "en": "Find your match. Understand why. Take the next step.",
+    "de": "Finde passende Möglichkeiten. Verstehe warum. Geh den nächsten Schritt."
+  },
+  "Përmirëso përputhjet": {
+    "en": "Improve your matches",
+    "de": "Passendere Vorschläge erhalten"
+  },
+  "Hapësira e kërkimit": {
+    "en": "Search workspace",
+    "de": "Suchbereich"
+  },
+  "EKSPLORO": {
+    "en": "EXPLORE",
+    "de": "ENTDECKEN"
+  },
+  "Lloji i mundësive": {
+    "en": "Opportunity mode",
+    "de": "Art der Möglichkeiten"
+  },
+  "Llojet e mundësive": {
+    "en": "Opportunity types",
+    "de": "Arten von Möglichkeiten"
+  },
+  "Punë profesionale": {
+    "en": "Professional jobs",
+    "de": "Berufliche Stellen"
+  },
+  "Freelance": {
+    "en": "Freelance",
+    "de": "Freelance"
+  },
+  "Product Leads": {
+    "en": "Product leads",
+    "de": "Produktchancen"
+  },
+  "Product Lead": {
+    "en": "Product lead",
+    "de": "Produktchance"
+  },
+  "Lokale / Mini": {
+    "en": "Local / Mini jobs",
+    "de": "Lokale Jobs / Minijobs"
+  },
+  "Të gjitha": {
+    "en": "All",
+    "de": "Alle"
+  },
+  "NDËRTO AVANTAZHIN TËND": {
+    "en": "BUILD YOUR ADVANTAGE",
+    "de": "STÄRKE DEIN PROFIL"
+  },
+  "CV & dëshmi": {
+    "en": "CV & evidence",
+    "de": "Lebenslauf & Nachweise"
+  },
+  "Produktet e mia": {
+    "en": "My products",
+    "de": "Meine Produkte"
+  },
+  "Përputhje të shpjegueshme.": {
+    "en": "Matches you can understand.",
+    "de": "Nachvollziehbare Übereinstimmungen."
+  },
+  "Vendimi mbetet i yti.": {
+    "en": "The decision stays yours.",
+    "de": "Du entscheidest."
+  },
+  "Kërko në mundësitë e ruajtura": {
+    "en": "Search stored opportunities",
+    "de": "Gespeicherte Möglichkeiten durchsuchen"
+  },
+  "Kërko punë, aftësi, kompani ose mundësi…": {
+    "en": "Search jobs, skills, companies or opportunities…",
+    "de": "Jobs, Fähigkeiten, Unternehmen oder Möglichkeiten suchen…"
+  },
+  "Kërko": {
+    "en": "Search",
+    "de": "Suchen"
+  },
+  "Profili i kërkimit": {
+    "en": "Search profile",
+    "de": "Suchprofil"
+  },
+  "Kërkim i përgjithshëm": {
+    "en": "General search",
+    "de": "Allgemeine Suche"
+  },
+  "Gjej mundësi": {
+    "en": "Find opportunities",
+    "de": "Möglichkeiten finden"
+  },
+  "Kërkime të ruajtura": {
+    "en": "Saved searches",
+    "de": "Gespeicherte Suchen"
+  },
+  "Kërkimet e tua": {
+    "en": "Your searches",
+    "de": "Deine Suchen"
+  },
+  "Zgjidh, përshtat ose planifiko.": {
+    "en": "Choose, adjust or schedule.",
+    "de": "Auswählen, anpassen oder planen."
+  },
+  "Apliko filtrat në hapësirë": {
+    "en": "Apply filters to the workspace",
+    "de": "Filter auf den Suchbereich anwenden"
+  },
+  "burime": {
+    "en": "sources",
+    "de": "Quellen"
+  },
+  "Aktiv": {
+    "en": "Active",
+    "de": "Aktiv"
+  },
+  "Joaktiv": {
+    "en": "Inactive",
+    "de": "Inaktiv"
+  },
+  "Aktivizo": {
+    "en": "Enable",
+    "de": "Aktivieren"
+  },
+  "Ndrysho": {
+    "en": "Edit",
+    "de": "Bearbeiten"
+  },
+  "Profil i ri": {
+    "en": "New profile",
+    "de": "Neues Profil"
+  },
+  "Burimet": {
+    "en": "Sources",
+    "de": "Quellen"
+  },
+  "Celes": {
+    "en": "API key",
+    "de": "API-Schlüssel"
+  },
+  "Mundësitë nga burime të tjera mund t’i shtosh edhe manualisht.": {
+    "en": "You can also add opportunities from other sources manually.",
+    "de": "Möglichkeiten aus anderen Quellen kannst du auch manuell hinzufügen."
+  },
+  "Plotëso": {
+    "en": "Complete",
+    "de": "Vervollständige"
+  },
+  "profilin": {
+    "en": "your profile",
+    "de": "dein Profil"
+  },
+  "(aftësi, gjuhë, vendndodhje) — pikët e përputhjes llogariten nga të dhënat që jep ti.": {
+    "en": "(skills, languages, location) — match scores use the information you provide.",
+    "de": "(Fähigkeiten, Sprachen, Standort) – die Bewertung basiert auf deinen Angaben."
+  },
+  "Statuset": {
+    "en": "Statuses",
+    "de": "Status"
+  },
+  "Filtrat": {
+    "en": "Filters",
+    "de": "Filter"
+  },
+  "Mënyra e punës": {
+    "en": "Work arrangement",
+    "de": "Arbeitsmodell"
+  },
+  "Çdo lloj": {
+    "en": "Any arrangement",
+    "de": "Alle Arbeitsmodelle"
+  },
+  "Remote": {
+    "en": "Remote",
+    "de": "Remote"
+  },
+  "Në zyrë / hybrid": {
+    "en": "On-site / hybrid",
+    "de": "Vor Ort / hybrid"
+  },
+  "Në zyrë": {
+    "en": "On-site",
+    "de": "Vor Ort"
+  },
+  "Hybrid": {
+    "en": "Hybrid",
+    "de": "Hybrid"
+  },
+  "Përputhja minimale": {
+    "en": "Minimum match",
+    "de": "Mindestübereinstimmung"
+  },
+  "Përputhja: çdo": {
+    "en": "Match: any",
+    "de": "Übereinstimmung: alle"
+  },
+  "Data e postimit": {
+    "en": "Date posted",
+    "de": "Veröffentlichungsdatum"
+  },
+  "Data: çdo": {
+    "en": "Date: any",
+    "de": "Datum: alle"
+  },
+  "< 7 ditë": {
+    "en": "< 7 days",
+    "de": "< 7 Tage"
+  },
+  "< 30 ditë": {
+    "en": "< 30 days",
+    "de": "< 30 Tage"
+  },
+  "Burimi": {
+    "en": "Source",
+    "de": "Quelle"
+  },
+  "Burimi: të gjitha": {
+    "en": "Source: all",
+    "de": "Quelle: alle"
+  },
+  "Më shumë filtra": {
+    "en": "More filters",
+    "de": "Weitere Filter"
+  },
+  "Më pak filtra": {
+    "en": "Fewer filters",
+    "de": "Weniger Filter"
+  },
+  "Vendndodhja": {
+    "en": "Location",
+    "de": "Standort"
+  },
+  "Vendndodhja…": {
+    "en": "Location…",
+    "de": "Standort…"
+  },
+  "Paga minimale vjetore": {
+    "en": "Minimum annual salary",
+    "de": "Jährliches Mindestgehalt"
+  },
+  "Paga min. €/vit": {
+    "en": "Min. salary €/year",
+    "de": "Mindestgehalt €/Jahr"
+  },
+  "Apliko": {
+    "en": "Apply",
+    "de": "Anwenden"
+  },
+  "Hiq filtrin": {
+    "en": "Remove filter",
+    "de": "Filter entfernen"
+  },
+  "Pastro": {
+    "en": "Clear",
+    "de": "Zurücksetzen"
+  },
+  "Projekte freelance": {
+    "en": "Freelance projects",
+    "de": "Freelance-Projekte"
+  },
+  "Mundësi pranë teje": {
+    "en": "Opportunities near you",
+    "de": "Möglichkeiten in deiner Nähe"
+  },
+  "Punë & mundësi": {
+    "en": "Jobs & opportunities",
+    "de": "Jobs & Möglichkeiten"
+  },
+  "Punë": {
+    "en": "Jobs",
+    "de": "Stellen"
+  },
+  "Renditja": {
+    "en": "Sort order",
+    "de": "Sortierung"
+  },
+  "Më të përputhshmet": {
+    "en": "Best matches",
+    "de": "Passendste zuerst"
+  },
+  "Më të rejat": {
+    "en": "Newest first",
+    "de": "Neueste zuerst"
+  },
+  "Shto manualisht": {
+    "en": "Add manually",
+    "de": "Manuell hinzufügen"
+  },
+  "Më të përputhshmet shfaqen të parat.": {
+    "en": "Your best matches appear first.",
+    "de": "Die passendsten Möglichkeiten erscheinen zuerst."
+  },
+  "Renditur sipas freskisë.": {
+    "en": "Sorted by most recent.",
+    "de": "Nach Aktualität sortiert."
+  },
+  "Pikët shpjegohen te detajet.": {
+    "en": "Scores are explained in the details.",
+    "de": "Die Bewertung wird in den Details erklärt."
+  },
+  "rezultate": {
+    "en": "results",
+    "de": "Ergebnisse"
+  },
+  "Shfaq më shumë": {
+    "en": "Show more",
+    "de": "Mehr anzeigen"
+  },
+  "Shfaqen deri në 300 rezultate. Ngushto kërkimin me filtra për mundësi të tjera.": {
+    "en": "Up to 300 results are shown. Refine your filters to find more opportunities.",
+    "de": "Bis zu 300 Ergebnisse werden angezeigt. Grenze die Suche mit Filtern ein, um weitere Möglichkeiten zu finden."
+  },
+  "Hapi tjetër fillon me një kërkim.": {
+    "en": "Your next step starts with a search.",
+    "de": "Dein nächster Schritt beginnt mit einer Suche."
+  },
+  "Nuk ka rezultate për këtë përzgjedhje. Ndrysho filtrat,": {
+    "en": "No results for this selection. Adjust your filters,",
+    "de": "Keine Ergebnisse für diese Auswahl. Ändere die Filter,"
+  },
+  "kërko në burime ose shto një mundësi që ke gjetur.": {
+    "en": "search sources or add an opportunity you found.",
+    "de": "durchsuche Quellen oder füge eine gefundene Möglichkeit hinzu."
+  },
+  "Pastro filtrat": {
+    "en": "Clear filters",
+    "de": "Filter zurücksetzen"
+  },
+  "Shto mundësi": {
+    "en": "Add opportunity",
+    "de": "Möglichkeit hinzufügen"
+  },
+  "Përputhja:": {
+    "en": "Match:",
+    "de": "Übereinstimmung:"
+  },
+  "Kompania nuk është deklaruar": {
+    "en": "Company not provided",
+    "de": "Unternehmen nicht angegeben"
+  },
+  "Përputhje e fortë": {
+    "en": "Strong match",
+    "de": "Hohe Übereinstimmung"
+  },
+  "Vendndodhja nuk është deklaruar": {
+    "en": "Location not provided",
+    "de": "Standort nicht angegeben"
+  },
+  "Pagesa e padeklaruar": {
+    "en": "Pay not provided",
+    "de": "Vergütung nicht angegeben"
+  },
+  "Paga e padeklaruar": {
+    "en": "Salary not provided",
+    "de": "Gehalt nicht angegeben"
+  },
+  "Buxheti i padeklaruar": {
+    "en": "Budget not provided",
+    "de": "Budget nicht angegeben"
+  },
+  "km larg": {
+    "en": "km away",
+    "de": "km entfernt"
+  },
+  "Vlera e udhëtimit ·": {
+    "en": "Travel value ·",
+    "de": "Lohnt sich der Weg ·"
+  },
+  "përputhje": {
+    "en": "match",
+    "de": "Übereinstimmung"
+  },
+  "Ruaj:": {
+    "en": "Save:",
+    "de": "Speichern:"
+  },
+  "Përgatit": {
+    "en": "Prepare",
+    "de": "Vorbereiten:"
+  },
+  "propozimin": {
+    "en": "proposal",
+    "de": "Angebot"
+  },
+  "aplikimin": {
+    "en": "application",
+    "de": "Bewerbung"
+  },
+  "Hap origjinalin": {
+    "en": "Open original",
+    "de": "Original öffnen"
+  },
+  "Ndrysho statusin": {
+    "en": "Change status",
+    "de": "Status ändern"
+  },
+  "Në pak fjalë": {
+    "en": "At a glance",
+    "de": "Auf einen Blick"
+  },
+  "Çfarë do të bësh": {
+    "en": "What you will do",
+    "de": "Was du tun wirst"
+  },
+  "Çfarë kërkohet": {
+    "en": "What is required",
+    "de": "Was erwartet wird"
+  },
+  "Kushtet kryesore": {
+    "en": "Key conditions",
+    "de": "Wichtige Rahmenbedingungen"
+  },
+  "Përmbledhje e krijuar me AI në {language} dhe e ruajtur për këtë njoftim.": {
+    "en": "AI summary created in {language} and saved for this listing.",
+    "de": "KI-Zusammenfassung auf {language} erstellt und für diese Anzeige gespeichert."
+  },
+  "Krijo një shpjegim të shkurtër me pika në {language}. AI përdor vetëm tekstin e njoftimit dhe rezultati ruhet që të mos paguhet përsëri.": {
+    "en": "Create a short bullet-point explanation in {language}. AI uses only the listing text, and the result is saved to avoid paying again.",
+    "de": "Erstelle eine kurze Erklärung in Stichpunkten auf {language}. Die KI verwendet nur den Anzeigentext; das Ergebnis wird gespeichert, damit keine erneuten Kosten entstehen."
+  },
+  "Shpjegoje me AI": {
+    "en": "Explain with AI",
+    "de": "Mit KI erklären"
+  },
+  "Po krijohet përmbledhja…": {
+    "en": "Creating summary…",
+    "de": "Zusammenfassung wird erstellt…"
+  },
+  "Përmbledhja e ruajtur u përdor": {
+    "en": "Saved summary reused",
+    "de": "Gespeicherte Zusammenfassung verwendet"
+  },
+  "Përmbledhja u krijua": {
+    "en": "Summary created",
+    "de": "Zusammenfassung erstellt"
+  },
+  "Përmbledhja nuk u krijua. Provo përsëri.": {
+    "en": "The summary could not be created. Try again.",
+    "de": "Die Zusammenfassung konnte nicht erstellt werden. Versuche es erneut."
+  },
+  "Burimi nuk ka dhënë përshkrim. Kontrollo kërkesat në njoftimin origjinal.": {
+    "en": "The source provided no description. Check the requirements in the original listing.",
+    "de": "Die Quelle enthält keine Beschreibung. Prüfe die Anforderungen in der Originalanzeige."
+  },
+  "Përshkrimi i plotë & kërkesat": {
+    "en": "Full description & requirements",
+    "de": "Vollständige Beschreibung & Anforderungen"
+  },
+  "Të dhënat lokale": {
+    "en": "Local details",
+    "de": "Lokale Angaben"
+  },
+  "Distanca:": {
+    "en": "Distance:",
+    "de": "Entfernung:"
+  },
+  "Kodi postar:": {
+    "en": "Postcode:",
+    "de": "Postleitzahl:"
+  },
+  "€/orë ·": {
+    "en": "€/hour ·",
+    "de": "€/Stunde ·"
+  },
+  "Orari:": {
+    "en": "Schedule:",
+    "de": "Arbeitszeiten:"
+  },
+  "Vlen udhëtimin?": {
+    "en": "Worth the trip?",
+    "de": "Lohnt sich der Weg?"
+  },
+  "Përse përputhet": {
+    "en": "Why it matches",
+    "de": "Warum es passt"
+  },
+  "Bazuar në profilin tënd dhe të dhënat e mundësisë.": {
+    "en": "Based on your profile and the opportunity details.",
+    "de": "Basierend auf deinem Profil und den Angaben zur Möglichkeit."
+  },
+  "Shiko faktorët e përputhjes": {
+    "en": "Show match factors",
+    "de": "Bewertungsfaktoren anzeigen"
+  },
+  "përjashtuar:": {
+    "en": "excluded:",
+    "de": "ausgeschlossen:"
+  },
+  "Pa dëshmi:": {
+    "en": "No evidence:",
+    "de": "Kein Nachweis:"
+  },
+  "“Pa dëshmi” tregon aftësi të profilit që njoftimi nuk i përmend. Nuk do të thotë se kërkohen nga puna.": {
+    "en": "“No evidence” means profile skills the listing does not mention. It does not mean the job requires them.",
+    "de": "„Kein Nachweis“ bezeichnet Profilfähigkeiten, die in der Anzeige nicht erwähnt werden. Das bedeutet nicht, dass sie für die Stelle erforderlich sind."
+  },
+  "Nuk ka dëshmi të mjaftueshme për të renditur aftësi të përputhura. Rishiko faktorët dhe": {
+    "en": "There is not enough evidence to list matching skills. Review the factors and",
+    "de": "Es gibt nicht genügend Nachweise für passende Fähigkeiten. Prüfe die Faktoren und"
+  },
+  "profilin tënd": {
+    "en": "your profile",
+    "de": "dein Profil"
+  },
+  "Shënimet e mia": {
+    "en": "My notes",
+    "de": "Meine Notizen"
+  },
+  "Kontakt, data aplikimit, përgjigje…": {
+    "en": "Contact, application date, responses…",
+    "de": "Kontakt, Bewerbungsdatum, Rückmeldungen…"
+  },
+  "Ruhen kur largohesh nga fusha.": {
+    "en": "Saved when you leave the field.",
+    "de": "Wird beim Verlassen des Feldes gespeichert."
+  },
+  "Mundësi produkti": {
+    "en": "Product fit",
+    "de": "Produktpassung"
+  },
+  "hard mismatch": {
+    "en": "No capability match",
+    "de": "Keine passenden Fähigkeiten"
+  },
+  "Mbulon:": {
+    "en": "Covers:",
+    "de": "Deckt ab:"
+  },
+  "Mungon:": {
+    "en": "Missing:",
+    "de": "Fehlt:"
+  },
+  "Shto një produkt aktiv për të krahasuar aftësitë me këtë mundësi.": {
+    "en": "Add an active product to compare its capabilities with this opportunity.",
+    "de": "Füge ein aktives Produkt hinzu, um seine Fähigkeiten mit dieser Möglichkeit abzugleichen."
+  },
+  "Nuk ka sinjale të mjaftueshme për të vlerësuar përshtatjen e produktit.": {
+    "en": "There is not enough evidence to assess product fit.",
+    "de": "Es gibt nicht genügend Hinweise, um die Produktpassung zu bewerten."
+  },
+  "Plotëso katalogun →": {
+    "en": "Complete your catalog →",
+    "de": "Katalog vervollständigen →"
+  },
+  "Aplikimi / Propozimi": {
+    "en": "Application / Proposal",
+    "de": "Bewerbung / Angebot"
+  },
+  "Krijo, rishiko dhe aprovo. Dërgimin e bën vetë në platformën origjinale.": {
+    "en": "Create, review and approve. Send it yourself on the original platform.",
+    "de": "Erstellen, prüfen und freigeben. Du sendest es selbst auf der ursprünglichen Plattform."
+  },
+  "Gjuha": {
+    "en": "Language",
+    "de": "Sprache"
+  },
+  "Toni": {
+    "en": "Tone",
+    "de": "Tonalität"
+  },
+  "Profesional": {
+    "en": "Professional",
+    "de": "Professionell"
+  },
+  "I përmbledhur": {
+    "en": "Concise",
+    "de": "Kurz und prägnant"
+  },
+  "Miqësor": {
+    "en": "Friendly",
+    "de": "Freundlich"
+  },
+  "Gjenero me AI": {
+    "en": "Generate with AI",
+    "de": "Mit KI erstellen"
+  },
+  "Gjuha dhe toni përdoren për AI. Kur AI nuk është aktiv, krijohet draft bazë në shqip që mund ta redaktosh.": {
+    "en": "Language and tone apply to AI generation. When AI is disabled, an editable basic draft is created in Albanian.",
+    "de": "Sprache und Ton gelten für die KI-Erstellung. Bei deaktivierter KI entsteht ein bearbeitbarer Basisentwurf auf Albanisch."
+  },
+  "Aplikim pune": {
+    "en": "Job application",
+    "de": "Bewerbung"
+  },
+  "Propozim freelance": {
+    "en": "Freelance proposal",
+    "de": "Freelance-Angebot"
+  },
+  "Prezantim produkti": {
+    "en": "Product outreach",
+    "de": "Produktvorstellung"
+  },
+  "Mesazh për punë lokale": {
+    "en": "Local job message",
+    "de": "Nachricht für einen lokalen Job"
+  },
+  "Tema": {
+    "en": "Subject",
+    "de": "Betreff"
+  },
+  "Përmbajtja e aplikimit": {
+    "en": "Application content",
+    "de": "Bewerbungstext"
+  },
+  "Version final i aprovuar": {
+    "en": "Approved final version",
+    "de": "Freigegebene Endfassung"
+  },
+  "Redaktuar nga ti": {
+    "en": "Edited by you",
+    "de": "Von dir bearbeitet"
+  },
+  "Përmbajtje e gjeneruar": {
+    "en": "Generated content",
+    "de": "Generierter Inhalt"
+  },
+  "· e ruajtur": {
+    "en": "· saved",
+    "de": "· gespeichert"
+  },
+  "Ruaj": {
+    "en": "Save",
+    "de": "Speichern"
+  },
+  "Aprovo": {
+    "en": "Approve",
+    "de": "Freigeben"
+  },
+  "Shëno të dërguar": {
+    "en": "Mark as sent",
+    "de": "Als gesendet markieren"
+  },
+  "Rigjenero": {
+    "en": "Regenerate",
+    "de": "Neu erstellen"
+  },
+  "Arkivo": {
+    "en": "Archive",
+    "de": "Archivieren"
+  },
+  "mungon:": {
+    "en": "missing:",
+    "de": "fehlt:"
+  },
+  "template": {
+    "en": "Basic draft",
+    "de": "Basisentwurf"
+  },
+  "Rishikimet (": {
+    "en": "Revisions (",
+    "de": "Versionen ("
+  },
+  "Hap për të lexuar këtë version.": {
+    "en": "Open to read this version.",
+    "de": "Öffnen, um diese Version zu lesen."
+  },
+  "Krijo draft aplikimi/propozimi (nga faktet e profilit — e redakton pastaj vetë).": {
+    "en": "Create an application or proposal draft from your profile facts, then edit it yourself.",
+    "de": "Erstelle einen Bewerbungs- oder Angebotsentwurf aus deinen Profilangaben und bearbeite ihn anschließend."
+  },
+  "Lloji i aplikimit": {
+    "en": "Application type",
+    "de": "Art des Anschreibens"
+  },
+  "Krijo draft": {
+    "en": "Create draft",
+    "de": "Entwurf erstellen"
+  },
+  "Fshi": {
+    "en": "Delete",
+    "de": "Löschen"
+  },
+  "Ndrysho profilin e kërkimit": {
+    "en": "Edit search profile",
+    "de": "Suchprofil bearbeiten"
+  },
+  "Profil i ri kërkimi": {
+    "en": "New search profile",
+    "de": "Neues Suchprofil"
+  },
+  "Profilet janë kërkime të ripërdorshme: filtra + burime, të ruajtura dhe të ekzekutueshme me një klik.": {
+    "en": "Search profiles combine reusable filters and sources. Save them and run them with one click.",
+    "de": "Suchprofile bündeln wiederverwendbare Filter und Quellen. Speichern und mit einem Klick ausführen."
+  },
+  "Emri *": {
+    "en": "Name *",
+    "de": "Name *"
+  },
+  "p.sh. Remote Developer Germany": {
+    "en": "e.g. Remote Developer Germany",
+    "de": "z. B. Remote-Entwickler Deutschland"
+  },
+  "Fjalë kyçe (një për rresht)": {
+    "en": "Keywords (one per line)",
+    "de": "Suchbegriffe (einer pro Zeile)"
+  },
+  "Përjashto (një për rresht)": {
+    "en": "Exclude (one per line)",
+    "de": "Ausschließen (einer pro Zeile)"
+  },
+  "Rrezja (km)": {
+    "en": "Radius (km)",
+    "de": "Umkreis (km)"
+  },
+  "p.sh. Berlin": {
+    "en": "e.g. Berlin",
+    "de": "z. B. Berlin"
+  },
+  "p.sh. 15": {
+    "en": "e.g. 15",
+    "de": "z. B. 15"
+  },
+  "Paga min €/vit": {
+    "en": "Min. salary €/year",
+    "de": "Mindestgehalt €/Jahr"
+  },
+  "Tarifa min €/orë": {
+    "en": "Min. rate €/hour",
+    "de": "Mindeststundensatz €"
+  },
+  "Buxheti min €": {
+    "en": "Minimum budget €",
+    "de": "Mindestbudget €"
+  },
+  "Burimet (bosh = të gjitha aktive)": {
+    "en": "Sources (empty = all active sources)",
+    "de": "Quellen (leer = alle aktiven Quellen)"
+  },
+  "(duhet celes)": {
+    "en": "(API key required)",
+    "de": "(API-Schlüssel erforderlich)"
+  },
+  "duhet celes": {
+    "en": "API key required",
+    "de": "API-Schlüssel erforderlich"
+  },
+  "Fshi profilin": {
+    "en": "Delete profile",
+    "de": "Profil löschen"
+  },
+  "Ruaj profilin": {
+    "en": "Save profile",
+    "de": "Profil speichern"
+  },
+  "Kërkim i planifikuar": {
+    "en": "Scheduled search",
+    "de": "Geplante Suche"
+  },
+  "Kërko automatikisht dhe merr njoftime për përputhje të reja. Ekzekutimi kërkon që shërbimi i planifikimit të jetë aktiv.": {
+    "en": "Search automatically and get notified of new matches. The scheduler service must be running.",
+    "de": "Suche automatisch und erhalte Benachrichtigungen über neue Treffer. Der Planungsdienst muss dafür laufen."
+  },
+  "Aktivizo planifikimin": {
+    "en": "Enable scheduling",
+    "de": "Zeitplanung aktivieren"
+  },
+  "Sa shpesh?": {
+    "en": "How often?",
+    "de": "Wie oft?"
+  },
+  "Vetëm manualisht": {
+    "en": "Manual only",
+    "de": "Nur manuell"
+  },
+  "Çdo orë": {
+    "en": "Every hour",
+    "de": "Stündlich"
+  },
+  "Çdo 3 orë": {
+    "en": "Every 3 hours",
+    "de": "Alle 3 Stunden"
+  },
+  "Çdo 6 orë": {
+    "en": "Every 6 hours",
+    "de": "Alle 6 Stunden"
+  },
+  "Çdo ditë": {
+    "en": "Every day",
+    "de": "Täglich"
+  },
+  "Ditët e javës": {
+    "en": "Weekdays",
+    "de": "Wochentags"
+  },
+  "Ora lokale": {
+    "en": "Local time",
+    "de": "Ortszeit"
+  },
+  "Zona kohore": {
+    "en": "Time zone",
+    "de": "Zeitzone"
+  },
+  "Ruaj planifikimin": {
+    "en": "Save schedule",
+    "de": "Zeitplan speichern"
+  },
+  "Shto ·": {
+    "en": "Add ·",
+    "de": "Hinzufügen ·"
+  },
+  "MBAJE NË RADAR": {
+    "en": "KEEP IT ON YOUR RADAR",
+    "de": "BEHALTE ES IM BLICK"
+  },
+  "Shto një mundësi.": {
+    "en": "Add an opportunity.",
+    "de": "Möglichkeit hinzufügen."
+  },
+  "Për rezultate që gjen vetë (LinkedIn, grupe, klientë…) dhe do t'i gjurmosh këtu.": {
+    "en": "For opportunities you find yourself (LinkedIn, groups, clients…) and want to track here.",
+    "de": "Für Möglichkeiten, die du selbst findest (LinkedIn, Gruppen, Kunden …) und hier verfolgen möchtest."
+  },
+  "Lloji": {
+    "en": "Type",
+    "de": "Art"
+  },
+  "Titulli *": {
+    "en": "Title *",
+    "de": "Titel *"
+  },
+  "p.sh. Backend Developer ose Klient kërkon platformë rezervimesh": {
+    "en": "e.g. Backend Developer or Client needs a booking platform",
+    "de": "z. B. Backend-Entwickler oder Kunde sucht Buchungsplattform"
+  },
+  "Kompania / Klienti": {
+    "en": "Company / Client",
+    "de": "Unternehmen / Kunde"
+  },
+  "p.sh. Berlin ose Remote": {
+    "en": "e.g. Berlin or Remote",
+    "de": "z. B. Berlin oder Remote"
+  },
+  "Paga (tekst i lirë)": {
+    "en": "Salary (free text)",
+    "de": "Gehalt (Freitext)"
+  },
+  "p.sh. 55.000–65.000 €/vit": {
+    "en": "e.g. €55,000–65,000/year",
+    "de": "z. B. 55.000–65.000 €/Jahr"
+  },
+  "manual / linkedin / klient…": {
+    "en": "manual / linkedin / client…",
+    "de": "manuell / linkedin / Kunde …"
+  },
+  "Kategoria": {
+    "en": "Category",
+    "de": "Kategorie"
+  },
+  "Kodi postar / vendi": {
+    "en": "Postcode / area",
+    "de": "Postleitzahl / Ort"
+  },
+  "p.sh. 45127": {
+    "en": "e.g. 45127",
+    "de": "z. B. 45127"
+  },
+  "Paga €/orë": {
+    "en": "Pay €/hour",
+    "de": "Vergütung €/Stunde"
+  },
+  "Orari (tekst i lirë)": {
+    "en": "Schedule (free text)",
+    "de": "Arbeitszeiten (Freitext)"
+  },
+  "p.sh. të shtunë në mëngjes": {
+    "en": "e.g. Saturday morning",
+    "de": "z. B. Samstagvormittag"
+  },
+  "Lloji i mundësisë": {
+    "en": "Opportunity type",
+    "de": "Art der Möglichkeit"
+  },
+  "Automatizim": {
+    "en": "Automation",
+    "de": "Automatisierung"
+  },
+  "Zgjidhje AI": {
+    "en": "AI solution",
+    "de": "KI-Lösung"
+  },
+  "Software i personalizuar": {
+    "en": "Custom software",
+    "de": "Individuelle Software"
+  },
+  "Konsulencë": {
+    "en": "Consulting",
+    "de": "Beratung"
+  },
+  "Përshkrimi": {
+    "en": "Description",
+    "de": "Beschreibung"
+  },
+  "Shto": {
+    "en": "Add",
+    "de": "Hinzufügen"
+  },
+  "← Kthehu te paneli": {
+    "en": "← Back to workspace",
+    "de": "← Zurück zur Übersicht"
+  },
+  "Kyçu ·": {
+    "en": "Sign in ·",
+    "de": "Anmelden ·"
+  },
+  "MË SHUMË MUNDËSI. MË SHUMË QARTËSI.": {
+    "en": "MORE OPPORTUNITIES. MORE CLARITY.",
+    "de": "MEHR MÖGLICHKEITEN. MEHR KLARHEIT."
+  },
+  "Hapi yt i ardhshëm,": {
+    "en": "Your next step",
+    "de": "Dein nächster Schritt"
+  },
+  "fillon këtu.": {
+    "en": "starts here.",
+    "de": "beginnt hier."
+  },
+  "Një vend për të gjetur punë, projekte dhe mundësi që lidhen me atë që di të bësh.": {
+    "en": "One place to find jobs, projects and opportunities that match what you can do.",
+    "de": "Ein Ort für Jobs, Projekte und Möglichkeiten, die zu deinen Fähigkeiten passen."
+  },
+  "Gjej": {
+    "en": "Find",
+    "de": "Finden"
+  },
+  "Kupto": {
+    "en": "Understand",
+    "de": "Verstehen"
+  },
+  "Vepro": {
+    "en": "Act",
+    "de": "Handeln"
+  },
+  "HAPËSIRA JOTE PERSONALE": {
+    "en": "YOUR PERSONAL WORKSPACE",
+    "de": "DEIN PERSÖNLICHER BEREICH"
+  },
+  "Mirë se erdhe.": {
+    "en": "Welcome back.",
+    "de": "Willkommen zurück."
+  },
+  "Kyçu për të vazhduar me mundësitë e tua.": {
+    "en": "Sign in to continue with your opportunities.",
+    "de": "Melde dich an, um deine Möglichkeiten weiterzuverfolgen."
+  },
+  "Emri i përdoruesit": {
+    "en": "Username",
+    "de": "Benutzername"
+  },
+  "Fjalëkalimi": {
+    "en": "Password",
+    "de": "Passwort"
+  },
+  "Kyçu →": {
+    "en": "Sign in →",
+    "de": "Anmelden →"
+  },
+  "PROFILI YT, AVANTAZHI YT": {
+    "en": "YOUR PROFILE, YOUR ADVANTAGE",
+    "de": "DEIN PROFIL, DEIN VORTEIL"
+  },
+  "Le të njohim atë që di të bësh.": {
+    "en": "Let's get to know what you can do.",
+    "de": "Zeig uns, was du kannst."
+  },
+  "Fillo me CV-në ose plotëso vetë. Ti vendos çfarë bëhet pjesë e profilit.": {
+    "en": "Start with your CV or enter details yourself. You decide what becomes part of your profile.",
+    "de": "Beginne mit deinem Lebenslauf oder trage Angaben selbst ein. Du entscheidest, was in dein Profil kommt."
+  },
+  "Seksionet e profilit": {
+    "en": "Profile sections",
+    "de": "Profilbereiche"
+  },
+  "Rreth teje": {
+    "en": "About you",
+    "de": "Über dich"
+  },
+  "CV & rishikimi": {
+    "en": "CV & review",
+    "de": "Lebenslauf & Prüfung"
+  },
+  "Aftësi & përvojë": {
+    "en": "Skills & experience",
+    "de": "Fähigkeiten & Erfahrung"
+  },
+  "Produkte & aftësi": {
+    "en": "Products & capabilities",
+    "de": "Produkte & Leistungen"
+  },
+  "Boshllëqe & kufizime": {
+    "en": "Gaps & constraints",
+    "de": "Lücken & Einschränkungen"
+  },
+  "Preferencat e kërkimit": {
+    "en": "Search preferences",
+    "de": "Sucheinstellungen"
+  },
+  "Punë pranë teje": {
+    "en": "Jobs near you",
+    "de": "Jobs in deiner Nähe"
+  },
+  "Njoftimet": {
+    "en": "Notifications",
+    "de": "Benachrichtigungen"
+  },
+  "Të dhënat": {
+    "en": "Data",
+    "de": "Daten"
+  },
+  "Gati për çfarë?": {
+    "en": "Ready for what?",
+    "de": "Bereit wofür?"
+  },
+  "Po ngarkohet profili…": {
+    "en": "Loading your profile…",
+    "de": "Profil wird geladen …"
+  },
+  "01 / RRETH TEJE": {
+    "en": "01 / ABOUT YOU",
+    "de": "01 / ÜBER DICH"
+  },
+  "Si dëshiron të prezantohesh?": {
+    "en": "How would you like to introduce yourself?",
+    "de": "Wie möchtest du dich vorstellen?"
+  },
+  "Emri": {
+    "en": "Name",
+    "de": "Name"
+  },
+  "Titulli profesional": {
+    "en": "Professional title",
+    "de": "Berufsbezeichnung"
+  },
+  "p.sh. Software Developer": {
+    "en": "e.g. Software Developer",
+    "de": "z. B. Softwareentwickler"
+  },
+  "Telefon": {
+    "en": "Phone",
+    "de": "Telefon"
+  },
+  "p.sh. Essen, Gjermani": {
+    "en": "e.g. Essen, Germany",
+    "de": "z. B. Essen, Deutschland"
+  },
+  "Përmbledhje (summary)": {
+    "en": "Summary",
+    "de": "Kurzprofil"
+  },
+  "Aftësitë": {
+    "en": "Skills",
+    "de": "Fähigkeiten"
+  },
+  "përmbledhjet e kërkimit": {
+    "en": "search summaries",
+    "de": "Suchzusammenfassungen"
+  },
+  "Këto përmbledhje përdoren nga kërkimi. Për nivele, dëshmi dhe zëra të detajuar hap “Aftësi": {
+    "en": "These summaries are used for search. For proficiency levels, evidence and detailed entries, open “Skills",
+    "de": "Diese Zusammenfassungen werden für die Suche verwendet. Für Niveaus, Nachweise und Einzelangaben öffne „Fähigkeiten"
+  },
+  "përvojë”.": {
+    "en": "experience”.",
+    "de": "Erfahrung“."
+  },
+  "Aftësi (një për rresht)": {
+    "en": "Skills (one per line)",
+    "de": "Fähigkeiten (eine pro Zeile)"
+  },
+  "Gjuhët (Gjuhë – nivel)": {
+    "en": "Languages (language – level)",
+    "de": "Sprachen (Sprache – Niveau)"
+  },
+  "Gjermanisht – B2 Anglisht – C1 Shqip – amtare": {
+    "en": "German – B2 English – C1 Albanian – native",
+    "de": "Deutsch – B2 Englisch – C1 Albanisch – Muttersprache"
+  },
+  "Eksperienca (tekst i lirë)": {
+    "en": "Experience (free text)",
+    "de": "Erfahrung (Freitext)"
+  },
+  "Aftësitë që ofron si shërbim (një për rresht)": {
+    "en": "Capabilities you offer as a service (one per line)",
+    "de": "Leistungen, die du anbietest (eine pro Zeile)"
+  },
+  "Zhvillim websites BusinessSite RC SaaS white-label Automatizime AI Alate interne të personalizuar": {
+    "en": "Website development BusinessSite RC white-label SaaS AI automation Custom internal tools",
+    "de": "Website-Entwicklung BusinessSite RC White-Label-SaaS KI-Automatisierung Individuelle interne Tools"
+  },
+  "Preferenca": {
+    "en": "Preferences",
+    "de": "Einstellungen"
+  },
+  "Fjalë kyçe të përfshira (një për rresht)": {
+    "en": "Included keywords (one per line)",
+    "de": "Einzuschließende Suchbegriffe (einer pro Zeile)"
+  },
+  "Fjalë kyçe për të përjashtuar (një për rresht)": {
+    "en": "Excluded keywords (one per line)",
+    "de": "Auszuschließende Suchbegriffe (einer pro Zeile)"
+  },
+  "Vendndodhjet e interesit (një për rresht)": {
+    "en": "Locations of interest (one per line)",
+    "de": "Gewünschte Standorte (einer pro Zeile)"
+  },
+  "Paga minimale vjetore brutto €": {
+    "en": "Minimum gross annual salary €",
+    "de": "Jährliches Mindestbruttogehalt €"
+  },
+  "Pranoj remote": {
+    "en": "Open to remote work",
+    "de": "Remote-Arbeit möglich"
+  },
+  "Pranoj në zyrë": {
+    "en": "Open to on-site work",
+    "de": "Arbeit vor Ort möglich"
+  },
+  "Pranoj hybrid": {
+    "en": "Open to hybrid work",
+    "de": "Hybride Arbeit möglich"
+  },
+  "Ruaj preferencat": {
+    "en": "Save preferences",
+    "de": "Einstellungen speichern"
+  },
+  "Preferencat lokale / mini-punë": {
+    "en": "Local / Mini job preferences",
+    "de": "Einstellungen für lokale Jobs / Minijobs"
+  },
+  "Përdoren për distancën, kategorinë, pagën minimale dhe kufizimet e transportit te mundësitë lokale. Feed-et publike lokale (RSS/Atom, një URL për rresht ose me presje) kërkohen nga profili": {
+    "en": "Used for distance, category, minimum pay and transport constraints for local opportunities. Public local feeds (RSS/Atom, one URL per line or comma-separated) are searched by the profile",
+    "de": "Für Entfernung, Kategorie, Mindestvergütung und Mobilität bei lokalen Möglichkeiten. Öffentliche lokale Feeds (RSS/Atom, eine URL pro Zeile oder kommagetrennt) werden von diesem Profil durchsucht:"
+  },
+  "Local / Mini Jobs": {
+    "en": "Local / Mini Jobs",
+    "de": "Lokale Jobs / Minijobs"
+  },
+  "Baza / vendi": {
+    "en": "Home area",
+    "de": "Ausgangsort"
+  },
+  "p.sh. Essen": {
+    "en": "e.g. Essen",
+    "de": "z. B. Essen"
+  },
+  "Kodi postar": {
+    "en": "Postcode",
+    "de": "Postleitzahl"
+  },
+  "Transporti": {
+    "en": "Transport",
+    "de": "Verkehrsmittel"
+  },
+  "Udhëtim max (min)": {
+    "en": "Maximum travel time (min)",
+    "de": "Maximale Fahrzeit (Min.)"
+  },
+  "Paga min €/orë": {
+    "en": "Minimum pay €/hour",
+    "de": "Mindestvergütung €/Stunde"
+  },
+  "Ditët/orari i disponueshëm": {
+    "en": "Available days / times",
+    "de": "Verfügbare Tage / Zeiten"
+  },
+  "p.sh. fundjave": {
+    "en": "e.g. weekends",
+    "de": "z. B. am Wochenende"
+  },
+  "Kategoritë e preferuara": {
+    "en": "Preferred categories",
+    "de": "Bevorzugte Kategorien"
+  },
+  "Pa makinë (puna që kërkon makinë përjashtohet)": {
+    "en": "No car (jobs requiring a car are excluded)",
+    "de": "Kein Auto (Jobs mit eigenem Auto als Voraussetzung werden ausgeschlossen)"
+  },
+  "Feed-et lokale (RSS/Atom, me presje)": {
+    "en": "Local feeds (RSS/Atom, comma-separated)",
+    "de": "Lokale Feeds (RSS/Atom, kommagetrennt)"
+  },
+  "Ruaj preferencat lokale": {
+    "en": "Save local preferences",
+    "de": "Lokale Einstellungen speichern"
+  },
+  "ZGJIDHJET QË OFRON": {
+    "en": "SOLUTIONS YOU OFFER",
+    "de": "DEINE LÖSUNGEN"
+  },
+  "Produktet e tua.": {
+    "en": "Your products.",
+    "de": "Deine Produkte."
+  },
+  "Trego çfarë zgjidh çdo produkt. Product Leads i krahason kërkesat me aftësitë e produkteve aktive.": {
+    "en": "Describe what each product solves. Product leads compare requirements with the capabilities of active products.",
+    "de": "Beschreibe, was jedes Produkt löst. Produktchancen gleichen Anforderungen mit den Fähigkeiten aktiver Produkte ab."
+  },
+  "· Prioritet": {
+    "en": "· Priority",
+    "de": "· Priorität"
+  },
+  "Riaktivizo": {
+    "en": "Reactivate",
+    "de": "Reaktivieren"
+  },
+  "Ngjiti prioritetin": {
+    "en": "Increase priority",
+    "de": "Priorität erhöhen"
+  },
+  "Ul prioritetin": {
+    "en": "Decrease priority",
+    "de": "Priorität senken"
+  },
+  "Ende asnjë produkt. Shto një zgjidhje që ofron, çfarë zgjidh dhe aftësitë e saj. Product Fit do të ketë një bazë për krahasim.": {
+    "en": "No products yet. Add a solution, the problem it solves and its capabilities to enable product-fit comparisons.",
+    "de": "Noch keine Produkte. Füge eine Lösung, ihren Nutzen und ihre Fähigkeiten hinzu, um die Produktpassung zu vergleichen."
+  },
+  "Po ndryshon:": {
+    "en": "Editing:",
+    "de": "In Bearbeitung:"
+  },
+  "Ndrysho produktin": {
+    "en": "Edit product",
+    "de": "Produkt bearbeiten"
+  },
+  "Shto një produkt ose aftësi": {
+    "en": "Add a product or capability",
+    "de": "Produkt oder Leistung hinzufügen"
+  },
+  "Përshkrimi i shkurtër": {
+    "en": "Short description",
+    "de": "Kurzbeschreibung"
+  },
+  "Përshkrimi i detajuar": {
+    "en": "Detailed description",
+    "de": "Ausführliche Beschreibung"
+  },
+  "Aftësi/features (me presje)": {
+    "en": "Capabilities / features (comma-separated)",
+    "de": "Fähigkeiten / Funktionen (kommagetrennt)"
+  },
+  "Teknologjitë (me presje)": {
+    "en": "Technologies (comma-separated)",
+    "de": "Technologien (kommagetrennt)"
+  },
+  "Industritë (me presje)": {
+    "en": "Industries (comma-separated)",
+    "de": "Branchen (kommagetrennt)"
+  },
+  "Gjuhët e ndërfaqes (me presje)": {
+    "en": "Interface languages (comma-separated)",
+    "de": "Oberflächensprachen (kommagetrennt)"
+  },
+  "Modeli i dërgesës": {
+    "en": "Delivery model",
+    "de": "Bereitstellungsmodell"
+  },
+  "Deployment": {
+    "en": "Deployment",
+    "de": "Bereitstellung"
+  },
+  "Faqja": {
+    "en": "Website",
+    "de": "Website"
+  },
+  "Repo / referenca": {
+    "en": "Repository / references",
+    "de": "Repository / Referenzen"
+  },
+  "Status": {
+    "en": "Status",
+    "de": "Status"
+  },
+  "Shënime komerciale": {
+    "en": "Commercial notes",
+    "de": "Geschäftliche Notizen"
+  },
+  "White-label i disponueshëm": {
+    "en": "White-label available",
+    "de": "White-Label verfügbar"
+  },
+  "Ruaj ndryshimet": {
+    "en": "Save changes",
+    "de": "Änderungen speichern"
+  },
+  "Shto produkt": {
+    "en": "Add product",
+    "de": "Produkt hinzufügen"
+  },
+  "02 / AFTËSI TË KONFIRMUARA": {
+    "en": "02 / CONFIRMED SKILLS",
+    "de": "02 / BESTÄTIGTE FÄHIGKEITEN"
+  },
+  "Çfarë sjell me vete?": {
+    "en": "What do you bring to the table?",
+    "de": "Was bringst du mit?"
+  },
+  "Shto aftësi, përvojë dhe punë që tregojnë çfarë mund të bësh. Ruhen vetëm të dhënat që konfirmon.": {
+    "en": "Add skills, experience and work that show what you can do. Only details you confirm are saved.",
+    "de": "Füge Fähigkeiten, Erfahrung und Arbeiten hinzu, die dein Können zeigen. Nur bestätigte Angaben werden gespeichert."
+  },
+  "Aftësi & teknologji": {
+    "en": "Skills & technologies",
+    "de": "Fähigkeiten & Technologien"
+  },
+  "Gjuhët": {
+    "en": "Languages",
+    "de": "Sprachen"
+  },
+  "Përvoja e punës": {
+    "en": "Work experience",
+    "de": "Berufserfahrung"
+  },
+  "Edukimi": {
+    "en": "Education",
+    "de": "Ausbildung"
+  },
+  "Certifikimet": {
+    "en": "Certifications",
+    "de": "Zertifikate"
+  },
+  "Portfolio": {
+    "en": "Portfolio",
+    "de": "Portfolio"
+  },
+  "Projektet": {
+    "en": "Projects",
+    "de": "Projekte"
+  },
+  "Po ngarkohen të dhënat…": {
+    "en": "Loading details…",
+    "de": "Angaben werden geladen …"
+  },
+  "NGA CV-JA TE PROFILI": {
+    "en": "FROM CV TO PROFILE",
+    "de": "VOM LEBENSLAUF ZUM PROFIL"
+  },
+  "CV-ja jote. Fjala e fundit, e jotja.": {
+    "en": "Your CV. Your final say.",
+    "de": "Dein Lebenslauf. Deine Entscheidung."
+  },
+  "Ngarko CV": {
+    "en": "Upload CV",
+    "de": "Lebenslauf hochladen"
+  },
+  "Nxirr sugjerimet": {
+    "en": "Extract suggestions",
+    "de": "Vorschläge extrahieren"
+  },
+  "Rishiko dëshmitë": {
+    "en": "Review evidence",
+    "de": "Nachweise prüfen"
+  },
+  "Prano ose refuzo": {
+    "en": "Accept or reject",
+    "de": "Annehmen oder ablehnen"
+  },
+  "Teksti i nxjerrë propozohet për rishikim. Asgjë nuk shtohet në profil pa pranimin tënd.": {
+    "en": "Extracted text is proposed for review. Nothing is added to your profile without your acceptance.",
+    "de": "Extrahierte Angaben werden zur Prüfung vorgeschlagen. Ohne deine Zustimmung wird nichts zum Profil hinzugefügt."
+  },
+  "Zgjidh CV-në": {
+    "en": "Choose CV",
+    "de": "Lebenslauf auswählen"
+  },
+  "Fshi CV": {
+    "en": "Delete CV",
+    "de": "Lebenslauf löschen"
+  },
+  "ekstrakton tekstin dhe krijon sugjerime për rishikim": {
+    "en": "extracts text and creates suggestions for review",
+    "de": "extrahiert Text und erstellt Vorschläge zur Prüfung"
+  },
+  "QARTËSI MBI KUFIZIMET": {
+    "en": "CLARITY ABOUT CONSTRAINTS",
+    "de": "KLARHEIT ÜBER EINSCHRÄNKUNGEN"
+  },
+  "Çfarë duhet të marrim parasysh?": {
+    "en": "What should we take into account?",
+    "de": "Was sollen wir berücksichtigen?"
+  },
+  "Dallo një aftësi që po mëson nga një kusht që nuk mund ta ndryshosh.": {
+    "en": "Distinguish a skill you are learning from a constraint you cannot change.",
+    "de": "Unterscheide eine Fähigkeit, die du gerade lernst, von einer festen Einschränkung."
+  },
+  "Kufizimi ose aftësia": {
+    "en": "Constraint or skill",
+    "de": "Einschränkung oder Fähigkeit"
+  },
+  "p.sh. Gjermanisht B2 ose pa makinë": {
+    "en": "e.g. German B2 or no car",
+    "de": "z. B. Deutsch B2 oder kein Auto"
+  },
+  "Aftësi për të zhvilluar": {
+    "en": "Skill to develop",
+    "de": "Auszubauende Fähigkeit"
+  },
+  "Certifikim": {
+    "en": "Certification",
+    "de": "Zertifikat"
+  },
+  "Rëndësia": {
+    "en": "Importance",
+    "de": "Bedeutung"
+  },
+  "Informacion": {
+    "en": "Information",
+    "de": "Information"
+  },
+  "Preferencë": {
+    "en": "Preference",
+    "de": "Präferenz"
+  },
+  "Kusht i domosdoshëm": {
+    "en": "Essential requirement",
+    "de": "Zwingende Voraussetzung"
+  },
+  "Gjendja sot": {
+    "en": "Current situation",
+    "de": "Aktueller Stand"
+  },
+  "Synimi": {
+    "en": "Target",
+    "de": "Ziel"
+  },
+  "Gatishmëria": {
+    "en": "Willingness",
+    "de": "Bereitschaft"
+  },
+  "E papërcaktuar": {
+    "en": "Not specified",
+    "de": "Nicht angegeben"
+  },
+  "Po mësoj": {
+    "en": "Currently learning",
+    "de": "Lerne ich gerade"
+  },
+  "Dua të mësoj": {
+    "en": "Willing to learn",
+    "de": "Bereit zu lernen"
+  },
+  "Dua ta marr": {
+    "en": "Willing to obtain",
+    "de": "Bereit zu erwerben"
+  },
+  "Nuk jam i interesuar": {
+    "en": "Not interested",
+    "de": "Kein Interesse"
+  },
+  "Nuk mund ta ndryshoj": {
+    "en": "Unable to change",
+    "de": "Kann ich nicht ändern"
+  },
+  "Shënime": {
+    "en": "Notes",
+    "de": "Notizen"
+  },
+  "Shto kufizimin": {
+    "en": "Add constraint",
+    "de": "Einschränkung hinzufügen"
+  },
+  "Ide që mund të të ndihmojnë": {
+    "en": "Ideas that may help",
+    "de": "Ideen, die dir helfen könnten"
+  },
+  "Këto janë sugjerime sipas rolit, jo fakte të konfirmuara. Shto vetëm ato që të përfaqësojnë.": {
+    "en": "These are role-based suggestions, not confirmed facts. Add only what represents you.",
+    "de": "Dies sind rollenbezogene Vorschläge, keine bestätigten Angaben. Übernimm nur, was auf dich zutrifft."
+  },
+  "Njoftime me email": {
+    "en": "Email notifications",
+    "de": "E-Mail-Benachrichtigungen"
+  },
+  "Aktivizo email-in": {
+    "en": "Enable email",
+    "de": "E-Mail aktivieren"
+  },
+  "Email pranues": {
+    "en": "Recipient email",
+    "de": "Empfänger-E-Mail"
+  },
+  "Përputhja min. për email": {
+    "en": "Minimum match for email",
+    "de": "Mindestübereinstimmung für E-Mails"
+  },
+  "Llojet për email (me presje)": {
+    "en": "Types for email (comma-separated)",
+    "de": "Arten für E-Mails (kommagetrennt)"
+  },
+  "Ora e digestit": {
+    "en": "Digest time",
+    "de": "Uhrzeit der Zusammenfassung"
+  },
+  "Quiet hours nga": {
+    "en": "Quiet hours start",
+    "de": "Ruhezeit ab"
+  },
+  "Quiet hours deri": {
+    "en": "Quiet hours end",
+    "de": "Ruhezeit bis"
+  },
+  "Adapter dev: email-at": {
+    "en": "Development adapter: emails are",
+    "de": "Entwicklungsadapter: E-Mails werden"
+  },
+  "regjistrohen në log": {
+    "en": "logged",
+    "de": "protokolliert"
+  },
+  ", pa dërgim real.": {
+    "en": ", not actually sent.",
+    "de": ", nicht tatsächlich gesendet."
+  },
+  "Adapter SMTP nga variablat e mjedisit (SMTP_HOST/SMTP_USER/SMTP_PASS).": {
+    "en": "SMTP adapter configured through environment variables (SMTP_HOST/SMTP_USER/SMTP_PASS).",
+    "de": "SMTP-Adapter über Umgebungsvariablen konfiguriert (SMTP_HOST/SMTP_USER/SMTP_PASS)."
+  },
+  "Ruaj email-in": {
+    "en": "Save email settings",
+    "de": "E-Mail-Einstellungen speichern"
+  },
+  "Njoftimet in-app mbeten gjithmonë aktive pavarësisht kësaj seksioni.": {
+    "en": "In-app notifications stay active regardless of these settings.",
+    "de": "Benachrichtigungen in der App bleiben unabhängig von diesen Einstellungen aktiv."
+  },
+  "Adzuna (punë DACH)": {
+    "en": "Adzuna (DACH jobs)",
+    "de": "Adzuna (DACH-Stellen)"
+  },
+  "Regjistrohu falas te": {
+    "en": "Sign up for free at",
+    "de": "Kostenlos registrieren bei"
+  },
+  "Krijo një \"Application\" dhe kopjo": {
+    "en": "Create an “Application” and copy",
+    "de": "Erstelle eine „Application“ und kopiere"
+  },
+  "Vendosi këtu — ruhen vetëm lokalisht në jobs.db": {
+    "en": "Enter them here — stored locally in jobs.db",
+    "de": "Hier eintragen – lokal in jobs.db gespeichert"
+  },
+  "Vendi": {
+    "en": "Country",
+    "de": "Land"
+  },
+  "Gjermani": {
+    "en": "Germany",
+    "de": "Deutschland"
+  },
+  "Austri": {
+    "en": "Austria",
+    "de": "Österreich"
+  },
+  "Zvicër": {
+    "en": "Switzerland",
+    "de": "Schweiz"
+  },
+  "Kërko çfarë (default)": {
+    "en": "What to search (default)",
+    "de": "Suchbegriff (Standard)"
+  },
+  "Kërko ku (default)": {
+    "en": "Where to search (default)",
+    "de": "Suchort (Standard)"
+  },
+  "p.sh. Berlin (bosh = kudo)": {
+    "en": "e.g. Berlin (empty = anywhere)",
+    "de": "z. B. Berlin (leer = überall)"
+  },
+  "Ruaj burimet": {
+    "en": "Save sources",
+    "de": "Quellen speichern"
+  },
+  "aktive": {
+    "en": "active",
+    "de": "aktiv"
+  },
+  "Kërkimet nisen nga butoni": {
+    "en": "Searches start with the",
+    "de": "Suchen startest du über"
+  },
+  "“Gjej mundësi”": {
+    "en": "“Find opportunities” button",
+    "de": "„Möglichkeiten finden“"
+  },
+  "në panel. Burime të tjera lidhen më vonë.": {
+    "en": "in the workspace. More sources can be connected later.",
+    "de": "in der Übersicht. Weitere Quellen können später angebunden werden."
+  },
+  "Mundësitë, shënimet dhe profili ruhen në këtë instalim. Për kopje rezervë përdor udhëzimet e instalimit.": {
+    "en": "Opportunities, notes and your profile are stored in this installation. Follow the installation instructions for backups.",
+    "de": "Möglichkeiten, Notizen und dein Profil werden in dieser Installation gespeichert. Nutze für Sicherungen die Installationsanleitung."
+  },
+  "Gjuha e ndërfaqes": {
+    "en": "Interface language",
+    "de": "Oberflächensprache"
+  },
+  "Teknologjitë": {
+    "en": "Technologies",
+    "de": "Technologien"
+  },
+  "Veprimi dështoi. Provo përsëri.": {
+    "en": "The action failed. Please try again.",
+    "de": "Die Aktion ist fehlgeschlagen. Bitte erneut versuchen."
+  },
+  "Hapat me më shumë vlerë:": {
+    "en": "Your most useful next steps:",
+    "de": "Deine wichtigsten nächsten Schritte:"
+  },
+  "Profili është plotësuar për këtë mënyrë.": {
+    "en": "Your profile is complete for this mode.",
+    "de": "Dein Profil ist für diesen Bereich vollständig."
+  },
+  "Ndryshime të paruajtura": {
+    "en": "Unsaved changes",
+    "de": "Ungespeicherte Änderungen"
+  },
+  "Pranuar nga CV-ja": {
+    "en": "Accepted from CV",
+    "de": "Aus dem Lebenslauf übernommen"
+  },
+  "Të dhëna të profilit": {
+    "en": "Profile details",
+    "de": "Profilangaben"
+  },
+  "Të dhënat e ruajtura": {
+    "en": "Saved details",
+    "de": "Gespeicherte Angaben"
+  },
+  "Ende bosh. Shto zërin e parë.": {
+    "en": "Nothing here yet. Add your first entry.",
+    "de": "Noch keine Angaben. Füge den ersten Eintrag hinzu."
+  },
+  "Të hiqet ky zë? Ndryshimi zbatohet kur ruan seksionin.": {
+    "en": "Remove this entry? The change takes effect when you save the section.",
+    "de": "Diesen Eintrag entfernen? Die Änderung wird beim Speichern des Bereichs übernommen."
+  },
+  "Ky seksion ka ndryshuar nga një CV ose një faqe tjetër. Kopjo ndryshimet e tua dhe rifresko përpara ruajtjes.": {
+    "en": "This section was changed by a CV update or another tab. Copy your edits and reload before saving.",
+    "de": "Dieser Bereich wurde durch eine Lebenslaufaktualisierung oder einen anderen Tab geändert. Kopiere deine Änderungen und lade die Seite vor dem Speichern neu."
+  },
+  "U ruajt ✓": {
+    "en": "Saved ✓",
+    "de": "Gespeichert ✓"
+  },
+  "Seksioni u ruajt": {
+    "en": "Section saved",
+    "de": "Bereich gespeichert"
+  },
+  "Sugjerimet nuk u ngarkuan.": {
+    "en": "Suggestions could not be loaded.",
+    "de": "Vorschläge konnten nicht geladen werden."
+  },
+  "Seksioni i profilit": {
+    "en": "Profile section",
+    "de": "Profilbereich"
+  },
+  "Përvoja": {
+    "en": "Experience",
+    "de": "Erfahrung"
+  },
+  "Disponueshmëria": {
+    "en": "Availability",
+    "de": "Verfügbarkeit"
+  },
+  "Tjetër": {
+    "en": "Other",
+    "de": "Sonstiges"
+  },
+  "Kufizimi u ruajt": {
+    "en": "Constraint saved",
+    "de": "Einschränkung gespeichert"
+  },
+  "Ruaj kufizimin": {
+    "en": "Save constraint",
+    "de": "Einschränkung speichern"
+  },
+  "Të fshihet ky kufizim?": {
+    "en": "Delete this constraint?",
+    "de": "Diese Einschränkung löschen?"
+  },
+  "Nuk ka ekzekutim të planifikuar.": {
+    "en": "No scheduled run.",
+    "de": "Keine Ausführung geplant."
+  },
+  "Planifikimi nuk u ngarkua. Rihap panelin përpara ndryshimit.": {
+    "en": "The schedule could not be loaded. Reopen the panel before editing.",
+    "de": "Der Zeitplan konnte nicht geladen werden. Öffne die Ansicht vor dem Bearbeiten erneut."
+  },
+  "Planifikimi është i çaktivizuar.": {
+    "en": "Scheduling is disabled.",
+    "de": "Die Zeitplanung ist deaktiviert."
+  },
+  "Planifikimi u ruajt": {
+    "en": "Schedule saved",
+    "de": "Zeitplan gespeichert"
+  },
+  "Sesioni ka përfunduar. Kyçu përsëri për të ruajtur ndryshimet.": {
+    "en": "Your session has expired. Sign in again to save changes.",
+    "de": "Deine Sitzung ist abgelaufen. Melde dich erneut an, um Änderungen zu speichern."
+  },
+  "Ka ndryshime të paruajtura. Të largohesh?": {
+    "en": "You have unsaved changes. Leave this page?",
+    "de": "Du hast ungespeicherte Änderungen. Diese Seite verlassen?"
+  },
+  "Ngarkimi dështoi. Kontrollo lidhjen dhe sesionin.": {
+    "en": "Loading failed. Check your connection and session.",
+    "de": "Laden fehlgeschlagen. Prüfe deine Verbindung und Sitzung."
+  },
+  "Ka ndryshime të paruajtura. Të mbyllet paneli?": {
+    "en": "You have unsaved changes. Close the panel?",
+    "de": "Du hast ungespeicherte Änderungen. Ansicht schließen?"
+  },
+  "Statusi u ruajt": {
+    "en": "Status saved",
+    "de": "Status gespeichert"
+  },
+  "Statusi nuk u ruajt. Provo përsëri.": {
+    "en": "Status was not saved. Try again.",
+    "de": "Status wurde nicht gespeichert. Erneut versuchen."
+  },
+  "Të fshihet përgjithmonë?": {
+    "en": "Delete permanently?",
+    "de": "Dauerhaft löschen?"
+  },
+  "Fshirja dështoi": {
+    "en": "Deletion failed",
+    "de": "Löschen fehlgeschlagen"
+  },
+  "Statusi nuk u ruajt.": {
+    "en": "Status was not saved.",
+    "de": "Status wurde nicht gespeichert."
+  },
+  "Po ruhet…": {
+    "en": "Saving…",
+    "de": "Wird gespeichert …"
+  },
+  "Nuk u ruajt. Provo përsëri përpara mbylljes.": {
+    "en": "Not saved. Try again before closing.",
+    "de": "Nicht gespeichert. Vor dem Schließen erneut versuchen."
+  },
+  "Shënimet nuk u ruajtën. Provo përsëri.": {
+    "en": "Notes were not saved. Try again.",
+    "de": "Notizen wurden nicht gespeichert. Erneut versuchen."
+  },
+  "Të gjitha burimet dështuan": {
+    "en": "All sources failed",
+    "de": "Alle Quellen sind fehlgeschlagen"
+  },
+  "Asnjë rezultat i reja": {
+    "en": "No new results",
+    "de": "Keine neuen Ergebnisse"
+  },
+  "Kërkimi dështoi": {
+    "en": "Search failed",
+    "de": "Suche fehlgeschlagen"
+  },
+  "Profili u aktivizua": {
+    "en": "Profile enabled",
+    "de": "Profil aktiviert"
+  },
+  "Profili u çaktivizua": {
+    "en": "Profile disabled",
+    "de": "Profil deaktiviert"
+  },
+  "Ndryshimi nuk u ruajt.": {
+    "en": "The change was not saved.",
+    "de": "Die Änderung wurde nicht gespeichert."
+  },
+  "Gabim rrjeti": {
+    "en": "Network error",
+    "de": "Netzwerkfehler"
+  },
+  "Të fshihet profili? (mundësitë e gjetura mbeten)": {
+    "en": "Delete this profile? Found opportunities will remain.",
+    "de": "Dieses Profil löschen? Gefundene Möglichkeiten bleiben erhalten."
+  },
+  "Profili u fshi": {
+    "en": "Profile deleted",
+    "de": "Profil gelöscht"
+  },
+  "Profili u ruajt": {
+    "en": "Profile saved",
+    "de": "Profil gespeichert"
+  },
+  "Ruajtja dështoi": {
+    "en": "Save failed",
+    "de": "Speichern fehlgeschlagen"
+  },
+  "Ruajtja dështoi. Provo përsëri.": {
+    "en": "Save failed. Try again.",
+    "de": "Speichern fehlgeschlagen. Erneut versuchen."
+  },
+  "Po kërkon…": {
+    "en": "Searching…",
+    "de": "Suche läuft …"
+  },
+  "Ruaj ndryshimet përpara se të ndryshosh gjendjen e aplikimit.": {
+    "en": "Save your changes before changing the application status.",
+    "de": "Speichere deine Änderungen, bevor du den Bewerbungsstatus änderst."
+  },
+  "Rigjenerimi krijon version të re — editimet e ruajtura mbeten. Vazhdoj?": {
+    "en": "Regeneration creates a new version. Saved revisions remain available. Continue?",
+    "de": "Die Neuerstellung erzeugt eine neue Version. Gespeicherte Versionen bleiben erhalten. Fortfahren?"
+  },
+  "Veprimi dështoi": {
+    "en": "Action failed",
+    "de": "Aktion fehlgeschlagen"
+  },
+  "Drafti u krijua": {
+    "en": "Draft created",
+    "de": "Entwurf erstellt"
+  },
+  "U ruajt — version i re": {
+    "en": "Saved — new version",
+    "de": "Gespeichert – neue Version"
+  },
+  "U aprovua": {
+    "en": "Approved",
+    "de": "Freigegeben"
+  },
+  "U shënua si e dërguar": {
+    "en": "Marked as sent",
+    "de": "Als gesendet markiert"
+  },
+  "U përditësua": {
+    "en": "Updated",
+    "de": "Aktualisiert"
+  },
+  "Ruaj ndryshimet përpara gjenerimit.": {
+    "en": "Save your changes before generating.",
+    "de": "Speichere deine Änderungen vor der Erstellung."
+  },
+  "Po gjeneron…": {
+    "en": "Generating…",
+    "de": "Wird erstellt …"
+  },
+  "Gjenerimi dështoi": {
+    "en": "Generation failed",
+    "de": "Erstellung fehlgeschlagen"
+  },
+  "Në pritje": {
+    "en": "Pending",
+    "de": "Ausstehend"
+  },
+  "Sugjerimet u nxorën": {
+    "en": "Suggestions extracted",
+    "de": "Vorschläge extrahiert"
+  },
+  "Nxjerrja dështoi": {
+    "en": "Extraction failed",
+    "de": "Extraktion fehlgeschlagen"
+  },
+  "Po nxirren sugjerimet…": {
+    "en": "Extracting suggestions…",
+    "de": "Vorschläge werden extrahiert …"
+  },
+  "Nxjerrja dështoi. Provo përsëri.": {
+    "en": "Extraction failed. Try again.",
+    "de": "Extraktion fehlgeschlagen. Erneut versuchen."
+  },
+  "Rishiko dëshmitë përpara pranimit.": {
+    "en": "Review the evidence before accepting.",
+    "de": "Prüfe die Nachweise vor der Übernahme."
+  },
+  "U shtua në profil": {
+    "en": "Added to profile",
+    "de": "Zum Profil hinzugefügt"
+  },
+  "Pa efekt (ekziston/manual fiton)": {
+    "en": "No change (already exists or manual data takes precedence)",
+    "de": "Keine Änderung (bereits vorhanden oder manuelle Angaben haben Vorrang)"
+  },
+  "Veprimi nuk u krye. Provo përsëri.": {
+    "en": "The action was not completed. Try again.",
+    "de": "Die Aktion wurde nicht ausgeführt. Erneut versuchen."
+  },
+  "Gabim rrjeti. Provo përsëri.": {
+    "en": "Network error. Try again.",
+    "de": "Netzwerkfehler. Erneut versuchen."
+  },
+  "Njoftimi nuk u përditësua. Provo përsëri.": {
+    "en": "The notification was not updated. Try again.",
+    "de": "Die Benachrichtigung wurde nicht aktualisiert. Erneut versuchen."
+  },
+  "Njoftimet nuk u përditësuan. Provo përsëri.": {
+    "en": "Notifications were not updated. Try again.",
+    "de": "Benachrichtigungen wurden nicht aktualisiert. Erneut versuchen."
+  },
+  "Buxheti / tarifa": {
+    "en": "Budget / rate",
+    "de": "Budget / Stundensatz"
+  },
+  "Po ngarkohet versioni…": {
+    "en": "Loading version…",
+    "de": "Version wird geladen …"
+  },
+  "Versioni nuk u ngarkua. Mbylle dhe rihape për ta provuar përsëri.": {
+    "en": "The version could not be loaded. Close and reopen it to retry.",
+    "de": "Die Version konnte nicht geladen werden. Schließe und öffne sie erneut."
+  },
+  "Statusi i mundësive": {
+    "en": "Opportunity status",
+    "de": "Status der Möglichkeiten"
+  },
+  "U hoq nga të ruajturat": {
+    "en": "Removed from saved",
+    "de": "Aus gespeicherten Möglichkeiten entfernt"
+  },
+  "U ruajt në mundësitë e tua": {
+    "en": "Saved to your opportunities",
+    "de": "In deinen Möglichkeiten gespeichert"
+  },
+  "Nuk u ruajt. Provo përsëri.": {
+    "en": "Not saved. Try again.",
+    "de": "Nicht gespeichert. Erneut versuchen."
+  },
+  "Ndryshime të paruajtura · ruaj përpara aprovimit": {
+    "en": "Unsaved changes · save before approving",
+    "de": "Ungespeicherte Änderungen · vor Freigabe speichern"
+  },
+  "Veprimi nuk u krye. Kontrollo fushat dhe provo përsëri.": {
+    "en": "The action was not completed. Check the fields and try again.",
+    "de": "Die Aktion wurde nicht ausgeführt. Prüfe die Felder und versuche es erneut."
+  },
+  "Ka ndryshime të paruajtura. Të dalësh?": {
+    "en": "You have unsaved changes. Sign out?",
+    "de": "Du hast ungespeicherte Änderungen. Abmelden?"
+  },
+  "Dalja dështoi.": {
+    "en": "Sign out failed.",
+    "de": "Abmelden fehlgeschlagen."
+  },
+  "Gabim rrjeti.": {
+    "en": "Network error.",
+    "de": "Netzwerkfehler."
+  },
+  "+ Shto një zë": {
+    "en": "+ Add entry",
+    "de": "+ Eintrag hinzufügen"
+  },
+  "Dëshmi:": {
+    "en": "Evidence:",
+    "de": "Nachweis:"
+  },
+  "Ende asnjë kufizim i deklaruar.": {
+    "en": "No constraints declared yet.",
+    "de": "Noch keine Einschränkungen angegeben."
+  },
+  "Hiq zërin": {
+    "en": "Remove entry",
+    "de": "Eintrag entfernen"
+  },
+  "Kontrollo lidhjen ose kyçu përsëri. Mund ta provosh sërish nga lista.": {
+    "en": "Check your connection or sign in again. You can retry from the list.",
+    "de": "Prüfe deine Verbindung oder melde dich erneut an. Du kannst es aus der Liste erneut versuchen."
+  },
+  "Kufizimet nuk u ngarkuan.": {
+    "en": "Constraints could not be loaded.",
+    "de": "Einschränkungen konnten nicht geladen werden."
+  },
+  "Njoftimet nuk u ngarkuan. Mbylle dhe provo përsëri.": {
+    "en": "Notifications could not be loaded. Close and try again.",
+    "de": "Benachrichtigungen konnten nicht geladen werden. Schließen und erneut versuchen."
+  },
+  "Nuk ka njoftime": {
+    "en": "No notifications",
+    "de": "Keine Benachrichtigungen"
+  },
+  "Nuk ka sugjerime të tjera për momentin.": {
+    "en": "No more suggestions for now.",
+    "de": "Momentan keine weiteren Vorschläge."
+  },
+  "Nuk u hap dot.": {
+    "en": "Could not open.",
+    "de": "Konnte nicht geöffnet werden."
+  },
+  "Plotësimi i profilit": {
+    "en": "Profile completeness",
+    "de": "Profilvollständigkeit"
+  },
+  "Plotësimi nuk u ngarkua.": {
+    "en": "Profile completeness could not be loaded.",
+    "de": "Profilvollständigkeit konnte nicht geladen werden."
+  },
+  "Po ngarkohen njoftimet…": {
+    "en": "Loading notifications…",
+    "de": "Benachrichtigungen werden geladen …"
+  },
+  "Po ngarkohet paneli": {
+    "en": "Loading panel",
+    "de": "Ansicht wird geladen"
+  },
+  "Pranimi e shton këtë fakt në profil kur nuk bie ndesh me të dhënat manuale.": {
+    "en": "Accepting adds this fact to your profile unless it conflicts with manual entries.",
+    "de": "Die Übernahme ergänzt dein Profil, sofern kein Widerspruch zu manuellen Angaben besteht."
+  },
+  "Provo përsëri": {
+    "en": "Try again",
+    "de": "Erneut versuchen"
+  },
+  "Rishiko aftësitë e tua →": {
+    "en": "Review your skills →",
+    "de": "Fähigkeiten prüfen →"
+  },
+  "Sugjerim · ende i pakonfirmuar": {
+    "en": "Suggestion · not yet confirmed",
+    "de": "Vorschlag · noch nicht bestätigt"
+  },
+  "Sugjerime në pritje (": {
+    "en": "Pending suggestions (",
+    "de": "Ausstehende Vorschläge ("
+  },
+  "Sugjerimet nuk u ngarkuan. Rifresko për ta provuar përsëri.": {
+    "en": "Suggestions could not be loaded. Reload to retry.",
+    "de": "Vorschläge konnten nicht geladen werden. Zum Wiederholen neu laden."
+  },
+  "Të dhënat nuk u ngarkuan. Provo përsëri përpara ndryshimit.": {
+    "en": "Details could not be loaded. Try again before editing.",
+    "de": "Angaben konnten nicht geladen werden. Vor dem Bearbeiten erneut versuchen."
+  },
+  "Të gjitha sugjerimet janë rishikuar.": {
+    "en": "All suggestions have been reviewed.",
+    "de": "Alle Vorschläge wurden geprüft."
+  },
+  "Refuzo": {
+    "en": "Reject",
+    "de": "Ablehnen"
+  },
+  "Refuzuar": {
+    "en": "Rejected",
+    "de": "Abgelehnt"
+  },
+  "hiq": {
+    "en": "dismiss",
+    "de": "entfernen"
+  },
+  "i plotësuar": {
+    "en": "complete",
+    "de": "vollständig"
+  },
+  "{p0} mundësi të reja nga {p1}/{p2} burime": {
+    "en": "{p0} new opportunities from {p1}/{p2} sources",
+    "de": "{p0} neue Möglichkeiten aus {p1}/{p2} Quellen"
+  },
+  "{p0} zëra": {
+    "en": "{p0} entries",
+    "de": "{p0} Einträge"
+  },
+  "{p0}: burimi i papërdorshëm": {
+    "en": "{p0}: source unavailable",
+    "de": "{p0}: Quelle nicht verfügbar"
+  },
+  "Aktiv · {p0}": {
+    "en": "Active · {p0}",
+    "de": "Aktiv · {p0}"
+  },
+  "Planifikuar: {p0}": {
+    "en": "Scheduled: {p0}",
+    "de": "Geplant: {p0}"
+  },
+  " — {p0} boshllëqe konteksti": {
+    "en": " — {p0} missing details",
+    "de": " – {p0} fehlende Angaben"
+  },
+  " ({p0} burime me gabim)": {
+    "en": " ({p0} failed sources)",
+    "de": " ({p0} fehlgeschlagene Quellen)"
+  },
+  " · {p0} burime me gabim": {
+    "en": " · {p0} failed sources",
+    "de": " · {p0} fehlgeschlagene Quellen"
+  },
+  "Fallback template ({p0})": {
+    "en": "Basic draft fallback ({p0})",
+    "de": "Basisentwurf als Ersatz ({p0})"
+  },
+  "U gjenerua me AI{p0}": {
+    "en": "Generated with AI{p0}",
+    "de": "Mit KI erstellt{p0}"
+  },
+  "Parse: {p0}": {
+    "en": "Extraction: {p0}",
+    "de": "Extraktion: {p0}"
+  },
+  "Parse: {p0} sugjerime të reja": {
+    "en": "Extracted {p0} new suggestions",
+    "de": "{p0} neue Vorschläge extrahiert"
+  },
+  "{p0} nga {p1} rezultate": {
+    "en": "{p0} of {p1} results",
+    "de": "{p0} von {p1} Ergebnissen"
+  },
+  "Niveli": {
+    "en": "Level",
+    "de": "Niveau"
+  },
+  "Titulli": {
+    "en": "Title",
+    "de": "Titel"
+  },
+  "Organizata": {
+    "en": "Organization",
+    "de": "Organisation"
+  },
+  "Periudha": {
+    "en": "Period",
+    "de": "Zeitraum"
+  },
+  "Viti": {
+    "en": "Year",
+    "de": "Jahr"
+  },
+  "Lidhja": {
+    "en": "Link",
+    "de": "Link"
+  },
+  "Kontakt": {
+    "en": "Contact",
+    "de": "Kontakt"
+  },
+  "Kusht": {
+    "en": "Requirement",
+    "de": "Voraussetzung"
+  },
+  "Licenca": {
+    "en": "License",
+    "de": "Lizenz"
+  },
+  "Certifikim mungon": {
+    "en": "Missing certification",
+    "de": "Fehlendes Zertifikat"
+  },
+  "e re": {
+    "en": "new",
+    "de": "neu"
+  },
+  "e ruajtur": {
+    "en": "saved",
+    "de": "gespeichert"
+  },
+  "draft i përgatitur": {
+    "en": "draft prepared",
+    "de": "Entwurf vorbereitet"
+  },
+  "aplikuar": {
+    "en": "applied",
+    "de": "beworben"
+  },
+  "përgjigje": {
+    "en": "response",
+    "de": "Rückmeldung"
+  },
+  "intervistë": {
+    "en": "interview",
+    "de": "Vorstellungsgespräch"
+  },
+  "ofertë": {
+    "en": "offer",
+    "de": "Angebot"
+  },
+  "refuzuar": {
+    "en": "rejected",
+    "de": "abgelehnt"
+  },
+  "arkivuar": {
+    "en": "archived",
+    "de": "archiviert"
+  },
+  "lead i ruajtur": {
+    "en": "saved lead",
+    "de": "gespeicherter Lead"
+  },
+  "kontaktuar": {
+    "en": "contacted",
+    "de": "kontaktiert"
+  },
+  "propozim i përgatitur": {
+    "en": "proposal prepared",
+    "de": "Angebot vorbereitet"
+  },
+  "propozim dërguar": {
+    "en": "proposal sent",
+    "de": "Angebot gesendet"
+  },
+  "negocim": {
+    "en": "negotiation",
+    "de": "Verhandlung"
+  },
+  "fituar": {
+    "en": "won",
+    "de": "gewonnen"
+  },
+  "humbur": {
+    "en": "lost",
+    "de": "verloren"
+  },
+  "kualifikuar": {
+    "en": "qualified",
+    "de": "qualifiziert"
+  },
+  "outreach i përgatitur": {
+    "en": "outreach prepared",
+    "de": "Kontaktaufnahme vorbereitet"
+  },
+  "i interesuar": {
+    "en": "interested",
+    "de": "interessiert"
+  },
+  "pranuar": {
+    "en": "accepted",
+    "de": "angenommen"
+  },
+  "përfunduar": {
+    "en": "completed",
+    "de": "abgeschlossen"
+  },
+  "Të reja": {
+    "en": "New",
+    "de": "Neu"
+  },
+  "Të ruajtura": {
+    "en": "Saved",
+    "de": "Gespeichert"
+  },
+  "Aplikuara": {
+    "en": "Applied",
+    "de": "Beworben"
+  },
+  "Intervista": {
+    "en": "Interviews",
+    "de": "Gespräche"
+  },
+  "Ofertat": {
+    "en": "Offers",
+    "de": "Angebote"
+  },
+  "Leads": {
+    "en": "Leads",
+    "de": "Leads"
+  },
+  "Kontaktuar": {
+    "en": "Contacted",
+    "de": "Kontaktiert"
+  },
+  "Propozime": {
+    "en": "Proposals",
+    "de": "Angebote"
+  },
+  "Fituar": {
+    "en": "Won",
+    "de": "Gewonnen"
+  },
+  "Kualifikuar": {
+    "en": "Qualified",
+    "de": "Qualifiziert"
+  },
+  "Ruaj lead": {
+    "en": "Save lead",
+    "de": "Lead speichern"
+  },
+  "Aplikova": {
+    "en": "I applied",
+    "de": "Beworben"
+  },
+  "Kontaktova": {
+    "en": "I contacted",
+    "de": "Kontaktiert"
+  },
+  "Humbur": {
+    "en": "Lost",
+    "de": "Verloren"
+  },
+  "Kualifiko": {
+    "en": "Qualify",
+    "de": "Qualifizieren"
+  },
+  "Përfunduar": {
+    "en": "Completed",
+    "de": "Abgeschlossen"
+  },
+  "Lokale": {
+    "en": "Local",
+    "de": "Lokal"
+  },
+  "e aprovuar": {
+    "en": "approved",
+    "de": "freigegeben"
+  },
+  "e dërguar": {
+    "en": "sent",
+    "de": "gesendet"
+  },
+  "e redaktuar": {
+    "en": "edited",
+    "de": "bearbeitet"
+  },
+  "e arkivuar": {
+    "en": "archived",
+    "de": "archiviert"
+  },
+  "active": {
+    "en": "Active",
+    "de": "Aktiv"
+  },
+  "draft": {
+    "en": "Draft",
+    "de": "Entwurf"
+  },
+  "archived": {
+    "en": "Archived",
+    "de": "Archiviert"
+  },
+  "generated": {
+    "en": "Generated",
+    "de": "Generiert"
+  },
+  "edited": {
+    "en": "Edited",
+    "de": "Bearbeitet"
+  },
+  "final": {
+    "en": "Final",
+    "de": "Endfassung"
+  },
+  "new_match": {
+    "en": "New match",
+    "de": "Neuer Treffer"
+  },
+  "walk": {
+    "en": "Walking",
+    "de": "Zu Fuß"
+  },
+  "walking": {
+    "en": "Walking",
+    "de": "Zu Fuß"
+  },
+  "bicycle": {
+    "en": "Bicycle",
+    "de": "Fahrrad"
+  },
+  "bike": {
+    "en": "Bicycle",
+    "de": "Fahrrad"
+  },
+  "car": {
+    "en": "Car",
+    "de": "Auto"
+  },
+  "public transport": {
+    "en": "Public transport",
+    "de": "Öffentliche Verkehrsmittel"
+  },
+  "public_transport": {
+    "en": "Public transport",
+    "de": "Öffentliche Verkehrsmittel"
+  },
+  "Public transport": {
+    "en": "Public transport",
+    "de": "Öffentliche Verkehrsmittel"
+  },
+  "transport_public": {
+    "en": "Public transport",
+    "de": "Öffentliche Verkehrsmittel"
+  },
+  "Titulli/roli i synuar": {
+    "en": "Target title / role",
+    "de": "Gewünschter Titel / Rolle"
+  },
+  "Të paktën 3 aftësi": {
+    "en": "At least 3 skills",
+    "de": "Mindestens 3 Fähigkeiten"
+  },
+  "Gjuhët me nivele": {
+    "en": "Languages with proficiency levels",
+    "de": "Sprachen mit Niveaus"
+  },
+  "Eksperienca (tekst ose zëra)": {
+    "en": "Experience (text or entries)",
+    "de": "Erfahrung (Text oder Einträge)"
+  },
+  "Vendndodhja/remote": {
+    "en": "Location / remote work",
+    "de": "Standort / Remote-Arbeit"
+  },
+  "Paga minimale": {
+    "en": "Minimum salary",
+    "de": "Mindestgehalt"
+  },
+  "CV e ngarkuar": {
+    "en": "Uploaded CV",
+    "de": "Hochgeladener Lebenslauf"
+  },
+  "Aftësi/teknologji": {
+    "en": "Skills / technologies",
+    "de": "Fähigkeiten / Technologien"
+  },
+  "Produkte/afërsi zgjidhjesh": {
+    "en": "Products / solutions",
+    "de": "Produkte / Lösungen"
+  },
+  "Portfolio/projekte": {
+    "en": "Portfolio / projects",
+    "de": "Portfolio / Projekte"
+  },
+  "Tarifa orare/buxheti": {
+    "en": "Hourly rate / budget",
+    "de": "Stundensatz / Budget"
+  },
+  "Eksperienca": {
+    "en": "Experience",
+    "de": "Erfahrung"
+  },
+  "Katalogu i produkteve me aftësi": {
+    "en": "Product catalog with capabilities",
+    "de": "Produktkatalog mit Fähigkeiten"
+  },
+  "Industritë e synuara": {
+    "en": "Target industries",
+    "de": "Zielbranchen"
+  },
+  "Përmbledhje komerciale": {
+    "en": "Commercial summary",
+    "de": "Geschäftliche Kurzbeschreibung"
+  },
+  "Aftësitë kryesore": {
+    "en": "Core skills",
+    "de": "Kernkompetenzen"
+  },
+  "Baza + kodi postar/rrezja": {
+    "en": "Home area + postcode / radius",
+    "de": "Ausgangsort + Postleitzahl / Umkreis"
+  },
+  "Transporti/no-car": {
+    "en": "Transport / no car",
+    "de": "Verkehrsmittel / kein Auto"
+  },
+  "Paga minimale €/orë": {
+    "en": "Minimum pay €/hour",
+    "de": "Mindestvergütung €/Stunde"
+  },
+  "Aftësi": {
+    "en": "Skills",
+    "de": "Fähigkeiten"
+  },
+  "Roli/titulli": {
+    "en": "Role / title",
+    "de": "Rolle / Titel"
+  },
+  "Remote/hybrid/zyrë": {
+    "en": "Remote / hybrid / on-site",
+    "de": "Remote / hybrid / vor Ort"
+  },
+  "Paga": {
+    "en": "Salary",
+    "de": "Gehalt"
+  },
+  "Eksperienca/senioriteti": {
+    "en": "Experience / seniority",
+    "de": "Erfahrung / Seniorität"
+  },
+  "Freskësia": {
+    "en": "Freshness",
+    "de": "Aktualität"
+  },
+  "Lloji i projektit": {
+    "en": "Project type",
+    "de": "Projektart"
+  },
+  "Buxheti/tarifa": {
+    "en": "Budget / rate",
+    "de": "Budget / Stundensatz"
+  },
+  "Përputhja me produktin": {
+    "en": "Product match",
+    "de": "Produktpassung"
+  },
+  "Rëndësia e problemit": {
+    "en": "Problem relevance",
+    "de": "Relevanz des Problems"
+  },
+  "Personalizimi i duhur": {
+    "en": "Customization needed",
+    "de": "Erforderliche Anpassung"
+  },
+  "Distanca": {
+    "en": "Distance",
+    "de": "Entfernung"
+  },
+  "Pagesa": {
+    "en": "Pay",
+    "de": "Vergütung"
+  },
+  "Transporti/udhëtimi": {
+    "en": "Transport / travel",
+    "de": "Verkehrsmittel / Fahrt"
+  },
+  "Orari": {
+    "en": "Schedule",
+    "de": "Arbeitszeiten"
+  },
+  "Kufizim i fortë": {
+    "en": "Hard constraint",
+    "de": "Feste Einschränkung"
+  },
+  "profil pa aftësi/fjalë kyçe": {
+    "en": "no profile skills / keywords",
+    "de": "keine Fähigkeiten / Suchbegriffe im Profil"
+  },
+  "pa datë": {
+    "en": "no date",
+    "de": "kein Datum"
+  },
+  "remote · pranohet": {
+    "en": "remote · accepted",
+    "de": "remote · akzeptiert"
+  },
+  "remote · jo preferim": {
+    "en": "remote · not preferred",
+    "de": "remote · nicht bevorzugt"
+  },
+  "në zyrë / hybrid": {
+    "en": "on-site / hybrid",
+    "de": "vor Ort / hybrid"
+  },
+  "në zyrë · jo preferim": {
+    "en": "on-site · not preferred",
+    "de": "vor Ort · nicht bevorzugt"
+  },
+  "e panjohur": {
+    "en": "unknown",
+    "de": "unbekannt"
+  },
+  "brenda zonës": {
+    "en": "within the area",
+    "de": "innerhalb des Gebiets"
+  },
+  "jashtë zonës": {
+    "en": "outside the area",
+    "de": "außerhalb des Gebiets"
+  },
+  "mbi minimum": {
+    "en": "above minimum",
+    "de": "über dem Minimum"
+  },
+  "nën minimum": {
+    "en": "below minimum",
+    "de": "unter dem Minimum"
+  },
+  "profil pa gjuhë": {
+    "en": "no profile languages",
+    "de": "keine Sprachen im Profil"
+  },
+  "profil pa titull": {
+    "en": "no profile title",
+    "de": "kein Titel im Profil"
+  },
+  "nivel i përzier": {
+    "en": "mixed seniority",
+    "de": "gemischte Erfahrungsstufen"
+  },
+  "nivel më i lartë se eksperjenca": {
+    "en": "higher level than stated experience",
+    "de": "höhere Stufe als angegebene Erfahrung"
+  },
+  "pa katalog produktesh/aftësish": {
+    "en": "no product / capability catalog",
+    "de": "kein Produkt- / Leistungskatalog"
+  },
+  "lloji i panjohur": {
+    "en": "unknown type",
+    "de": "unbekannte Art"
+  },
+  "tarifa orare": {
+    "en": "hourly rate",
+    "de": "Stundensatz"
+  },
+  "buxheti mbi/pragun": {
+    "en": "budget compared with threshold",
+    "de": "Budget im Vergleich zum Schwellenwert"
+  },
+  "pa të dhëna disponueshmërie": {
+    "en": "no availability details",
+    "de": "keine Angaben zur Verfügbarkeit"
+  },
+  "pa produkt përkatës": {
+    "en": "no matching product",
+    "de": "kein passendes Produkt"
+  },
+  "përafërsisht nga terma": {
+    "en": "estimated from keywords",
+    "de": "aus Suchbegriffen geschätzt"
+  },
+  "katalog produktesh bosh": {
+    "en": "empty product catalog",
+    "de": "leerer Produktkatalog"
+  },
+  "pa fjalë kyçe": {
+    "en": "no keywords",
+    "de": "keine Suchbegriffe"
+  },
+  "vlerësim heuristik — personalizim i vogël i pritshëm": {
+    "en": "heuristic estimate — minor customization expected",
+    "de": "heuristische Schätzung – geringe Anpassung erwartet"
+  },
+  "pa preferencë kategorish": {
+    "en": "no category preference",
+    "de": "keine Kategoriepräferenz"
+  },
+  "pa të dhëna orari": {
+    "en": "no schedule details",
+    "de": "keine Angaben zu Arbeitszeiten"
+  },
+  "pa kufizim përkatës": {
+    "en": "no relevant constraint",
+    "de": "keine relevante Einschränkung"
+  },
+  "kërkon makinë · profili pa makinë": {
+    "en": "car required · profile has no car",
+    "de": "Auto erforderlich · laut Profil kein Auto"
+  },
+  "transport i përputhur": {
+    "en": "compatible transport",
+    "de": "passendes Verkehrsmittel"
+  },
+  "të dhëna të pamjaftueshme": {
+    "en": "insufficient information",
+    "de": "unzureichende Angaben"
+  },
+  "nga gaps: po mësohet": {
+    "en": "From your development areas: currently learning",
+    "de": "Aus deinen Entwicklungsbereichen: wird gerade erlernt"
+  },
+  "≤ 7 ditë": {
+    "en": "≤ 7 days",
+    "de": "≤ 7 Tage"
+  },
+  "≤ 14 ditë": {
+    "en": "≤ 14 days",
+    "de": "≤ 14 Tage"
+  },
+  "≤ 30 ditë": {
+    "en": "≤ 30 days",
+    "de": "≤ 30 Tage"
+  },
+  "≤ 60 ditë": {
+    "en": "≤ 60 days",
+    "de": "≤ 60 Tage"
+  },
+  "> 60 ditë": {
+    "en": "> 60 days",
+    "de": "> 60 Tage"
+  },
+  "tani": {
+    "en": "just now",
+    "de": "gerade eben"
+  },
+  "{n} min më parë": {
+    "en": "{n} min ago",
+    "de": "vor {n} Min."
+  },
+  "{n} orë më parë": {
+    "en": "{n} hours ago",
+    "de": "vor {n} Std."
+  },
+  "{n} ditë më parë": {
+    "en": "{n} days ago",
+    "de": "vor {n} Tagen"
+  },
+  "{n}/{total} terma": {
+    "en": "{n}/{total} terms",
+    "de": "{n}/{total} Begriffe"
+  },
+  "{n}/{total} gjuhë": {
+    "en": "{n}/{total} languages",
+    "de": "{n}/{total} Sprachen"
+  },
+  "gjuhë: {value}": {
+    "en": "language: {value}",
+    "de": "Sprache: {value}"
+  },
+  "lloji: {value}": {
+    "en": "type: {value}",
+    "de": "Art: {value}"
+  },
+  "produkte: {value}": {
+    "en": "products: {value}",
+    "de": "Produkte: {value}"
+  },
+  "stile problem: {n}/{total}": {
+    "en": "problem signals: {n}/{total}",
+    "de": "Problemsignale: {n}/{total}"
+  },
+  "Punë në Gjermani · pa celes": {
+    "en": "Jobs in Germany · no API key",
+    "de": "Stellen in Deutschland · kein API-Schlüssel"
+  },
+  "Remote · pa celes": {
+    "en": "Remote · no API key",
+    "de": "Remote · kein API-Schlüssel"
+  },
+  "DACH · kërkon celes": {
+    "en": "DACH · API key required",
+    "de": "DACH · API-Schlüssel erforderlich"
+  },
+  "Projekte freelance · pa celes": {
+    "en": "Freelance projects · no API key",
+    "de": "Freelance-Projekte · kein API-Schlüssel"
+  },
+  "Kontrata remote · pa celes": {
+    "en": "Remote contracts · no API key",
+    "de": "Remote-Aufträge · kein API-Schlüssel"
+  },
+  "Kërkesa software (leads) · pa celes": {
+    "en": "Software requests (leads) · no API key",
+    "de": "Software-Anfragen (Leads) · kein API-Schlüssel"
+  },
+  "Remotive Kontrata": {
+    "en": "Remotive Contracts",
+    "de": "Remotive-Aufträge"
+  },
+  "Jobicy Kontrata": {
+    "en": "Jobicy Contracts",
+    "de": "Jobicy-Aufträge"
+  },
+  "Ecje qensh": {
+    "en": "Dog walking",
+    "de": "Gassi gehen"
+  },
+  "Kujdes kafshësh": {
+    "en": "Pet care",
+    "de": "Tierbetreuung"
+  },
+  "Kujdes shtëpie": {
+    "en": "House sitting",
+    "de": "Hausbetreuung"
+  },
+  "Pastrim": {
+    "en": "Cleaning",
+    "de": "Reinigung"
+  },
+  "Kopshtari": {
+    "en": "Gardening",
+    "de": "Gartenarbeit"
+  },
+  "Ndihmë blerjesh": {
+    "en": "Shopping help",
+    "de": "Einkaufshilfe"
+  },
+  "Ndihmë shtëpiake": {
+    "en": "Household help",
+    "de": "Haushaltshilfe"
+  },
+  "Dërgesa": {
+    "en": "Deliveries",
+    "de": "Lieferungen"
+  },
+  "Ndihmë teknike": {
+    "en": "Technical help",
+    "de": "Technische Hilfe"
+  },
+  "Ndihmë PC/telefon": {
+    "en": "Computer / phone help",
+    "de": "Computer- / Handyhilfe"
+  },
+  "Minipunë": {
+    "en": "Mini jobs",
+    "de": "Minijobs"
+  },
+  "Ndihmë lagjeje": {
+    "en": "Neighborhood help",
+    "de": "Nachbarschaftshilfe"
+  },
+  "Tjera lokale": {
+    "en": "Other local jobs",
+    "de": "Sonstige lokale Jobs"
+  },
+  "booking": {
+    "en": "booking",
+    "de": "Buchung"
+  },
+  "website": {
+    "en": "website",
+    "de": "Website"
+  },
+  "automation": {
+    "en": "automation",
+    "de": "Automatisierung"
+  },
+  "white_label": {
+    "en": "white-label",
+    "de": "White-Label"
+  },
+  "crm": {
+    "en": "CRM",
+    "de": "CRM"
+  },
+  "ecommerce": {
+    "en": "e-commerce",
+    "de": "E-Commerce"
+  },
+  "analytics": {
+    "en": "analytics",
+    "de": "Analyse"
+  },
+  "ai": {
+    "en": "AI",
+    "de": "KI"
+  },
+  "kredenciale të pasakta": {
+    "en": "Incorrect credentials",
+    "de": "Falsche Anmeldedaten"
+  },
+  "kërkon autentikim": {
+    "en": "Sign in required",
+    "de": "Anmeldung erforderlich"
+  },
+  "CSRF token i pavlefshëm": {
+    "en": "Invalid security token. Reload and try again.",
+    "de": "Ungültiges Sicherheitstoken. Neu laden und erneut versuchen."
+  },
+  "user i panjohur ose joaktiv": {
+    "en": "Unknown or inactive user",
+    "de": "Unbekannter oder inaktiver Benutzer"
+  },
+  "pa anëtarësi aktive tenant": {
+    "en": "No active workspace membership",
+    "de": "Keine aktive Workspace-Mitgliedschaft"
+  },
+  "shumë provo — provoni pas 1 minute": {
+    "en": "Too many attempts — try again in one minute",
+    "de": "Zu viele Versuche – in einer Minute erneut versuchen"
+  },
+  "skedar mungon": {
+    "en": "No file selected",
+    "de": "Keine Datei ausgewählt"
+  },
+  "skedar shumë i madh (>10MB)": {
+    "en": "File too large (>10 MB)",
+    "de": "Datei zu groß (>10 MB)"
+  },
+  "CV: nuk është ngarkuar": {
+    "en": "CV: not uploaded",
+    "de": "Lebenslauf: nicht hochgeladen"
+  },
+  "AI është çaktivizuar — u përdor template deterministic": {
+    "en": "AI is disabled — a deterministic basic draft was used",
+    "de": "KI ist deaktiviert – ein deterministischer Basisentwurf wurde verwendet"
+  },
+  "U shtua": {
+    "en": "Added",
+    "de": "Hinzugefügt"
+  },
+  "+{n} të reja": {
+    "en": "+{n} new",
+    "de": "+{n} neu"
+  },
+  "gabim": {
+    "en": "error",
+    "de": "Fehler"
+  },
+  "Jo": {
+    "en": "No",
+    "de": "Nein"
+  },
+  "Po": {
+    "en": "Yes",
+    "de": "Ja"
+  },
+  " €/orë": {
+    "en": " €/hour",
+    "de": " €/Stunde"
+  },
+  "gatshëm": {
+    "en": "ready",
+    "de": "bereit"
+  },
+  "Vendi: {value}": {
+    "en": "Location: {value}",
+    "de": "Ort: {value}"
+  },
+  "Përputhja ≥ {value}%": {
+    "en": "Match ≥ {value}%",
+    "de": "Übereinstimmung ≥ {value}%"
+  },
+  "< {n} ditë": {
+    "en": "< {n} days",
+    "de": "< {n} Tage"
+  },
+  "≥ {value} €/vit": {
+    "en": "≥ €{value}/year",
+    "de": "≥ {value} €/Jahr"
+  },
+  "Profili u ruajt — pikët u rillogaritën për {n} zëra": {
+    "en": "Profile saved — scores recalculated for {n} items",
+    "de": "Profil gespeichert — Bewertungen für {n} Einträge neu berechnet"
+  },
+  "Preferencat u ruajtën — pikët u rillogaritën": {
+    "en": "Preferences saved — scores recalculated",
+    "de": "Einstellungen gespeichert — Bewertungen neu berechnet"
+  },
+  "Rregullimet e burimeve u ruajtën": {
+    "en": "Source settings saved",
+    "de": "Quelleneinstellungen gespeichert"
+  },
+  "pending": {
+    "en": "Pending",
+    "de": "Ausstehend"
+  },
+  "parsed": {
+    "en": "Suggestions extracted",
+    "de": "Vorschläge extrahiert"
+  },
+  "failed": {
+    "en": "Extraction failed",
+    "de": "Extraktion fehlgeschlagen"
+  },
+  "{checked} të kontrolluara · {new} të reja · {sources} burime": {
+    "en": "{checked} checked · {new} new · {sources} sources",
+    "de": "{checked} geprüft · {new} neu · {sources} Quellen"
+  },
+  " — po hap": {
+    "en": " — opening",
+    "de": " — wird geöffnet"
+  },
+  "aftësitë e profilit janë bosh": {
+    "en": "No profile skills provided",
+    "de": "Keine Fähigkeiten im Profil angegeben"
+  },
+  "eksperienca nuk është plotësuar": {
+    "en": "Experience is missing",
+    "de": "Berufserfahrung fehlt"
+  },
+  "gjuhët nuk janë plotësuar": {
+    "en": "Languages are missing",
+    "de": "Sprachkenntnisse fehlen"
+  },
+  "katalogu i produkteve është bosh": {
+    "en": "The product catalog is empty",
+    "de": "Der Produktkatalog ist leer"
+  },
+  "vendndodhja e profilit mungon": {
+    "en": "Profile location is missing",
+    "de": "Standort im Profil fehlt"
+  },
+  "përshkrimi i mundësisë është shumë i shkurtër": {
+    "en": "The opportunity description is very short",
+    "de": "Die Beschreibung der Gelegenheit ist sehr kurz"
+  },
+  "{p0} zë": {
+    "en": "{p0} entry",
+    "de": "{p0} Eintrag"
+  },
+  "Ruaj ndryshimet përpara se të ndryshosh gjuhën.": {
+    "en": "Save your changes before switching language.",
+    "de": "Speichere deine Änderungen, bevor du die Sprache wechselst."
+  },
+  "distanca e panjohur — nuk gjykohet": {
+    "en": "Distance unknown — not evaluated",
+    "de": "Entfernung unbekannt — nicht bewertet"
+  },
+  "pagë e panjohur — nuk gjykohet": {
+    "en": "Pay unknown — not evaluated",
+    "de": "Vergütung unbekannt — nicht bewertet"
+  },
+  "dëshmi e pamjaftueshme": {
+    "en": "Insufficient evidence",
+    "de": "Unzureichende Nachweise"
+  },
+  "kod postar i njëjtë": {
+    "en": "Same postcode",
+    "de": "Gleiche Postleitzahl"
+  },
+  "pa koordinata/kod postar të njohur": {
+    "en": "No known coordinates or postcode",
+    "de": "Keine bekannten Koordinaten oder Postleitzahl"
+  },
+  "pagë {n}€/h nën minimumin {total}€/h": {
+    "en": "Pay €{n}/h below the €{total}/h minimum",
+    "de": "Vergütung {n} €/h unter dem Minimum von {total} €/h"
+  },
+  "pagë {n}€/h": {
+    "en": "Pay €{n}/h",
+    "de": "Vergütung {n} €/h"
+  },
+  "distanca {n} km": {
+    "en": "Distance {n} km",
+    "de": "Entfernung {n} km"
+  },
+  "udhëtimi ~{n} min": {
+    "en": "Travel ~{n} min",
+    "de": "Fahrtzeit ~{n} Min."
+  },
+  "kode postare: {n} km": {
+    "en": "Postcodes: {n} km",
+    "de": "Postleitzahlen: {n} km"
+  },
+  "koordinata: {n} km": {
+    "en": "Coordinates: {n} km",
+    "de": "Koordinaten: {n} km"
+  },
+  "titulli i profilit {n}/{total}": {
+    "en": "Profile title {n}/{total}",
+    "de": "Profilbezeichnung {n}/{total}"
+  },
+  "niveli përputhet ({value})": {
+    "en": "Level matches ({value})",
+    "de": "Niveau passt ({value})"
+  },
+  "po mësohet: {value}": {
+    "en": "Learning: {value}",
+    "de": "Wird erlernt: {value}"
+  },
+  "kategoria {value}": {
+    "en": "Category {value}",
+    "de": "Kategorie {value}"
+  },
+  "{value} jashtë preferencave": {
+    "en": "{value} outside preferences",
+    "de": "{value} außerhalb der Präferenzen"
+  },
+  " kufizim: {value}": {
+    "en": " Constraint: {value}",
+    "de": " Einschränkung: {value}"
+  },
+  "AI:": {
+    "en": "AI:",
+    "de": "AI:"
+  },
+  "App ID": {
+    "en": "App ID",
+    "de": "App ID"
+  },
+  "App Key": {
+    "en": "App Key",
+    "de": "App Key"
+  },
+  "Application ID": {
+    "en": "Application ID",
+    "de": "Application ID"
+  },
+  "Berlin Essen Remote": {
+    "en": "Berlin Essen Remote",
+    "de": "Berlin Essen Remote"
+  },
+  "DE": {
+    "en": "DE",
+    "de": "DE"
+  },
+  "Demo URL": {
+    "en": "Demo URL",
+    "de": "Demo URL"
+  },
+  "EN": {
+    "en": "EN",
+    "de": "EN"
+  },
+  "Email": {
+    "en": "Email",
+    "de": "Email"
+  },
+  "Key": {
+    "en": "Key",
+    "de": "Key"
+  },
+  "Python SQL Git": {
+    "en": "Python SQL Git",
+    "de": "Python SQL Git"
+  },
+  "SQ": {
+    "en": "SQ",
+    "de": "SQ"
+  },
+  "SaaS": {
+    "en": "SaaS",
+    "de": "SaaS"
+  },
+  "SaaS / self-hosted": {
+    "en": "SaaS / self-hosted",
+    "de": "SaaS / self-hosted"
+  },
+  "URL *": {
+    "en": "URL *",
+    "de": "URL *"
+  },
+  "Website": {
+    "en": "Website",
+    "de": "Website"
+  },
+  "White-label": {
+    "en": "White-label",
+    "de": "White-label"
+  },
+  "cloud / on-premise": {
+    "en": "cloud / on-premise",
+    "de": "cloud / on-premise"
+  },
+  "developer backend": {
+    "en": "developer backend",
+    "de": "developer backend"
+  },
+  "developer backend data analyst": {
+    "en": "developer backend data analyst",
+    "de": "developer backend data analyst"
+  },
+  "developer.adzuna.com/signup": {
+    "en": "developer.adzuna.com/signup",
+    "de": "developer.adzuna.com/signup"
+  },
+  "https://…": {
+    "en": "https://…",
+    "de": "https://…"
+  },
+  "https://…/feed.xml": {
+    "en": "https://…/feed.xml",
+    "de": "https://…/feed.xml"
+  },
+  "job, freelance, product_lead, local_job": {
+    "en": "job, freelance, product_lead, local_job",
+    "de": "job, freelance, product_lead, local_job"
+  },
+  "km ·": {
+    "en": "km ·",
+    "de": "km ·"
+  },
+  "senior unpaid": {
+    "en": "senior unpaid",
+    "de": "senior unpaid"
+  },
+  "senior unpaid praktikum": {
+    "en": "senior unpaid praktikum",
+    "de": "senior unpaid praktikum"
+  },
+  "ti@example.com": {
+    "en": "ti@example.com",
+    "de": "ti@example.com"
+  },
+  "v": {
+    "en": "v",
+    "de": "v"
+  },
+  "website, booking, crm": {
+    "en": "website, booking, crm",
+    "de": "website, booking, crm"
+  },
+  "white-label / saas / toolkit…": {
+    "en": "white-label / saas / toolkit…",
+    "de": "white-label / saas / toolkit…"
+  },
+  "· v": {
+    "en": "· v",
+    "de": "· v"
+  },
+  "· white-label": {
+    "en": "· white-label",
+    "de": "· white-label"
+  },
+  "Asistenti AI": {
+    "en": "AI assistant",
+    "de": "KI-Assistent"
+  },
+  "AI e aktivizuar": {
+    "en": "AI enabled",
+    "de": "KI aktiviert"
+  },
+  "AI e çaktivizuar ose e pakonfiguruar": {
+    "en": "AI disabled or not configured",
+    "de": "KI deaktiviert oder nicht konfiguriert"
+  },
+  "Lokale · Ollama": {
+    "en": "Local · Ollama",
+    "de": "Lokal · Ollama"
+  },
+  "Shërbim i jashtëm": {
+    "en": "External service",
+    "de": "Externer Dienst"
+  },
+  "Gjeneron vetëm kur e kërkon. Rishiko draftin përpara përdorimit; dërgimin e bën vetë.": {
+    "en": "Generates only when you ask. Review the draft before using it; you send it yourself.",
+    "de": "Erstellt Inhalte nur auf Anfrage. Prüfe den Entwurf vor der Verwendung; du sendest ihn selbst."
+  },
+  "Gati për kërkim": {
+    "en": "Ready to search",
+    "de": "Bereit für die Suche"
+  },
+  "Kërkon konfigurim": {
+    "en": "Setup required",
+    "de": "Einrichtung erforderlich"
+  },
+  "Konfiguro": {
+    "en": "Configure",
+    "de": "Einrichten"
+  },
+  "Feed-e lokale": {
+    "en": "Local feeds",
+    "de": "Lokale Feeds"
+  },
+  "RSS/Atom publike lokale · konfigurohen te Profili": {
+    "en": "Public local RSS/Atom · configure in Profile",
+    "de": "Öffentliche lokale RSS/Atom-Feeds · im Profil einrichten"
+  },
+  "Burimet publike ripërdorin përgjigjet e fundit për të shmangur kërkesat e përsëritura. Gjendja e konfigurimit nuk garanton disponueshmërinë e burimit.": {
+    "en": "Public sources reuse recent responses to avoid repeated requests. Configuration status does not guarantee source availability.",
+    "de": "Öffentliche Quellen verwenden aktuelle Antworten erneut, um wiederholte Anfragen zu vermeiden. Der Konfigurationsstatus garantiert keine Verfügbarkeit der Quelle."
+  },
+  "Lëre bosh për të ruajtur çelësin ekzistues": {
+    "en": "Leave blank to keep the saved key",
+    "de": "Leer lassen, um den gespeicherten Schlüssel zu behalten"
+  },
+  "Zgjidh plotësimin automatik ose rishikimin. Fushat ekzistuese ruhen; informacioni që mungon në CV nuk sajohet.": {
+    "en": "Choose autofill or review. Existing values are kept; information missing from the CV is not invented.",
+    "de": "Wähle automatisches Ausfüllen oder Prüfen. Vorhandene Angaben bleiben erhalten; fehlende Informationen werden nicht erfunden."
+  },
+  "Pas ngarkimit": {
+    "en": "After upload",
+    "de": "Nach dem Hochladen"
+  },
+  "Plotëso profilin automatikisht": {
+    "en": "Autofill my profile",
+    "de": "Profil automatisch ausfüllen"
+  },
+  "Nxirr vetëm sugjerime për rishikim": {
+    "en": "Only suggest changes for review",
+    "de": "Nur Vorschläge zur Prüfung erstellen"
+  },
+  "Vetëm ruaj CV-në": {
+    "en": "Only save the CV",
+    "de": "Lebenslauf nur speichern"
+  },
+  "Përdor AI për lexim më të plotë": {
+    "en": "Use AI for more complete extraction",
+    "de": "KI für eine vollständigere Erfassung verwenden"
+  },
+  "Me AI, teksti i CV-së dërgohet te shërbimi AI i konfiguruar. Pa këtë zgjedhje, lexohet vetëm lokalisht.": {
+    "en": "With AI, CV text is sent to your configured AI service. Without this option, it is processed only locally.",
+    "de": "Mit KI wird der Text des Lebenslaufs an deinen konfigurierten KI-Dienst gesendet. Ohne diese Option erfolgt die Verarbeitung nur lokal."
+  },
+  "Veprimi për CV-në e ruajtur": {
+    "en": "Action for the saved CV",
+    "de": "Aktion für den gespeicherten Lebenslauf"
+  },
+  "Përpuno CV-në": {
+    "en": "Process CV",
+    "de": "Lebenslauf verarbeiten"
+  },
+  "Ruaj ndryshimet e profilit përpara përpunimit të CV-së.": {
+    "en": "Save your profile changes before processing the CV.",
+    "de": "Speichere deine Profiländerungen, bevor du den Lebenslauf verarbeitest."
+  },
+  "CV: {merged} të dhëna u plotësuan; {pending} për rishikim.": {
+    "en": "CV: {merged} items filled; {pending} to review.",
+    "de": "Lebenslauf: {merged} Angaben ergänzt; {pending} zu prüfen."
+  },
+  "CV: {count} sugjerime për rishikim.": {
+    "en": "CV: {count} suggestions to review.",
+    "de": "Lebenslauf: {count} Vorschläge zur Prüfung."
+  },
+  "CV-ja është shumë e gjatë për leximin me AI; përdor rishikimin lokal.": {
+    "en": "The CV is too long for AI extraction; use local review.",
+    "de": "Der Lebenslauf ist für die KI-Erfassung zu lang; nutze die lokale Prüfung."
+  },
+  "Leximi me AI dështoi; u përdor leximi lokal.": {
+    "en": "AI extraction failed; local extraction was used.",
+    "de": "Die KI-Erfassung ist fehlgeschlagen; lokale Erfassung wurde verwendet."
+  },
+  "Disa të dhëna pa dëshmi të vlefshme u përjashtuan.": {
+    "en": "Some items without valid evidence were excluded.",
+    "de": "Einige Angaben ohne gültigen Beleg wurden ausgeschlossen."
+  },
+  "Profili u plotësua, por pikët nuk u rifreskuan. Ruaj profilin për t’i rillogaritur.": {
+    "en": "The profile was filled, but scores were not refreshed. Save the profile to recalculate them.",
+    "de": "Das Profil wurde ergänzt, aber die Bewertungen wurden nicht aktualisiert. Speichere das Profil, um sie neu zu berechnen."
+  },
+  "PDF me më shumë se 100 faqe; ngarko vetëm CV-në.": {
+    "en": "PDF exceeds 100 pages; upload only the CV.",
+    "de": "Die PDF enthält mehr als 100 Seiten; lade nur den Lebenslauf hoch."
+  },
+  "CV-ja është bosh.": {
+    "en": "The CV is empty.",
+    "de": "Der Lebenslauf ist leer."
+  },
+  "Po lexohet CV-ja…": {
+    "en": "Reading the CV…",
+    "de": "Lebenslauf wird gelesen…"
+  },
+  "Zgjidh mënyrën": {
+    "en": "Choose mode",
+    "de": "Modus wählen"
+  },
+  "Rishiko profilin": {
+    "en": "Review profile",
+    "de": "Profil prüfen"
+  },
+  "Ndrysho kur duhet": {
+    "en": "Edit if needed",
+    "de": "Bei Bedarf bearbeiten"
+  },
+  "Vazhdo te profili yt": {
+    "en": "Continue to your profile",
+    "de": "Weiter zu deinem Profil"
+  },
+  "Të dhënat e pranuara janë ruajtur. Refuzimi i një sugjerimi nuk fshin të dhënat ekzistuese. Kontrollo edhe fushat që kanë mbetur bosh.": {
+    "en": "Accepted details are saved. Rejecting a suggestion does not delete existing details. Check any fields that are still empty.",
+    "de": "Bestätigte Angaben sind gespeichert. Das Ablehnen eines Vorschlags löscht keine vorhandenen Angaben. Prüfe auch die noch leeren Felder."
+  },
+  "Shiko profilin tim": {
+    "en": "View my profile",
+    "de": "Mein Profil ansehen"
+  },
+  "Kontrollo aftësitë dhe përvojën": {
+    "en": "Review skills and experience",
+    "de": "Kenntnisse und Erfahrung prüfen"
+  },
+  "Shiko ofertat e punës": {
+    "en": "View job opportunities",
+    "de": "Stellenangebote ansehen"
+  },
+  "Kjo nuk do të thotë se çdo fushë e CV-së është importuar. Kontrollo profilin më poshtë.": {
+    "en": "This does not mean every CV field was imported. Use the links below to review your profile.",
+    "de": "Das bedeutet nicht, dass alle Angaben aus dem Lebenslauf importiert wurden. Prüfe dein Profil über die Links unten."
+  },
+  "HISTORIA JOTE PROFESIONALE": {
+    "en": "YOUR PROFESSIONAL STORY",
+    "de": "DEIN BERUFLICHER WEG"
+  },
+  "Profili yt": {
+    "en": "Your profile",
+    "de": "Dein Profil"
+  },
+  "Shto një titull që të përfaqëson": {
+    "en": "Add a title that represents you",
+    "de": "Ergänze einen passenden Titel"
+  },
+  "Ndrysho profilin": {
+    "en": "Edit profile",
+    "de": "Profil bearbeiten"
+  },
+  "RRETH MEJE": {
+    "en": "ABOUT ME",
+    "de": "ÜBER MICH"
+  },
+  "Përvoja jote ka më shumë lidhje.": {
+    "en": "Your experience opens more possibilities.",
+    "de": "Deine Erfahrung eröffnet neue Möglichkeiten."
+  },
+  "AI lexon CV-në dhe profilin, plotëson faktet që mungojnë dhe lidh përvojën me aftësi e drejtime të afërta pune.": {
+    "en": "AI reads your CV and profile, fills missing facts and connects experience with skills and related career directions.",
+    "de": "KI liest Lebenslauf und Profil, ergänzt fehlende Fakten und verbindet Erfahrung mit Kompetenzen und passenden Berufsfeldern."
+  },
+  "Me këtë veprim, teksti i CV-së dhe të dhënat profesionale dërgohen te shërbimi AI i konfiguruar.": {
+    "en": "This action sends your CV text and professional details to the configured AI service.",
+    "de": "Diese Aktion sendet deinen Lebenslauftext und deine beruflichen Angaben an den eingerichteten KI-Dienst."
+  },
+  "Plotëso dhe kupto profilin me AI": {
+    "en": "Complete and understand my profile with AI",
+    "de": "Mein Profil mit KI ergänzen und verstehen"
+  },
+  "Aftësitë dhe teknologjitë": {
+    "en": "Skills and technologies",
+    "de": "Kenntnisse und Technologien"
+  },
+  "Shto CV-në ose aftësitë e tua.": {
+    "en": "Add your CV or your skills.",
+    "de": "Füge deinen Lebenslauf oder deine Kenntnisse hinzu."
+  },
+  "Shto gjuhët dhe nivelet që zotëron.": {
+    "en": "Add your languages and proficiency levels.",
+    "de": "Ergänze deine Sprachen und Sprachkenntnisse."
+  },
+  "Përvoja ende nuk është plotësuar. Përdor AI ose shtoje vetë.": {
+    "en": "Your experience is still missing. Use AI or add it yourself.",
+    "de": "Deine Berufserfahrung fehlt noch. Nutze KI oder trage sie selbst ein."
+  },
+  "Hap lidhjen": {
+    "en": "Open link",
+    "de": "Link öffnen"
+  },
+  "Ende asnjë e dhënë në këtë seksion.": {
+    "en": "No details in this section yet.",
+    "de": "Hier sind noch keine Angaben vorhanden."
+  },
+  "NGA PËRVOJA TE MUNDËSITË": {
+    "en": "FROM EXPERIENCE TO OPPORTUNITIES",
+    "de": "VON ERFAHRUNG ZU CHANCEN"
+  },
+  "Harta e aftësive dhe drejtimeve": {
+    "en": "Your skills and career directions",
+    "de": "Deine Kompetenzen und Berufsrichtungen"
+  },
+  "Rifresko lidhjet me AI": {
+    "en": "Refresh connections with AI",
+    "de": "Verbindungen mit KI aktualisieren"
+  },
+  "Këto janë lidhje për kërkim, jo diploma ose tituj të konfirmuar. Mund t’i konfirmosh për kërkim ose t’i çaktivizosh. Nuk shtohen si pretendime në aplikime.": {
+    "en": "These are search connections, not confirmed degrees or titles. Confirm them for search or deactivate them. They are not added as claims in applications.",
+    "de": "Dies sind Suchverbindungen, keine bestätigten Abschlüsse oder Titel. Bestätige sie für die Suche oder deaktiviere sie. Sie werden nicht als Aussagen in Bewerbungen übernommen."
+  },
+  "Zbulo oferta për profilin tim": {
+    "en": "Discover opportunities for my profile",
+    "de": "Passende Angebote für mein Profil finden"
+  },
+  "Kërkon në Adzuna deri në 3 drejtime aktive, sipas vendndodhjes tënde. Lidhjet përdoren edhe në renditjen e ofertave.": {
+    "en": "Searches Adzuna for up to 3 active career directions near your location. Connections also help rank opportunities.",
+    "de": "Sucht auf Adzuna nach bis zu 3 aktiven Berufsrichtungen in deiner Nähe. Die Verbindungen helfen auch beim Sortieren der Angebote."
+  },
+  "Fotoja e profilit": {
+    "en": "Profile photo",
+    "de": "Profilfoto"
+  },
+  "Ngarko një foto ose zgjidh një imazh nga CV-ja. Fotoja nuk përdoret për vlerësimin e punëve.": {
+    "en": "Upload a photo or choose an image from your CV. Your photo is not used to evaluate job matches.",
+    "de": "Lade ein Foto hoch oder wähle ein Bild aus deinem Lebenslauf. Dein Foto wird nicht zur Bewertung passender Stellen verwendet."
+  },
+  "Zgjidh një foto": {
+    "en": "Choose a photo",
+    "de": "Foto auswählen"
+  },
+  "Ruaj foton": {
+    "en": "Save photo",
+    "de": "Foto speichern"
+  },
+  "Gjej fotot në CV": {
+    "en": "Find photos in CV",
+    "de": "Bilder im Lebenslauf finden"
+  },
+  "Hiq foton": {
+    "en": "Remove photo",
+    "de": "Foto entfernen"
+  },
+  "Çdo detaj i dobishëm hap më shumë mundësi.": {
+    "en": "Every useful detail opens more possibilities.",
+    "de": "Jedes hilfreiche Detail eröffnet neue Möglichkeiten."
+  },
+  "Drejtime pune": {
+    "en": "Career directions",
+    "de": "Berufsrichtungen"
+  },
+  "Aftësi të transferueshme": {
+    "en": "Transferable skills",
+    "de": "Übertragbare Fähigkeiten"
+  },
+  "Mjete dhe teknologji": {
+    "en": "Tools and technologies",
+    "de": "Werkzeuge und Technologien"
+  },
+  "Fusha profesionale": {
+    "en": "Professional fields",
+    "de": "Berufsfelder"
+  },
+  "Çfarë di të bësh": {
+    "en": "What you can do",
+    "de": "Was du kannst"
+  },
+  "Profili ka ndryshuar. Rifresko lidhjet; deri atëherë nuk ndikojnë në përputhje.": {
+    "en": "Your profile has changed. Refresh connections; until then they will not affect matching.",
+    "de": "Dein Profil hat sich geändert. Aktualisiere die Verbindungen; bis dahin beeinflussen sie die Zuordnung nicht."
+  },
+  "Konfirmuar për kërkim": {
+    "en": "Confirmed for search",
+    "de": "Für die Suche bestätigt"
+  },
+  "E çaktivizuar": {
+    "en": "Deactivated",
+    "de": "Deaktiviert"
+  },
+  "Lidhje nga AI · aktive": {
+    "en": "AI connection · active",
+    "de": "KI-Verbindung · aktiv"
+  },
+  "Pse lidhet me mua?": {
+    "en": "Why is this relevant to me?",
+    "de": "Warum passt das zu mir?"
+  },
+  "E konfirmuar ✓": {
+    "en": "Confirmed ✓",
+    "de": "Bestätigt ✓"
+  },
+  "Përdore për kërkim": {
+    "en": "Use for search",
+    "de": "Für die Suche verwenden"
+  },
+  "Nuk më përshtatet": {
+    "en": "Not relevant to me",
+    "de": "Passt nicht zu mir"
+  },
+  "Lidhjet e tua profesionale shfaqen këtu pas analizës me AI.": {
+    "en": "Your career connections will appear here after AI analysis.",
+    "de": "Nach der KI-Analyse erscheinen hier deine beruflichen Verbindungen."
+  },
+  "Lidhjet e kërkimit u përditësuan.": {
+    "en": "Search connections updated.",
+    "de": "Suchverbindungen aktualisiert."
+  },
+  "AI po lexon përvojën dhe po ndërton lidhjet…": {
+    "en": "AI is reading your experience and finding connections…",
+    "de": "KI liest deine Erfahrung und ermittelt Verbindungen…"
+  },
+  "Profili u pasurua. Rishiko faktet dhe lidhjet e reja.": {
+    "en": "Profile enriched. Review the facts and new connections.",
+    "de": "Profil ergänzt. Prüfe die Fakten und neuen Verbindungen."
+  },
+  "Po kërkohen oferta sipas drejtimeve të tua…": {
+    "en": "Searching for opportunities in your career directions…",
+    "de": "Passende Angebote zu deinen Berufsrichtungen werden gesucht…"
+  },
+  "U shtuan {count} oferta të reja.": {
+    "en": "Added {count} new opportunities.",
+    "de": "{count} neue Angebote hinzugefügt."
+  },
+  "Fotoja u ruajt.": {
+    "en": "Photo saved.",
+    "de": "Foto gespeichert."
+  },
+  "Fotoja u hoq.": {
+    "en": "Photo removed.",
+    "de": "Foto entfernt."
+  },
+  "Po kërkohen imazhet…": {
+    "en": "Looking for images…",
+    "de": "Bilder werden gesucht…"
+  },
+  "Zgjidh foton tënde. Imazhet e tjera mund të jenë logo ose dekorime.": {
+    "en": "Choose your photo. Other images may be logos or decorations.",
+    "de": "Wähle dein Foto. Andere Bilder können Logos oder Dekorationen sein."
+  },
+  "Përdor foton": {
+    "en": "Use photo",
+    "de": "Foto verwenden"
+  },
+  "Imazh nga CV-ja": {
+    "en": "Image from CV",
+    "de": "Bild aus dem Lebenslauf"
+  },
+  "Nuk u gjet foto e veçuar në CV. Ngarko një foto personale.": {
+    "en": "No separate photo found in your CV. Upload a personal photo.",
+    "de": "Kein separates Foto im Lebenslauf gefunden. Lade ein persönliches Foto hoch."
+  },
+  "Lidhje nga përvoja": {
+    "en": "Connections from experience",
+    "de": "Verbindungen aus Erfahrung"
+  },
+  "Shto CV-në ose përvojën tënde përpara analizës.": {
+    "en": "Add your CV or experience before analysis.",
+    "de": "Füge vor der Analyse deinen Lebenslauf oder deine Erfahrung hinzu."
+  },
+  "Profili është shumë i gjatë për një analizë të vetme.": {
+    "en": "The profile is too long for a single analysis.",
+    "de": "Das Profil ist für eine einzelne Analyse zu lang."
+  },
+  "Analiza e profilit dështoi. Provo përsëri.": {
+    "en": "Profile analysis failed. Try again.",
+    "de": "Profilanalyse fehlgeschlagen. Versuche es erneut."
+  },
+  "Profili ndryshoi gjatë analizës. Provo përsëri.": {
+    "en": "Your profile changed during analysis. Try again.",
+    "de": "Dein Profil wurde während der Analyse geändert. Versuche es erneut."
+  },
+  "Nuk u gjetën lidhje me dëshmi të mjaftueshme.": {
+    "en": "No connections with sufficient evidence were found.",
+    "de": "Keine Verbindungen mit ausreichenden Belegen gefunden."
+  },
+  "Profili ka ndryshuar. Rifresko analizën përpara kërkimit.": {
+    "en": "Your profile changed. Refresh the analysis before searching.",
+    "de": "Dein Profil hat sich geändert. Aktualisiere die Analyse vor der Suche."
+  },
+  "Aktivizo të paktën një drejtim kërkimi.": {
+    "en": "Activate at least one career direction.",
+    "de": "Aktiviere mindestens eine Berufsrichtung."
+  },
+  "Lidh Adzuna te Burimet për kërkimin sipas roleve.": {
+    "en": "Connect Adzuna under Sources to search by career direction.",
+    "de": "Verbinde Adzuna unter Quellen, um nach Berufsrichtungen zu suchen."
+  },
+  "Fotoja duhet të jetë deri në 5 MB.": {
+    "en": "Your photo must be no larger than 5 MB.",
+    "de": "Dein Foto darf höchstens 5 MB groß sein."
+  },
+  "Zgjidh një foto të vlefshme JPG, PNG ose WebP.": {
+    "en": "Choose a valid JPG, PNG or WebP photo.",
+    "de": "Wähle ein gültiges JPG-, PNG- oder WebP-Foto."
+  },
+  "Zgjidh një foto.": {
+    "en": "Choose a photo.",
+    "de": "Wähle ein Foto."
+  },
+  "CV-ja ndryshoi. Rifresko fotot.": {
+    "en": "Your CV changed. Refresh the photos.",
+    "de": "Dein Lebenslauf wurde geändert. Aktualisiere die Fotos."
+  },
+  "Detaje": {
+    "en": "Details",
+    "de": "Details"
+  },
+  "Ndrysho foton": {
+    "en": "Change photo",
+    "de": "Foto ändern"
+  },
+  "Mbyll": {
+    "en": "Close",
+    "de": "Schließen"
+  },
+  "Fotoja nga CV-ja u vendos në profil. Mund ta ndryshosh te Profili im.": {
+    "en": "The CV photo was added to your profile. You can change it in My profile.",
+    "de": "Das Foto aus dem Lebenslauf wurde deinem Profil hinzugefügt. Du kannst es unter Mein Profil ändern."
+  },
+  "CV-ja ka disa imazhe. Zgjidh foton tënde te Profili im.": {
+    "en": "The CV contains several images. Choose your photo in My profile.",
+    "de": "Der Lebenslauf enthält mehrere Bilder. Wähle dein Foto unter Mein Profil aus."
+  },
+  "Me plotësimin automatik, një foto e përshtatshme nga CV-ja vendoset në profil nëse nuk ke foto. Mund ta ndryshosh më pas.": {
+    "en": "Autofill adds a suitable CV photo if your profile has no photo. You can change it afterwards.",
+    "de": "Beim automatischen Ausfüllen wird ein geeignetes Lebenslauffoto übernommen, falls dein Profil kein Foto hat. Du kannst es danach ändern."
+  },
+  "Kontrolli i aftësive nga përvoja nuk përfundoi; të dhënat e lexuara u ruajtën.": {
+    "en": "The check for skills in work experience did not finish; extracted data was retained.",
+    "de": "Die Prüfung der Fähigkeiten aus der Berufserfahrung wurde nicht abgeschlossen; die gelesenen Daten wurden gespeichert."
+  },
+  "Ndërto profilin": {
+    "en": "Build your profile",
+    "de": "Profil aufbauen"
+  },
+  "NJË PROFIL, SHUMË MUNDËSI": {
+    "en": "ONE PROFILE, MANY OPPORTUNITIES",
+    "de": "EIN PROFIL, VIELE MÖGLICHKEITEN"
+  },
+  "Fillo me historinë tënde.": {
+    "en": "Start with your story.",
+    "de": "Beginne mit deiner Geschichte."
+  },
+  "Ngarko CV-në ose na trego për veten. Rishiko rezultatin dhe vazhdo; mund ta plotësosh kur të duash.": {
+    "en": "Upload your CV or tell us about yourself. Review the result and continue; you can add more anytime.",
+    "de": "Lade deinen Lebenslauf hoch oder erzähle von dir. Prüfe das Ergebnis und mache weiter; du kannst jederzeit etwas ergänzen."
+  },
+  "Kam një CV": {
+    "en": "I have a CV",
+    "de": "Ich habe einen Lebenslauf"
+  },
+  "Nxirr të dhënat dhe foton nga dokumenti.": {
+    "en": "Extract details and a photo from the document.",
+    "de": "Daten und Foto aus dem Dokument übernehmen."
+  },
+  "Dua të përshkruaj veten": {
+    "en": "I want to describe myself",
+    "de": "Ich möchte mich beschreiben"
+  },
+  "Mjaftojnë disa fjali. AI i organizon për ty.": {
+    "en": "A few sentences are enough. AI organizes them for you.",
+    "de": "Ein paar Sätze genügen. Die KI ordnet sie für dich."
+  },
+  "Të dhënat e tua · plotësohen vetëm një herë": {
+    "en": "Your details · enter them once",
+    "de": "Deine Daten · nur einmal eingeben"
+  },
+  "Emri dhe emaili përdoren nga llogaria kur janë të disponueshme. Adresën dhe telefonin i jep ti ose CV-ja.": {
+    "en": "Your account name and email are reused when available. Your address and phone come from you or your CV.",
+    "de": "Name und E-Mail werden aus dem Konto übernommen, wenn vorhanden. Adresse und Telefon stammen von dir oder deinem Lebenslauf."
+  },
+  "Fotoja është opsionale": {
+    "en": "A photo is optional",
+    "de": "Ein Foto ist optional"
+  },
+  "Shto ose ndrysho foton": {
+    "en": "Add or change photo",
+    "de": "Foto hinzufügen oder ändern"
+  },
+  "Mund të vazhdosh edhe pa foto.": {
+    "en": "You can continue without a photo.",
+    "de": "Du kannst ohne Foto fortfahren."
+  },
+  "Çfarë di të bësh dhe çfarë po kërkon?": {
+    "en": "What can you do, and what are you looking for?",
+    "de": "Was kannst du und was suchst du?"
+  },
+  "Trego për punën, shkollën, gjuhët, interesat dhe orarin që dëshiron…": {
+    "en": "Tell us about your work, education, languages, interests and preferred schedule…",
+    "de": "Erzähle von Arbeit, Ausbildung, Sprachen, Interessen und deinen gewünschten Arbeitszeiten…"
+  },
+  "Përfshi çfarë dëshiron. Mosha dhe shtetësia janë opsionale dhe nuk ndryshojnë pikët e përputhjes.": {
+    "en": "Include what you wish. Age and nationality are optional and do not affect match scores.",
+    "de": "Gib an, was du möchtest. Alter und Staatsangehörigkeit sind optional und beeinflussen die Passungswerte nicht."
+  },
+  "Organizo me AI": {
+    "en": "Organize with AI",
+    "de": "Mit KI strukturieren"
+  },
+  "Përshkrimi dërgohet te shërbimi AI i konfiguruar.": {
+    "en": "Your description is sent to the configured AI service.",
+    "de": "Deine Beschreibung wird an den konfigurierten KI-Dienst gesendet."
+  },
+  "NJË SHEMBULL": {
+    "en": "AN EXAMPLE",
+    "de": "EIN BEISPIEL"
+  },
+  "Jetoj në Essen. Kam studiuar gjuhën gjermane dhe kam përvojë në punë teknike. Flas shqip dhe gjermanisht B2. Më pëlqejnë natyra dhe kafshët. Kërkoj punë pasdite ose fundjavë, deri 30 km larg. Kam patentë B, por nuk kam makinë.": {
+    "en": "I live in Essen. I studied German and have technical work experience. I speak Albanian and German at B2 level. I enjoy nature and animals. I am looking for afternoon or weekend work within 30 km. I have a category B driving licence, but no car.",
+    "de": "Ich lebe in Essen. Ich habe Deutsch studiert und Erfahrung mit technischen Arbeiten. Ich spreche Albanisch und Deutsch auf B2-Niveau. Ich mag Natur und Tiere. Ich suche Arbeit nachmittags oder am Wochenende, bis zu 30 km entfernt. Ich habe einen Führerschein Klasse B, aber kein Auto."
+  },
+  "Ky është vetëm shembull. Në profil ruhen vetëm të dhënat që jep dhe konfirmon ti.": {
+    "en": "This is only an example. Only details you provide and confirm are saved to your profile.",
+    "de": "Dies ist nur ein Beispiel. Nur von dir angegebene und bestätigte Daten werden im Profil gespeichert."
+  },
+  "PARASHIKIMI YT": {
+    "en": "YOUR PREVIEW",
+    "de": "DEINE VORSCHAU"
+  },
+  "A të përfaqëson kjo?": {
+    "en": "Does this represent you?",
+    "de": "Passt das zu dir?"
+  },
+  "Ndrysho fushat ose hiq përzgjedhjen. Asgjë nuk bëhet pjesë e profilit pa e ruajtur këtu.": {
+    "en": "Edit fields or deselect items. Nothing becomes part of your profile until you save it here.",
+    "de": "Bearbeite Felder oder wähle Einträge ab. Erst beim Speichern werden sie Teil deines Profils."
+  },
+  "Diçka mungon?": {
+    "en": "Something missing?",
+    "de": "Fehlt etwas?"
+  },
+  "Shto plotësim": {
+    "en": "Add a detail",
+    "de": "Angabe ergänzen"
+  },
+  "Ruaj profilin dhe vazhdo": {
+    "en": "Save profile and continue",
+    "de": "Profil speichern und weiter"
+  },
+  "Fushat që mungojnë mund t’i plotësosh më vonë.": {
+    "en": "You can fill missing fields later.",
+    "de": "Fehlende Angaben kannst du später ergänzen."
+  },
+  "Hobi & interesa": {
+    "en": "Hobbies & interests",
+    "de": "Hobbys & Interessen"
+  },
+  "Çfarë kërkon": {
+    "en": "What you are looking for",
+    "de": "Was du suchst"
+  },
+  "Të dhëna personale · opsionale": {
+    "en": "Personal details · optional",
+    "de": "Persönliche Daten · optional"
+  },
+  "Adresa": {
+    "en": "Address",
+    "de": "Adresse"
+  },
+  "Datëlindja": {
+    "en": "Date of birth",
+    "de": "Geburtsdatum"
+  },
+  "Mosha e deklaruar": {
+    "en": "Stated age",
+    "de": "Angegebenes Alter"
+  },
+  "Shtetësia": {
+    "en": "Nationality",
+    "de": "Staatsangehörigkeit"
+  },
+  "Puna që kërkon": {
+    "en": "Work you are looking for",
+    "de": "Gesuchte Tätigkeit"
+  },
+  "Udhëtimi": {
+    "en": "Travel",
+    "de": "Anfahrt"
+  },
+  "Pagesa e dëshiruar": {
+    "en": "Desired pay",
+    "de": "Gewünschte Vergütung"
+  },
+  "Plotëso me një përshkrim": {
+    "en": "Add details with a description",
+    "de": "Mit einer Beschreibung ergänzen"
+  },
+  "Krijo CV profesionale": {
+    "en": "Create a professional CV",
+    "de": "Professionellen Lebenslauf erstellen"
+  },
+  "Interesat mund të hapin drejtime të tjera pune. Shtoji nëse dëshiron.": {
+    "en": "Interests can open other work directions. Add them if you wish.",
+    "de": "Interessen können weitere berufliche Möglichkeiten eröffnen. Ergänze sie, wenn du möchtest."
+  },
+  "Interesat nuk paraqiten si përvojë profesionale.": {
+    "en": "Interests are not presented as professional experience.",
+    "de": "Interessen werden nicht als Berufserfahrung dargestellt."
+  },
+  "Sipas profilit · AI": {
+    "en": "Based on your profile · AI",
+    "de": "Nach deinem Profil · KI"
+  },
+  "Eksploro oferta": {
+    "en": "Explore listings",
+    "de": "Angebote entdecken"
+  },
+  "JASHTË KËRKIMIT KRYESOR": {
+    "en": "BEYOND YOUR MAIN SEARCH",
+    "de": "ABSEITS DEINER HAUPTSUCHE"
+  },
+  "Mundësi që mund të mos i kishe menduar": {
+    "en": "Opportunities you may not have considered",
+    "de": "Möglichkeiten, an die du vielleicht noch nicht gedacht hast"
+  },
+  "Një lidhje tjetër me profilin tënd": {
+    "en": "Another connection to your profile",
+    "de": "Ein weiterer Bezug zu deinem Profil"
+  },
+  "Për t’u verifikuar": {
+    "en": "Needs verification",
+    "de": "Zu prüfen"
+  },
+  "Bazuar në interes; përvoja duhet verifikuar.": {
+    "en": "Based on an interest; experience needs verification.",
+    "de": "Auf einem Interesse basierend; Erfahrung muss geprüft werden."
+  },
+  "Jashtë drejtimit kryesor": {
+    "en": "Beyond the main direction",
+    "de": "Außerhalb der Hauptrichtung"
+  },
+  "Kërkon në Adzuna deri në 6 drejtime, përfshirë mundësi jashtë drejtimit kryesor. Lidhjet përdoren edhe në renditjen e ofertave.": {
+    "en": "Searches up to 6 directions in Adzuna plus connected job sources. Career connections also inform ranking.",
+    "de": "Sucht bis zu 6 Richtungen in Adzuna sowie verbundene Stellenquellen. Berufliche Verbindungen beeinflussen auch die Rangfolge."
+  },
+  "Kontrollo plotësime për profilin": {
+    "en": "Check for profile additions",
+    "de": "Profilergänzungen prüfen"
+  },
+  "Ruaj ndryshimet e tua në draft përpara kontrollit të profilit.": {
+    "en": "Save your draft edits before checking for profile additions.",
+    "de": "Speichere deine Änderungen am Entwurf, bevor du Profilergänzungen prüfst."
+  },
+  "Po kontrollohen plotësimet…": {
+    "en": "Checking for additions…",
+    "de": "Ergänzungen werden geprüft…"
+  },
+  "Kontaktet": {
+    "en": "Contact details",
+    "de": "Kontaktdaten"
+  },
+  "Përmbledhje": {
+    "en": "Summary",
+    "de": "Zusammenfassung"
+  },
+  "Në profil aktualisht": {
+    "en": "Currently in your profile",
+    "de": "Derzeit in deinem Profil"
+  },
+  "Shiko tekstin burim": {
+    "en": "View source text",
+    "de": "Quelltext anzeigen"
+  },
+  "Rishiko të dhënat. Fushat e papërzgjedhura nuk ruhen.": {
+    "en": "Review the details. Unselected fields will not be saved.",
+    "de": "Prüfe die Angaben. Nicht ausgewählte Felder werden nicht gespeichert."
+  },
+  "AI po organizon përshkrimin tënd…": {
+    "en": "AI is organizing your description…",
+    "de": "Die KI strukturiert deine Beschreibung…"
+  },
+  "Po ruhet profili dhe po ndërtohen lidhjet…": {
+    "en": "Saving your profile and building connections…",
+    "de": "Das Profil wird gespeichert und Verbindungen werden erstellt…"
+  },
+  "Profili u ruajt. Mund ta plotësosh kur të duash.": {
+    "en": "Profile saved. You can add details anytime.",
+    "de": "Profil gespeichert. Du kannst jederzeit Angaben ergänzen."
+  },
+  "Përshkrimi duhet të ketë 20–12000 karaktere.": {
+    "en": "The description must contain 20–12000 characters.",
+    "de": "Die Beschreibung muss 20–12000 Zeichen enthalten."
+  },
+  "Profili ndryshoi. Gjenero parashikimin përsëri.": {
+    "en": "Your profile changed. Generate a new preview.",
+    "de": "Dein Profil wurde geändert. Erstelle eine neue Vorschau."
+  },
+  "Parashikimi është i pavlefshëm.": {
+    "en": "The preview is invalid.",
+    "de": "Die Vorschau ist ungültig."
+  },
+  "Parashikimi nuk u gjet. Gjeneroje përsëri.": {
+    "en": "Preview not found. Generate it again.",
+    "de": "Vorschau nicht gefunden. Erstelle sie erneut."
+  },
+  "Aplikimi nuk u gjet.": {
+    "en": "Application not found.",
+    "de": "Bewerbung nicht gefunden."
+  },
+  "CV-ja jote profesionale": {
+    "en": "Your professional CV",
+    "de": "Dein professioneller Lebenslauf"
+  },
+  "NGA PROFILI TE CV-JA": {
+    "en": "FROM PROFILE TO CV",
+    "de": "VOM PROFIL ZUM LEBENSLAUF"
+  },
+  "Një prezantim që të përfaqëson.": {
+    "en": "A presentation that represents you.",
+    "de": "Eine Vorstellung, die zu dir passt."
+  },
+  "Përdor të dhënat që ke ruajtur. Pa i plotësuar nga e para.": {
+    "en": "Use your saved details without entering them again.",
+    "de": "Nutze deine gespeicherten Angaben, ohne sie erneut einzugeben."
+  },
+  "Plotësimi i CV-së": {
+    "en": "CV completeness",
+    "de": "Vollständigkeit des Lebenslaufs"
+  },
+  "Ky tregues mat plotësimin e dokumentit, jo shanset për t’u punësuar.": {
+    "en": "This measures document completeness, not your chances of being hired.",
+    "de": "Dieser Wert misst die Vollständigkeit des Dokuments, nicht deine Einstellungschancen."
+  },
+  "Mund të plotësosh": {
+    "en": "You can add",
+    "de": "Du kannst ergänzen"
+  },
+  "Gjuha e titujve": {
+    "en": "Heading language",
+    "de": "Sprache der Überschriften"
+  },
+  "Përmbajtja mbetet në gjuhën e profilit; nuk përkthehet automatikisht.": {
+    "en": "Content stays in the profile language; it is not automatically translated.",
+    "de": "Die Inhalte bleiben in der Profilsprache und werden nicht automatisch übersetzt."
+  },
+  "Aftësi në dokument": {
+    "en": "Skills in the document",
+    "de": "Fähigkeiten im Dokument"
+  },
+  "Përfshi projektet": {
+    "en": "Include projects",
+    "de": "Projekte einschließen"
+  },
+  "Përfshi foton": {
+    "en": "Include photo",
+    "de": "Foto einschließen"
+  },
+  "Përfshi të dhënat personale opsionale": {
+    "en": "Include optional personal details",
+    "de": "Optionale persönliche Daten einschließen"
+  },
+  "Përditëso parashikimin": {
+    "en": "Update preview",
+    "de": "Vorschau aktualisieren"
+  },
+  "Shkarko PDF": {
+    "en": "Download PDF",
+    "de": "PDF herunterladen"
+  },
+  "Ndrysho të dhënat në profil": {
+    "en": "Edit your profile details",
+    "de": "Profilangaben bearbeiten"
+  },
+  "PDF-në mund ta bashkëngjitësh vetë te aplikimi në platformën origjinale.": {
+    "en": "You can attach the PDF to your application on the original platform.",
+    "de": "Du kannst die PDF auf der ursprünglichen Plattform an deine Bewerbung anhängen."
+  },
+  "Rreth meje": {
+    "en": "About me",
+    "de": "Profil"
+  },
+  "Lidhje me profilin": {
+    "en": "Profile connections",
+    "de": "Profilbezüge"
+  },
+  "Gjuha e CV-së": {
+    "en": "CV language",
+    "de": "Sprache des Lebenslaufs"
+  },
+  "Ky dokument është për shkarkim. Profili yt nuk ndryshon.": {
+    "en": "This document is for download. Your profile stays unchanged.",
+    "de": "Dieses Dokument ist zum Herunterladen. Dein Profil bleibt unverändert."
+  },
+  "AI përshtat përmbajtjen dhe kontrollon gjuhën e faktet, duke ruajtur të dhënat e tua.": {
+    "en": "AI adapts the content and checks language and facts while preserving your information.",
+    "de": "KI passt den Inhalt an und prüft Sprache und Fakten, ohne deine Angaben zu verändern."
+  },
+  "Gjenero CV-në me AI": {
+    "en": "Generate CV with AI",
+    "de": "Lebenslauf mit KI erstellen"
+  },
+  "CV-ja në këtë gjuhë është gati për rishikim dhe shkarkim.": {
+    "en": "Your CV in this language is ready to review and download.",
+    "de": "Dein Lebenslauf in dieser Sprache ist zur Prüfung und zum Download bereit."
+  },
+  "Zgjidh gjuhën dhe gjenero CV-në. Më poshtë shfaqen të dhënat burimore të profilit.": {
+    "en": "Choose a language and generate your CV. The original profile content appears below.",
+    "de": "Wähle eine Sprache und erstelle deinen Lebenslauf. Unten stehen die ursprünglichen Profilangaben."
+  },
+  "Zgjedhjet ndryshuan. Gjenero CV-në përpara shkarkimit.": {
+    "en": "Options changed. Generate the CV before downloading.",
+    "de": "Die Auswahl wurde geändert. Erstelle den Lebenslauf vor dem Download."
+  },
+  "AI po shkruan CV-në dhe po kontrollon gjuhën e faktet…": {
+    "en": "AI is writing your CV and checking language and facts…",
+    "de": "KI erstellt deinen Lebenslauf und prüft Sprache und Fakten…"
+  },
+  "Zgjidh shqip, anglisht ose gjermanisht.": {
+    "en": "Choose Albanian, English or German.",
+    "de": "Wähle Albanisch, Englisch oder Deutsch."
+  },
+  "Plotëso profilin përpara se të gjenerosh CV-në.": {
+    "en": "Complete your profile before generating a CV.",
+    "de": "Ergänze dein Profil, bevor du einen Lebenslauf erstellst."
+  },
+  "CV-ja është shumë e gjatë. Përfshi më pak projekte ose aftësi.": {
+    "en": "The CV is too long. Include fewer projects or skills.",
+    "de": "Der Lebenslauf ist zu lang. Wähle weniger Projekte oder Fähigkeiten aus."
+  },
+  "Kontrolli i CV-së nuk përfundoi. Provo përsëri; profili nuk ndryshoi.": {
+    "en": "The CV check could not finish. Try again; your profile is unchanged.",
+    "de": "Die Lebenslaufprüfung wurde nicht abgeschlossen. Versuche es erneut; dein Profil ist unverändert."
+  },
+  "Profili ndryshoi gjatë gjenerimit. Gjenero CV-në përsëri.": {
+    "en": "Your profile changed during generation. Generate the CV again.",
+    "de": "Dein Profil wurde während der Erstellung geändert. Erstelle den Lebenslauf erneut."
+  },
+  "Gjenero CV-në në gjuhën e zgjedhur përpara shkarkimit.": {
+    "en": "Generate the CV in the chosen language before downloading.",
+    "de": "Erstelle den Lebenslauf vor dem Download in der gewählten Sprache."
+  },
+  "Këto ndryshime zëvendësojnë të dhëna ekzistuese. Konfirmoji përpara ruajtjes.": {
+    "en": "These changes replace existing information. Confirm them before saving.",
+    "de": "Diese Änderungen ersetzen vorhandene Angaben. Bestätige sie vor dem Speichern."
+  },
+  "Po plotëson të njëjtin profil. Të dhënat ekzistuese nuk zëvendësohen pa konfirmimin tënd.": {
+    "en": "You are adding to the same profile. Existing information is not replaced without your confirmation.",
+    "de": "Du ergänzt dasselbe Profil. Vorhandene Angaben werden nur mit deiner Bestätigung ersetzt."
+  },
+  "Do t’i ndryshosh këto të dhëna?": {
+    "en": "Change this existing information?",
+    "de": "Diese vorhandenen Angaben ändern?"
+  },
+  "Vetëm fushat më poshtë do të ndryshojnë. Pjesa tjetër e profilit ruhet.": {
+    "en": "Only the fields below will change. The rest of your profile is preserved.",
+    "de": "Nur die folgenden Felder ändern sich. Der Rest deines Profils bleibt erhalten."
+  },
+  "Mbaj profilin aktual": {
+    "en": "Keep current profile",
+    "de": "Aktuelles Profil behalten"
+  },
+  "Konfirmo ndryshimet": {
+    "en": "Confirm changes",
+    "de": "Änderungen bestätigen"
+  },
+  "Aktualisht": {
+    "en": "Currently",
+    "de": "Bisher"
+  },
+  "Pas ndryshimit": {
+    "en": "After the change",
+    "de": "Nach der Änderung"
+  },
+  "Ndryshimet nuk u ruajtën. Profili ekzistues mbetet siç ishte.": {
+    "en": "Changes were not saved. Your existing profile is unchanged.",
+    "de": "Die Änderungen wurden nicht gespeichert. Dein bestehendes Profil bleibt unverändert."
+  },
+  "Jep përparësi": {
+    "en": "Prioritize",
+    "de": "Priorisieren"
+  },
+  "Hiq përparësinë": {
+    "en": "Remove priority",
+    "de": "Priorität aufheben"
+  },
+  "Prioritet për kërkim": {
+    "en": "Search priority",
+    "de": "Suchpriorität"
+  },
+  "Jep përparësi e favorizon këtë drejtim në kërkim. Nuk dërgon aplikime dhe nuk shton kualifikime në CV.": {
+    "en": "Prioritize favors this direction in searches. It does not send applications or add qualifications to your CV.",
+    "de": "Priorisieren bevorzugt diese Richtung bei der Suche. Es versendet keine Bewerbungen und ergänzt keine Qualifikationen im Lebenslauf."
+  },
+  "Përdoruesi · pilot lokal": {
+    "en": "User · local pilot",
+    "de": "Benutzer · lokaler Pilot"
+  },
+  "Ndërro përdoruesin": {
+    "en": "Switch user",
+    "de": "Benutzer wechseln"
+  },
+  "Piloti 2": {
+    "en": "Pilot 2",
+    "de": "Pilot 2"
+  },
+  "Përdoruesi ndryshoi. Rifresko faqen përpara ruajtjes.": {
+    "en": "The user changed. Reload the page before saving.",
+    "de": "Der Benutzer wurde gewechselt. Lade die Seite vor dem Speichern neu."
+  },
+  "Kërkim i zgjeruar": {
+    "en": "Extended search",
+    "de": "Erweiterte Suche"
+  },
+  "MË SHUMË BURIME, MË SHUMË MUNDËSI": {
+    "en": "MORE SOURCES, MORE OPPORTUNITIES",
+    "de": "MEHR QUELLEN, MEHR MÖGLICHKEITEN"
+  },
+  "Kërko për hapin tënd të ardhshëm.": {
+    "en": "Search for your next step.",
+    "de": "Finde deinen nächsten Schritt."
+  },
+  "Punë, freelance, minijob ose kërkesa që mund t’i zgjidhësh me produktet e tua.": {
+    "en": "Jobs, freelance work, minijobs or requests your products could solve.",
+    "de": "Jobs, freiberufliche Projekte, Minijobs oder Anfragen, die deine Produkte lösen könnten."
+  },
+  "Çfarë mundësie kërkon?": {
+    "en": "What opportunity are you looking for?",
+    "de": "Welche Möglichkeit suchst du?"
+  },
+  "Klientë për produktet e mia": {
+    "en": "Customers for my products",
+    "de": "Kunden für meine Produkte"
+  },
+  "Përdor një produkt": {
+    "en": "Use a product",
+    "de": "Produkt verwenden"
+  },
+  "Pa produkt të zgjedhur": {
+    "en": "No product selected",
+    "de": "Kein Produkt ausgewählt"
+  },
+  "Profesion, aftësi ose zgjidhje që ofron": {
+    "en": "Profession, skill or solution you offer",
+    "de": "Beruf, Fähigkeit oder angebotene Lösung"
+  },
+  "Burimet zgjidhen sipas llojit të mundësisë. Profili yt përdoret për renditjen; kushtet e punëdhënësit duhen kontrolluar.": {
+    "en": "Sources are selected for the opportunity type. Your profile informs ranking; employer requirements need review.",
+    "de": "Quellen werden nach Art der Möglichkeit ausgewählt. Dein Profil beeinflusst die Rangfolge; Arbeitgeberanforderungen müssen geprüft werden."
+  },
+  "Kërko në burimet e lidhura": {
+    "en": "Search connected sources",
+    "de": "Verbundene Quellen durchsuchen"
+  },
+  "Shiko rezultatet": {
+    "en": "View results",
+    "de": "Ergebnisse ansehen"
+  },
+  "Mbulimi i kërkimit": {
+    "en": "Search coverage",
+    "de": "Suchabdeckung"
+  },
+  "Aktive do të thotë të konfiguruara; rezultati i secilit burim shfaqet pas kërkimit.": {
+    "en": "Active means configured; each source result appears after searching.",
+    "de": "Aktiv bedeutet konfiguriert; das Ergebnis jeder Quelle erscheint nach der Suche."
+  },
+  "Lidh Google Jobs dhe kërkimin në web": {
+    "en": "Connect Google Jobs and web search",
+    "de": "Google Jobs und Websuche verbinden"
+  },
+  "Rezultatet nga web janë pista për verifikim. LinkedIn dhe Fiverr nuk janë lidhje direkte aktive.": {
+    "en": "Web results are leads to verify. LinkedIn and Fiverr are not active direct integrations.",
+    "de": "Webergebnisse sind zu prüfende Hinweise. LinkedIn und Fiverr sind keine aktiven direkten Integrationen."
+  },
+  "Shto faqet e kompanive që të interesojnë": {
+    "en": "Add company boards you want to follow",
+    "de": "Interessante Unternehmensseiten hinzufügen"
+  },
+  "Shkruaj identifikuesit e faqeve të kompanive, të ndarë me presje. Deri në 8 për burim. Ruhen vetëm për përdoruesin aktual.": {
+    "en": "Enter company board identifiers, separated by commas. Up to 8 per source. Saved for the current user only.",
+    "de": "Kennungen der Unternehmensseiten durch Kommas trennen. Bis zu 8 pro Quelle. Nur für den aktuellen Benutzer gespeichert."
+  },
+  "Identifikuesit e kompanive": {
+    "en": "Company identifiers",
+    "de": "Unternehmenskennungen"
+  },
+  "Çelësat ruhen në server. Lëri bosh për të mbajtur lidhjen ekzistuese.": {
+    "en": "Keys are stored on the server. Leave blank to retain the existing connection.",
+    "de": "Schlüssel werden auf dem Server gespeichert. Leer lassen, um die bestehende Verbindung zu behalten."
+  },
+  "Po përgatitet kërkimi…": {
+    "en": "Preparing the search…",
+    "de": "Suche wird vorbereitet…"
+  },
+  "Po kërkohet në": {
+    "en": "Searching",
+    "de": "Suche in"
+  },
+  "Nuk ka burime të lidhura për këtë kërkim. Plotëso kërkimin ose lidh burimet.": {
+    "en": "No connected sources for this search. Enter a query or connect sources.",
+    "de": "Keine verbundenen Quellen für diese Suche. Suchtext eingeben oder Quellen verbinden."
+  },
+  "Punë remote · burim publik": {
+    "en": "Remote jobs · public source",
+    "de": "Remote-Jobs · öffentliche Quelle"
+  },
+  "Faqet e punëdhënësve · shto kompanitë te Burimet": {
+    "en": "Employer boards · add companies in Sources",
+    "de": "Arbeitgeberseiten · Unternehmen unter Quellen hinzufügen"
+  },
+  "Punësim nga kompanitë · thread mujor publik": {
+    "en": "Company hiring · public monthly thread",
+    "de": "Stellenangebote von Unternehmen · öffentlicher monatlicher Thread"
+  },
+  "Kërkim Google Jobs · kërkon çelës SerpApi": {
+    "en": "Google Jobs search · requires a SerpApi key",
+    "de": "Google-Jobs-Suche · SerpApi-Schlüssel erforderlich"
+  },
+  "Punë dhe kërkesa projektesh në web · kërkon çelës": {
+    "en": "Jobs and project requests on the web · key required",
+    "de": "Jobs und Projektanfragen im Web · Schlüssel erforderlich"
+  },
+  "Kërkon deri në 6 drejtime në Adzuna dhe në burimet e tjera të lidhura. Lidhjet përdoren edhe në renditjen e ofertave.": {
+    "en": "Searches up to 6 directions in Adzuna plus connected job sources. Career connections also inform ranking.",
+    "de": "Sucht bis zu 6 Richtungen in Adzuna sowie verbundene Stellenquellen. Berufliche Verbindungen beeinflussen auch die Rangfolge."
+  },
+  "Gjermani · njoftime zyrtare publike": {
+    "en": "Germany · official public notices",
+    "de": "Deutschland · offizielle öffentliche Bekanntmachungen"
+  },
+  "Holandë": {
+    "en": "Netherlands",
+    "de": "Niederlande"
+  },
+  "Belgjikë": {
+    "en": "Belgium",
+    "de": "Belgien"
+  },
+  "Francë": {
+    "en": "France",
+    "de": "Frankreich"
+  },
+  "Poloni": {
+    "en": "Poland",
+    "de": "Polen"
+  },
+  "Itali": {
+    "en": "Italy",
+    "de": "Italien"
+  },
+  "Spanjë": {
+    "en": "Spain",
+    "de": "Spanien"
+  },
+  "Mbretëria e Bashkuar": {
+    "en": "United Kingdom",
+    "de": "Vereinigtes Königreich"
+  },
+  "SHBA": {
+    "en": "USA",
+    "de": "USA"
+  },
+  "Kanada": {
+    "en": "Canada",
+    "de": "Kanada"
+  },
+  "Australi": {
+    "en": "Australia",
+    "de": "Australien"
+  },
+  "Zelandë e Re": {
+    "en": "New Zealand",
+    "de": "Neuseeland"
+  },
+  "Brazil": {
+    "en": "Brazil",
+    "de": "Brasilien"
+  },
+  "Indi": {
+    "en": "India",
+    "de": "Indien"
+  },
+  "Meksikë": {
+    "en": "Mexico",
+    "de": "Mexiko"
+  },
+  "Singapor": {
+    "en": "Singapore",
+    "de": "Singapur"
+  },
+  "Afrikë e Jugut": {
+    "en": "South Africa",
+    "de": "Südafrika"
+  },
+  "Produktet dhe projektet e mia": {
+    "en": "My products and projects",
+    "de": "Meine Produkte und Projekte"
+  },
+  "Bundesnetzagentur · Punë": {
+    "en": "Bundesnetzagentur · Jobs",
+    "de": "Bundesnetzagentur · Stellenangebote"
+  },
+  "Bundesnetzagentur · Tendera": {
+    "en": "Bundesnetzagentur · Tenders",
+    "de": "Bundesnetzagentur · Ausschreibungen"
+  },
+  "Punë remote · pa celes": {
+    "en": "Remote jobs · no key required",
+    "de": "Remote-Stellen · kein Schlüssel erforderlich"
+  },
+  "Punë DACH · kërkon celes": {
+    "en": "Jobs in Germany, Austria and Switzerland · key required",
+    "de": "Stellen in Deutschland, Österreich und der Schweiz · Schlüssel erforderlich"
+  },
+  "Kërkesa software nga HN · keyword-gate deterministic": {
+    "en": "Software requests from HN · filtered by keywords",
+    "de": "Softwareanfragen von HN · nach Stichwörtern gefiltert"
+  },
+  "Lloj i pavlefshëm": {
+    "en": "Invalid opportunity type",
+    "de": "Ungültige Art der Möglichkeit"
+  },
+  "Vend i pavlefshëm": {
+    "en": "Invalid country",
+    "de": "Ungültiges Land"
+  },
+  "Shto të paktën një faqe punëdhënësi te Burimet.": {
+    "en": "Add at least one employer page under Sources.",
+    "de": "Füge unter Quellen mindestens eine Arbeitgeberseite hinzu."
+  },
+  "Konfiguro çelësin SerpApi te Burimet.": {
+    "en": "Set up your SerpApi key under Sources.",
+    "de": "Hinterlege deinen SerpApi-Schlüssel unter Quellen."
+  },
+  "Konfiguro çelësin Brave te Burimet.": {
+    "en": "Set up your Brave key under Sources.",
+    "de": "Hinterlege deinen Brave-Schlüssel unter Quellen."
+  },
+  "Shkruaj profesionin ose përdor kërkimin sipas profilit.": {
+    "en": "Enter a profession or search using your profile.",
+    "de": "Gib einen Beruf ein oder suche anhand deines Profils."
+  },
+  "Shkruaj çfarë kërkon ose përdor profilin.": {
+    "en": "Enter what you are looking for or use your profile.",
+    "de": "Gib ein, was du suchst, oder verwende dein Profil."
+  },
+  "Google Jobs nuk e përfundoi kërkimin. Kontrollo çelësin ose kuotën.": {
+    "en": "Google Jobs could not complete the search. Check your key or quota.",
+    "de": "Google Jobs konnte die Suche nicht abschließen. Prüfe deinen Schlüssel oder dein Kontingent."
+  },
+  "burimi i papërdorshëm: {value}": {
+    "en": "Source unavailable: {value}",
+    "de": "Quelle nicht verfügbar: {value}"
+  },
+  "{n}/{total} faqe punëdhënësi dështuan: {value}": {
+    "en": "{n}/{total} employer pages failed: {value}",
+    "de": "{n}/{total} Arbeitgeberseiten fehlgeschlagen: {value}"
+  },
+  "Ruajtja e burimit dështoi ({value}). Provo përsëri.": {
+    "en": "Could not save source results ({value}). Try again.",
+    "de": "Quellenergebnisse konnten nicht gespeichert werden ({value}). Versuche es erneut."
+  },
+  "Konfigurimi i shërbimeve menaxhohet nga pronari.": {
+    "en": "Service settings are managed by the owner.",
+    "de": "Die Diensteinstellungen werden vom Betreiber verwaltet."
+  },
+  "Piloti lejohet vetëm në këtë kompjuter.": {
+    "en": "This pilot is only available on this computer.",
+    "de": "Dieser Pilot ist nur auf diesem Computer verfügbar."
+  },
+  "Origin i pavlefshëm": {
+    "en": "Invalid request origin",
+    "de": "Ungültiger Anfrageursprung"
+  },
+  "Përdor deri në 8 identifikues kompanish për burim.": {
+    "en": "Use up to 8 company identifiers per source.",
+    "de": "Verwende bis zu 8 Unternehmenskennungen pro Quelle."
+  },
+  "duhet konfigurim (celes)": {
+    "en": "Setup required (key)",
+    "de": "Einrichtung erforderlich (Schlüssel)"
+  },
+  "Adzuna: vendos celesat te Profili › Burimet (developer.adzuna.com — falas)": {
+    "en": "Adzuna: add your keys under Profile › Sources (developer.adzuna.com — free)",
+    "de": "Adzuna: Hinterlege deine Schlüssel unter Profil › Quellen (developer.adzuna.com — kostenlos)"
+  },
+  "pa feed-e lokale — konfiguro URL-t te Profili › Lokale": {
+    "en": "No local feeds — add URLs under Profile › Local jobs",
+    "de": "Keine lokalen Feeds — hinterlege URLs unter Profil › Lokale Jobs"
+  },
+  "AI është çaktivizuar": {
+    "en": "AI is disabled",
+    "de": "KI ist deaktiviert"
+  },
+  "transport dështoi": {
+    "en": "Connection failed",
+    "de": "Verbindung fehlgeschlagen"
+  },
+  "detyrë e panjohur": {
+    "en": "Unknown task",
+    "de": "Unbekannte Aufgabe"
+  },
+  "përgjigje pa JSON": {
+    "en": "Invalid AI response format",
+    "de": "Ungültiges KI-Antwortformat"
+  },
+  "përgjigje jo-objekt ose detyrë e panjohur": {
+    "en": "Invalid response or unknown task",
+    "de": "Ungültige Antwort oder unbekannte Aufgabe"
+  },
+  "PDF pa tekst të ekstraktueshëm (skanuar? duhet OCR)": {
+    "en": "The PDF has no extractable text. A scanned document requires text recognition (OCR).",
+    "de": "Die PDF enthält keinen auslesbaren Text. Ein gescanntes Dokument benötigt Texterkennung (OCR)."
+  },
+  "nga teksti i CV-së": {
+    "en": "From the CV text",
+    "de": "Aus dem Lebenslauftext"
+  },
+  "gatishmëria për shitje dhe dorëzim e projektit": {
+    "en": "Whether the project is ready for sale and delivery",
+    "de": "Verkaufs- und Lieferbereitschaft des Projekts"
+  },
+  "gjuhët/teknologjitë e produktit": {
+    "en": "Product languages and technologies",
+    "de": "Sprachen und Technologien des Produkts"
+  },
+  "industritë e synuara": {
+    "en": "Target industries",
+    "de": "Zielbranchen"
+  },
+  "asnjë kategori e nevojave nuk mbulohet nga produkti": {
+    "en": "The product does not cover any identified need category",
+    "de": "Das Produkt deckt keine der erkannten Bedarfskategorien ab"
+  },
+  "katalog bosh — shto produkt te Profili (pa fit të shpikur)": {
+    "en": "Your catalog is empty — add a product to your profile to assess fit",
+    "de": "Dein Katalog ist leer — füge ein Produkt zum Profil hinzu, um die Passung zu prüfen"
+  },
+  "emri është i detyrueshëm (dhe vlerat të jenë të sakta)": {
+    "en": "A name and valid values are required",
+    "de": "Ein Name und gültige Werte sind erforderlich"
+  },
+  "email i çaktivizuar": {
+    "en": "Email is disabled",
+    "de": "E-Mail ist deaktiviert"
+  },
+  "kadencë e pavlefshme": {
+    "en": "Invalid schedule frequency",
+    "de": "Ungültiges Zeitplanintervall"
+  },
+  "kind i pavlefshëm": {
+    "en": "Invalid type",
+    "de": "Ungültiger Typ"
+  },
+  "përmbajtja s'mund të jetë bosh": {
+    "en": "Content cannot be empty",
+    "de": "Der Inhalt darf nicht leer sein"
+  },
+  "rating duhet të jetë 1–5 ose null": {
+    "en": "Rating must be 1–5 or empty",
+    "de": "Die Bewertung muss zwischen 1 und 5 liegen oder leer sein"
+  },
+  "s'u gjet titull në faqe — shto manualisht me titull": {
+    "en": "No title found on the page — add the opportunity manually with a title",
+    "de": "Auf der Seite wurde kein Titel gefunden — füge die Möglichkeit manuell mit einem Titel hinzu"
+  },
+  "status i pavlefshëm": {
+    "en": "Invalid status",
+    "de": "Ungültiger Status"
+  },
+  "trup shumë i madh": {
+    "en": "The request is too large",
+    "de": "Die Anfrage ist zu groß"
+  },
+  "vlera të pavlefshme": {
+    "en": "Invalid values",
+    "de": "Ungültige Werte"
+  },
+  "të gjitha": {
+    "en": "all",
+    "de": "alle"
+  },
+  "Këto përmbledhje përdoren nga kërkimi. Për nivele, dëshmi dhe zëra të detajuar hap “Aftësi & përvojë”.": {
+    "en": "Search uses these summaries. For levels, evidence and detailed entries, open “Skills & experience”.",
+    "de": "Die Suche verwendet diese Zusammenfassungen. Öffne „Fähigkeiten & Erfahrung“ für Niveaus, Nachweise und detaillierte Einträge."
+  },
+  "pa akses": {
+    "en": "Unavailable",
+    "de": "Nicht verfügbar"
+  },
+  "tipare për rolin {value}": {
+    "en": "Common skills for {value}",
+    "de": "Übliche Fähigkeiten für {value}"
+  },
+  "certifikatë e zakonshme për {value}": {
+    "en": "Common certification for {value}",
+    "de": "Übliches Zertifikat für {value}"
+  },
+  "teknologji kërkuar shpesh": {
+    "en": "Frequently requested technology",
+    "de": "Häufig gefragte Technologie"
+  },
+  "Erranda": {
+    "en": "Errands",
+    "de": "Besorgungen"
+  },
+  "Kujdes macesh": {
+    "en": "Cat sitting",
+    "de": "Katzenbetreuung"
+  },
+  "Kontrata nga Jobicy · pa celes": {
+    "en": "Contract work from Jobicy · no key required",
+    "de": "Aufträge von Jobicy · kein Schlüssel erforderlich"
+  },
+  "Kontrata/freelance nga Remotive · pa celes": {
+    "en": "Contract and freelance work from Remotive · no key required",
+    "de": "Aufträge und freiberufliche Projekte von Remotive · kein Schlüssel erforderlich"
+  },
+  "Thread-i mujor HN Freelancer · API publik Algolia": {
+    "en": "Monthly HN Freelancer thread · public Algolia API",
+    "de": "Monatlicher HN-Freelancer-Thread · öffentliche Algolia-API"
+  },
+  "Mundësi e re lokale": {
+    "en": "New local opportunity",
+    "de": "Neue lokale Möglichkeit"
+  },
+  "Projekt i ri freelance": {
+    "en": "New freelance opportunity",
+    "de": "Neues freiberufliches Projekt"
+  },
+  "Kërkesë e re për produktin": {
+    "en": "New product lead",
+    "de": "Neue Produktanfrage"
+  },
+  "Përputhje e re e fortë": {
+    "en": "New strong match",
+    "de": "Neue hohe Übereinstimmung"
+  },
+  "Mundësi e re": {
+    "en": "New opportunity",
+    "de": "Neue Möglichkeit"
+  },
+  "Shtuar manualisht": {
+    "en": "Added manually",
+    "de": "Manuell hinzugefügt"
+  },
+  "Klienti": {
+    "en": "Client",
+    "de": "Kunde"
+  },
+  "Trego çfarë zgjidh çdo produkt. Kërkesat e klientëve krahasohen me aftësitë e produkteve aktive.": {
+    "en": "Describe what each product solves. Client requests are compared with the capabilities of your active products.",
+    "de": "Beschreibe, was jedes Produkt löst. Kundenanfragen werden mit den Leistungen deiner aktiven Produkte verglichen."
+  },
+  "Skedari duhet të jetë deri në 4 MB.": {
+    "en": "The file must be no larger than 4 MB.",
+    "de": "Die Datei darf höchstens 4 MB groß sein."
+  },
+  "Në pilotin online, shtoje lidhjen dhe titullin te “Shto manualisht”.": {
+    "en": "For the online pilot, enter the link and title under “Add manually”.",
+    "de": "Trage im Online-Pilot den Link und Titel unter „Manuell hinzufügen“ ein."
+  },
+  "Feed-et personale aktivizohen pas verifikimit të burimit.": {
+    "en": "Custom feeds are enabled after source verification.",
+    "de": "Eigene Feeds werden nach Prüfung der Quelle aktiviert."
+  },
+  "Çelësat ruhen privatisht në server.": {
+    "en": "Keys are stored privately on the server.",
+    "de": "Schlüssel werden privat auf dem Server gespeichert."
+  },
+  "Me AI, teksti i CV-së dërgohet te shërbimi AI i konfiguruar. Pa AI, dokumenti përpunohet në serverin e platformës.": {
+    "en": "With AI enabled, your CV text is sent to the configured AI service. Without AI, the document is processed on the platform server.",
+    "de": "Mit KI wird dein Lebenslauftext an den eingerichteten KI-Dienst gesendet. Ohne KI wird das Dokument auf dem Server der Plattform verarbeitet."
+  },
+  "AI po përpunon këtë kërkesë. Prit përfundimin; mos e përsërit.": {
+    "en": "AI is processing this request. Wait for it to finish; do not repeat it.",
+    "de": "Die KI verarbeitet diese Anfrage. Warte auf den Abschluss; wiederhole sie nicht."
+  },
+  "Profili është i përditësuar. Nuk nevojitet përpunim tjetër me AI.": {
+    "en": "Your profile is up to date. No further AI processing is needed.",
+    "de": "Dein Profil ist aktuell. Eine weitere KI-Verarbeitung ist nicht erforderlich."
+  },
+  "Të dhënat nuk kanë ndryshuar. U përdor rezultati i ruajtur, pa kërkesë të re te AI.": {
+    "en": "Your data has not changed. The saved result was reused without a new AI request.",
+    "de": "Deine Daten haben sich nicht geändert. Das gespeicherte Ergebnis wurde ohne neue KI-Anfrage verwendet."
+  },
+  "Kur të dhënat janë të njëjta, përdoret rezultati i ruajtur pa kërkesë të re te AI.": {
+    "en": "When your data is unchanged, the saved result is reused without a new AI request.",
+    "de": "Bei unveränderten Daten wird das gespeicherte Ergebnis ohne neue KI-Anfrage verwendet."
+  },
+  "Mësime private dhe gjuhë": {
+    "en": "Tutoring and languages",
+    "de": "Nachhilfe und Sprachen"
+  },
+  "Kujdes fëmijësh": {
+    "en": "Childcare",
+    "de": "Kinderbetreuung"
+  },
+  "Shoqërim të moshuarish": {
+    "en": "Senior companionship",
+    "de": "Seniorenbegleitung"
+  },
+  "Kategori e pavlefshme.": {
+    "en": "Invalid category.",
+    "de": "Ungültige Kategorie."
+  },
+  "Zgjidh deri në 3 kategori për kërkim.": {
+    "en": "Choose up to 3 categories per search.",
+    "de": "Wähle bis zu 3 Kategorien pro Suche."
+  },
+  "Çfarë do të bësh pranë teje?": {
+    "en": "What would you like to do nearby?",
+    "de": "Was möchtest du in deiner Nähe machen?"
+  },
+  "Preferencat e ruajtura janë zgjedhur paraprakisht; ky kërkim nuk ndryshon profilin.": {
+    "en": "Saved preferences are preselected; this search does not change your profile.",
+    "de": "Gespeicherte Wünsche sind vorausgewählt; diese Suche ändert dein Profil nicht."
+  },
+  "Distanca, pagesa dhe përvoja vlerësohen kur oferta ka të dhëna. Interesi nuk është kualifikim.": {
+    "en": "Distance, pay and experience are assessed when the listing provides details. An interest is not a qualification.",
+    "de": "Entfernung, Vergütung und Erfahrung werden anhand vorhandener Angaben bewertet. Interesse ist keine Qualifikation."
+  },
+  "Më shumë mundësi lokale": {
+    "en": "More local opportunities",
+    "de": "Weitere lokale Möglichkeiten"
+  },
+  "Platforma të jashtme, jo integrime aktive. Hapja e tyre nuk nis kërkim me pagesë në aplikacion.": {
+    "en": "External platforms, not active integrations. Opening them does not start a paid search in this app.",
+    "de": "Externe Plattformen, keine aktiven Integrationen. Das Öffnen startet keine kostenpflichtige Suche in dieser App."
+  },
+  "Shtëpi, kopsht, kafshë dhe ndihmë në përditshmëri": {
+    "en": "Home, garden, pets and everyday assistance",
+    "de": "Haushalt, Garten, Tiere und Alltagshilfe"
+  },
+  "Mini-job nga punëdhënës në Gjermani": {
+    "en": "Minijobs from employers in Germany",
+    "de": "Minijobs von Arbeitgebern in Deutschland"
+  },
+  "Ofrimi i shërbimeve të kujdesit për kafshë": {
+    "en": "Offer pet care services",
+    "de": "Tierbetreuung anbieten"
+  },
+  "Ndihmë në lagje; jo çdo njoftim është punë me pagesë": {
+    "en": "Neighborhood help; not every listing is paid work",
+    "de": "Nachbarschaftshilfe; nicht jede Anzeige ist bezahlte Arbeit"
+  },
+  "Të ruajtura më parë": {
+    "en": "Previously saved",
+    "de": "Bereits gespeichert"
+  },
+  "U gjet nga kërkimi për punë lokale.": {
+    "en": "Found through a local work search.",
+    "de": "Über die Suche nach lokaler Arbeit gefunden."
+  },
+  "Përmbajtja e profilit është ende në gjuhën origjinale.": {
+    "en": "The profile content is still in its original language.",
+    "de": "Der Profilinhalt ist noch in seiner Originalsprache."
+  },
+  "Krijo një edicion të plotë në gjuhën e zgjedhur. Faktet e ruajtura nuk ndryshojnë dhe edicioni ripërdoret pa kërkesë të re te AI.": {
+    "en": "Create a complete edition in the selected language. Your saved facts stay unchanged, and the edition is reused without another AI request.",
+    "de": "Erstelle eine vollständige Fassung in der gewählten Sprache. Deine gespeicherten Fakten bleiben unverändert, und die Fassung wird ohne neue AI-Anfrage wiederverwendet."
+  },
+  "Përgatit profilin në këtë gjuhë": {
+    "en": "Prepare profile in this language",
+    "de": "Profil in dieser Sprache vorbereiten"
+  },
+  "Profili paraqitet në gjuhën e zgjedhur; faktet origjinale ruhen të pandryshuara.": {
+    "en": "The profile is presented in the selected language; the original facts remain unchanged.",
+    "de": "Das Profil wird in der gewählten Sprache angezeigt; die ursprünglichen Fakten bleiben unverändert."
+  },
+  "AI po përgatit profilin dhe po kontrollon gjuhën e faktet…": {
+    "en": "AI is preparing the profile and checking its language and facts…",
+    "de": "AI bereitet das Profil vor und prüft Sprache und Fakten…"
+  },
+  "Të fshihet produkti?": {
+    "en": "Delete this product?",
+    "de": "Dieses Produkt löschen?"
+  },
+  "CV nuk u gjet": {
+    "en": "CV not found",
+    "de": "CV nicht gefunden"
+  },
+  "DOCX pa tekst": {
+    "en": "The DOCX contains no text",
+    "de": "Die DOCX-Datei enthält keinen Text"
+  },
+  "URL jo valide": {
+    "en": "Invalid URL",
+    "de": "Ungültige URL"
+  },
+  "burim i panjohur": {
+    "en": "Unknown source",
+    "de": "Unbekannte Quelle"
+  },
+  "duhen fushat 'title' dhe 'url'": {
+    "en": "The title and URL fields are required",
+    "de": "Die Felder Titel und URL sind erforderlich"
+  },
+  "duhet 'entries'": {
+    "en": "The entries field is required",
+    "de": "Das Feld entries ist erforderlich"
+  },
+  "jep ids=1,2,…": {
+    "en": "Provide ids=1,2,…",
+    "de": "Gib ids=1,2,… an"
+  },
+  "kategoria e pavlefshme": {
+    "en": "Invalid category",
+    "de": "Ungültige Kategorie"
+  },
+  "nuk u gjet": {
+    "en": "Not found",
+    "de": "Nicht gefunden"
+  },
+  "profili nuk u gjet": {
+    "en": "Profile not found",
+    "de": "Profil nicht gefunden"
+  },
+  "seksion i panjohur": {
+    "en": "Unknown section",
+    "de": "Unbekannter Abschnitt"
+  },
+  "severity e pavlefshme": {
+    "en": "Invalid importance level",
+    "de": "Ungültige Wichtigkeitsstufe"
+  },
+  "willingness e pavlefshme": {
+    "en": "Invalid readiness value",
+    "de": "Ungültiger Bereitschaftswert"
+  },
+  "SMTP_HOST i pakonfiguruar": {
+    "en": "SMTP_HOST is not configured",
+    "de": "SMTP_HOST ist nicht konfiguriert"
+  },
+  "gjithçka e dërguar më parë (dedup)": {
+    "en": "Everything was sent previously (deduplicated)",
+    "de": "Alles wurde bereits gesendet (Duplikate entfernt)"
+  },
+  "pa mundësi të reja": {
+    "en": "No new opportunities",
+    "de": "Keine neuen Möglichkeiten"
+  },
+  "çaktivizuar": {
+    "en": "Disabled",
+    "de": "Deaktiviert"
+  },
+  "pa profil": {
+    "en": "No profile",
+    "de": "Kein Profil"
+  },
+  "pa konfigurim/profil": {
+    "en": "Configuration or profile missing",
+    "de": "Konfiguration oder Profil fehlt"
+  },
+  "leja/next_run u mor nga një tjetër worker": {
+    "en": "Another worker acquired the lease or next run",
+    "de": "Ein anderer Worker hat die Sperre oder den nächsten Lauf übernommen"
+  },
+  "ekziston tashmë në profil (manual fiton)": {
+    "en": "Already exists in the profile (manual entry takes precedence)",
+    "de": "Bereits im Profil vorhanden (manueller Eintrag hat Vorrang)"
+  },
+  "e refuzuar më parë — mbetet inaktiv": {
+    "en": "Previously rejected — remains inactive",
+    "de": "Zuvor abgelehnt — bleibt inaktiv"
+  },
+  "tashmë e aprovuar (idempotent)": {
+    "en": "Already approved",
+    "de": "Bereits bestätigt"
+  },
+  "fjalë-kyçe freelance/kontratë": {
+    "en": "Freelance or contract keywords",
+    "de": "Freelance- oder Vertrags-Schlüsselwörter"
+  },
+  "Njoftimi përmend minijob, nebenjob ose aushilfe.": {
+    "en": "The listing mentions Minijob, Nebenjob or Aushilfe.",
+    "de": "Die Anzeige erwähnt Minijob, Nebenjob oder Aushilfe."
+  },
+  "AI vetëm si analizë në drawer": {
+    "en": "AI analysis only in the details panel",
+    "de": "AI-Analyse nur im Detailbereich"
+  },
+  "abstain — dëshmi e pamjaftueshme ose AI i padisponueshëm": {
+    "en": "No AI score — insufficient evidence or AI unavailable",
+    "de": "Keine AI-Bewertung — unzureichende Nachweise oder AI nicht verfügbar"
+  },
+  "bazë deterministike": {
+    "en": "Deterministic baseline",
+    "de": "Deterministische Basis"
+  },
+  "dëshmi e mjaftueshme → blend": {
+    "en": "Sufficient evidence → combined score",
+    "de": "Ausreichende Nachweise → kombinierte Bewertung"
+  },
+  "përjashtim i fortë deterministic — AI e injoruar": {
+    "en": "Hard deterministic exclusion — AI ignored",
+    "de": "Harter deterministischer Ausschluss — AI ignoriert"
+  },
+  "renditje brenda bucket-i rule me AI": {
+    "en": "AI ordering within the rule group",
+    "de": "AI-Sortierung innerhalb der Regelgruppe"
+  },
+  "pa sinjale nevoje — product fit UNKNOWN (jo negative)": {
+    "en": "No need signals — product fit UNKNOWN (not negative)",
+    "de": "Keine Bedarfssignale — Produkt-Fit UNBEKANNT (nicht negativ)"
+  },
+  "model i pazgjedhur (settings: ai_model)": {
+    "en": "No model selected (setting: ai_model)",
+    "de": "Kein Modell ausgewählt (Einstellung: ai_model)"
+  },
+  "nuk ka mundësi për mostër": {
+    "en": "No opportunity available for the sample",
+    "de": "Keine Möglichkeit für die Stichprobe verfügbar"
+  },
+  "format i pambështetur: {value}": {
+    "en": "Unsupported format: {value}",
+    "de": "Nicht unterstütztes Format: {value}"
+  },
+  "PDF i korruptuar: {value}": {
+    "en": "Damaged PDF: {value}",
+    "de": "Beschädigte PDF-Datei: {value}"
+  },
+  "DOCX i korruptuar: {value}": {
+    "en": "Damaged DOCX: {value}",
+    "de": "Beschädigte DOCX-Datei: {value}"
+  },
+  "seksion {value} pa merge-target": {
+    "en": "Section {value} has no merge target",
+    "de": "Abschnitt {value} hat kein Zusammenführungsziel"
+  },
+  "fetch dështoi: {value}": {
+    "en": "Page retrieval failed: {value}",
+    "de": "Seitenabruf fehlgeschlagen: {value}"
+  },
+  "SMTP: {value}": {
+    "en": "SMTP: {value}",
+    "de": "SMTP: {value}"
+  },
+  "e papritur: {value}": {
+    "en": "Unexpected error: {value}",
+    "de": "Unerwarteter Fehler: {value}"
+  },
+  "Përdorimi": {
+    "en": "Usage",
+    "de": "Nutzung"
+  },
+  "PËRDORIMI KËTË MUAJ": {
+    "en": "USAGE THIS MONTH",
+    "de": "NUTZUNG IN DIESEM MONAT"
+  },
+  "Përdorimi dhe limitet": {
+    "en": "Usage and limits",
+    "de": "Nutzung und Limits"
+  },
+  "Shiko sa nga limiti mujor është përdorur nga veprimet që kërkojnë një shërbim të jashtëm.": {
+    "en": "See how much of the monthly limit was used by actions that require an external service.",
+    "de": "Sieh, wie viel des monatlichen Limits durch Aktionen mit einem externen Dienst genutzt wurde."
+  },
+  "AI për profilin dhe dokumentet": {
+    "en": "AI for profile and documents",
+    "de": "AI für Profil und Dokumente"
+  },
+  "Kërkim në burime të jashtme": {
+    "en": "Search across external sources",
+    "de": "Suche in externen Quellen"
+  },
+  "Përdorur": {
+    "en": "Used",
+    "de": "Verwendet"
+  },
+  "Në dispozicion": {
+    "en": "Available",
+    "de": "Verfügbar"
+  },
+  "Limiti mujor": {
+    "en": "Monthly limit",
+    "de": "Monatliches Limit"
+  },
+  "Shërbimet me pagesë janë përkohësisht joaktive.": {
+    "en": "Metered services are temporarily inactive.",
+    "de": "Nutzungsabhängige Dienste sind vorübergehend inaktiv."
+  },
+  "Limiti nuk është konfiguruar ende për këtë llogari.": {
+    "en": "A limit has not been configured for this account yet.",
+    "de": "Für dieses Konto wurde noch kein Limit eingerichtet."
+  },
+  "Një përdorim i mëparshëm po konfirmohet. Kërkesat e reja presin për të shmangur tejkalimin e limitit.": {
+    "en": "Previous usage is still being confirmed. New requests wait to prevent the limit from being exceeded.",
+    "de": "Eine frühere Nutzung wird noch bestätigt. Neue Anfragen warten, damit das Limit nicht überschritten wird."
+  },
+  "Limiti i këtij muaji është përdorur.": {
+    "en": "This month's limit has been used.",
+    "de": "Das Limit für diesen Monat ist aufgebraucht."
+  },
+  "Po i afrohesh limitit të këtij muaji.": {
+    "en": "You are approaching this month's limit.",
+    "de": "Du näherst dich dem Limit für diesen Monat."
+  },
+  "Gati për përdorim.": {
+    "en": "Ready to use.",
+    "de": "Einsatzbereit."
+  },
+  "Shumat janë vlerësime të brendshme për kontrollin e limitit; fatura e ofruesit mund të ndryshojë.": {
+    "en": "Amounts are internal estimates for limit control; the provider invoice may differ.",
+    "de": "Die Beträge sind interne Schätzungen zur Limitkontrolle; die Anbieterrechnung kann abweichen."
+  },
+  "Rezultatet e ruajtura ripërdoren pa konsumuar limit të ri.": {
+    "en": "Saved results are reused without consuming more of the limit.",
+    "de": "Gespeicherte Ergebnisse werden wiederverwendet, ohne das Limit erneut zu belasten."
+  },
+  "Gjendja e përdorimit për administratorin": {
+    "en": "Usage status for the administrator",
+    "de": "Nutzungsstatus für die Administration"
+  },
+  "Vetëm totalet e platformës shfaqen këtu; nuk shfaqen identitete, kërkesa apo përmbajtje përdoruesish.": {
+    "en": "Only platform totals appear here; user identities, requests and content are not shown.",
+    "de": "Hier erscheinen nur Plattform-Gesamtwerte; Identitäten, Anfragen und Inhalte von Nutzern werden nicht angezeigt."
+  },
+  "Kontrolli i limiteve": {
+    "en": "Limit control",
+    "de": "Limitkontrolle"
+  },
+  "Llogari me limit këtë muaj": {
+    "en": "Accounts with a limit this month",
+    "de": "Konten mit Limit in diesem Monat"
+  },
+  "Kërkesa këtë muaj": {
+    "en": "Requests this month",
+    "de": "Anfragen in diesem Monat"
+  },
+  "Në proces": {
+    "en": "In progress",
+    "de": "In Bearbeitung"
+  },
+  "Në pritje të konfirmimit": {
+    "en": "Awaiting confirmation",
+    "de": "Bestätigung ausstehend"
+  },
+  "AI dhe kërkimi me burime të jashtme janë përkohësisht të padisponueshme. Provo përsëri më vonë.": {
+    "en": "AI and external-source search are temporarily unavailable. Try again later.",
+    "de": "AI und die Suche in externen Quellen sind vorübergehend nicht verfügbar. Versuche es später erneut."
+  },
+  "Limiti i këtij muaji është përdorur. Provo përsëri pasi limiti të rinovohet.": {
+    "en": "This month's limit has been used. Try again after the limit renews.",
+    "de": "Das Limit für diesen Monat ist aufgebraucht. Versuche es nach der Erneuerung erneut."
+  },
+  "Një kërkesë e mëparshme po konfirmohet ende. Provo përsëri pas pak.": {
+    "en": "A previous request is still being confirmed. Try again shortly.",
+    "de": "Eine frühere Anfrage wird noch bestätigt. Versuche es in Kürze erneut."
+  },
+  "Kërkon administratorin e platformës.": {
+    "en": "Platform administrator access is required.",
+    "de": "Zugriff als Plattformadministrator ist erforderlich."
+  },
+  "Marrja e faqes dështoi. Provo përsëri.": {
+    "en": "The page could not be retrieved. Try again.",
+    "de": "Die Seite konnte nicht abgerufen werden. Versuche es erneut."
+  },
+  "Puna po vazhdon edhe nëse e mbyll këtë faqe.": {
+    "en": "The task continues even if you close this page.",
+    "de": "Die Aufgabe läuft weiter, auch wenn du diese Seite schließt."
+  },
+  "Puna u anulua.": {
+    "en": "The task was cancelled.",
+    "de": "Die Aufgabe wurde abgebrochen."
+  },
+  "Anulo": {
+    "en": "Cancel",
+    "de": "Abbrechen"
+  },
+  "Anulimi u kërkua.": {
+    "en": "Cancellation was requested.",
+    "de": "Der Abbruch wurde angefordert."
+  },
+  "Profili ndryshoi. Nis kërkimin përsëri me të dhënat e reja.": {
+    "en": "Your profile changed. Start the search again with the new data.",
+    "de": "Dein Profil wurde geändert. Starte die Suche mit den neuen Daten erneut."
+  },
+  "Profili ndryshoi. Gjenero CV-në përsëri.": {
+    "en": "Your profile changed. Generate the CV again.",
+    "de": "Dein Profil wurde geändert. Erstelle den Lebenslauf erneut."
+  },
+  "Profili ndryshoi. Gjenero draftin përsëri.": {
+    "en": "Your profile changed. Generate the draft again.",
+    "de": "Dein Profil wurde geändert. Erstelle den Entwurf erneut."
+  },
+  "Profili ndryshoi. Rifresko lidhjet përsëri.": {
+    "en": "Your profile changed. Refresh the connections again.",
+    "de": "Dein Profil wurde geändert. Aktualisiere die Verknüpfungen erneut."
+  },
+  "Rifresko lidhjet e profilit përpara kërkimit.": {
+    "en": "Refresh your profile connections before searching.",
+    "de": "Aktualisiere vor der Suche deine Profilverknüpfungen."
+  },
+  "Ky veprim nuk është aktiv për momentin.": {
+    "en": "This action is not active at the moment.",
+    "de": "Diese Aktion ist derzeit nicht aktiv."
+  },
+  "Puna nuk u gjet.": {
+    "en": "The task was not found.",
+    "de": "Die Aufgabe wurde nicht gefunden."
+  },
+  "Nuk ka burime të lidhura për këtë kërkim.": {
+    "en": "No connected sources are available for this search.",
+    "de": "Für diese Suche sind keine verbundenen Quellen verfügbar."
+  },
+  "Veprimi është i pavlefshëm.": {
+    "en": "The action is invalid.",
+    "de": "Die Aktion ist ungültig."
+  },
+  "Ky veprim nuk mbështetet.": {
+    "en": "This action is not supported.",
+    "de": "Diese Aktion wird nicht unterstützt."
+  },
+  "Toni është i pavlefshëm.": {
+    "en": "The selected tone is invalid.",
+    "de": "Der ausgewählte Ton ist ungültig."
+  },
+  "Mundësia nuk u gjet.": {
+    "en": "The opportunity was not found.",
+    "de": "Die Möglichkeit wurde nicht gefunden."
+  },
+  "Lloji i aplikimit është i pavlefshëm.": {
+    "en": "The application type is invalid.",
+    "de": "Die Bewerbungsart ist ungültig."
+  },
+  "Vetëm një punë e përfunduar mund të provohet përsëri.": {
+    "en": "Only a finished task can be retried.",
+    "de": "Nur eine beendete Aufgabe kann erneut versucht werden."
+  },
+  "Riprova duhet të ruajë të njëjtën kërkesë.": {
+    "en": "A retry must keep the same request.",
+    "de": "Ein erneuter Versuch muss dieselbe Anfrage beibehalten."
+  },
+  "Profili ndryshoi. Nise veprimin përsëri me profilin aktual.": {
+    "en": "Your profile changed. Start the action again with the current profile.",
+    "de": "Dein Profil wurde geändert. Starte die Aktion mit dem aktuellen Profil erneut."
+  },
+  "Burimet e jashtme nuk u përgjigjën. Provo përsëri.": {
+    "en": "The external sources did not respond. Try again.",
+    "de": "Die externen Quellen haben nicht geantwortet. Versuche es erneut."
+  },
+  "Një kërkesë po verifikohet ende. Mos e përsërit tani.": {
+    "en": "A request is still being verified. Do not repeat it yet.",
+    "de": "Eine Anfrage wird noch geprüft. Wiederhole sie noch nicht."
+  },
+  "Rezultati nuk kaloi kontrollin. Provo përsëri.": {
+    "en": "The result did not pass validation. Try again.",
+    "de": "Das Ergebnis hat die Prüfung nicht bestanden. Versuche es erneut."
+  },
+  "Puna zgjati shumë. Provo përsëri.": {
+    "en": "The task took too long. Try again.",
+    "de": "Die Aufgabe hat zu lange gedauert. Versuche es erneut."
+  },
+  "Puna u ndërpre. Provo përsëri.": {
+    "en": "The task was interrupted. Try again.",
+    "de": "Die Aufgabe wurde unterbrochen. Versuche es erneut."
+  },
+  "Puna dështoi pas disa provash.": {
+    "en": "The task failed after several attempts.",
+    "de": "Die Aufgabe ist nach mehreren Versuchen fehlgeschlagen."
+  },
+  "Puna nuk hyri në radhë. Provo përsëri.": {
+    "en": "The task could not be queued. Try again.",
+    "de": "Die Aufgabe konnte nicht eingereiht werden. Versuche es erneut."
+  },
+  "Ky veprim nuk është ende aktiv.": {
+    "en": "This action is not active yet.",
+    "de": "Diese Aktion ist noch nicht aktiv."
+  },
+  "work_status_dispatch_pending": {
+    "en": "Preparing",
+    "de": "Wird vorbereitet"
+  },
+  "work_status_queued": {
+    "en": "Queued",
+    "de": "In Warteschlange"
+  },
+  "work_status_running": {
+    "en": "In progress",
+    "de": "In Bearbeitung"
+  },
+  "work_status_succeeded": {
+    "en": "Completed",
+    "de": "Abgeschlossen"
+  },
+  "work_status_failed": {
+    "en": "Failed",
+    "de": "Fehlgeschlagen"
+  },
+  "work_status_cancelled": {
+    "en": "Cancelled",
+    "de": "Abgebrochen"
+  },
+  "work_status_superseded": {
+    "en": "Profile changed",
+    "de": "Profil geändert"
+  },
+  "work_status_pending": {
+    "en": "Waiting",
+    "de": "Wartet"
+  },
+  "work_step_draft": {
+    "en": "Drafting",
+    "de": "Entwurf"
+  },
+  "work_step_validate": {
+    "en": "Final check",
+    "de": "Abschlussprüfung"
+  },
+  "work_step_analyze": {
+    "en": "Analysis",
+    "de": "Analyse"
+  },
+  "work_step_summarize": {
+    "en": "Summary",
+    "de": "Zusammenfassung"
+  },
+  "{n} terma përkatës ({total} në titull)": {
+    "en": "{n} relevant terms ({total} in title)",
+    "de": "{n} passende Begriffe ({total} im Titel)"
+  },
+  "Shembull i redaktueshëm nga fakte fiktive. AI live është i çaktivizuar.": {
+    "en": "Editable example from fictional profile facts. Live AI is disabled.",
+    "de": "Bearbeitbares Beispiel aus fiktiven Profilangaben. Live-KI ist deaktiviert."
+  },
+  "Shembull demo i shkruar": {
+    "en": "Authored demo example",
+    "de": "Verfasstes Demo-Beispiel"
+  },
+  "Offline demo: external providers are disabled.": {
+    "en": "Offline demo: external providers are disabled.",
+    "de": "Offline-Demo: Externe Dienste sind deaktiviert."
+  }
+}

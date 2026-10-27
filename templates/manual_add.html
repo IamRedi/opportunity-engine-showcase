@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}{{ _('Shto ·') }} {{ APP_NAME }}{% endblock %}
+{% block content %}
+<div class="page-head">
+  <p class="eyebrow">{{ _('MBAJE NË RADAR') }}</p><h1>{{ _('Shto një mundësi.') }}</h1>
+  <p class="sub">{{ _("Për rezultate që gjen vetë (LinkedIn, grupe, klientë…) dhe do t'i gjurmosh këtu.") }}</p>
+</div>
+
+<form method="post" action="/jobs/add" class="form manual-form" id="addform">
+  <div class="kindpick" role="radiogroup" aria-label="{{ _('Lloji') }}">
+  {% for k, label in [('job',_('Punë')),('freelance','Freelance'),('product_lead','Product Lead'),('local_job','Lokale / Mini')] %}<label class="check"><input type="radio" name="kind" value="{{ k }}" {{ 'checked' if kind == k }}>{{ _(label) }}</label>{% endfor %}
+  </div>
+  <div class="grid2">
+    <label>{{ _('Titulli *') }}<input name="title" required placeholder="{{ _('p.sh. Backend Developer ose Klient kërkon platformë rezervimesh') }}"></label>
+    <label id="lbl-company"><span>{{ _('Kompania / Klienti') }}</span><input name="company"></label>
+    <label>{{ _('URL *') }}<input name="url" required placeholder="{{ _('https://…') }}"></label>
+    <label>{{ _('Vendndodhja') }}<input name="location" placeholder="{{ _('p.sh. Berlin ose Remote') }}"></label>
+    <label id="lbl-salary"><span>{{ _('Paga (tekst i lirë)') }}</span><input name="salary_text" placeholder="{{ _('p.sh. 55.000–65.000 €/vit') }}"></label>
+    <label>{{ _('Burimi') }}<input name="source" value="manual" placeholder="{{ _('manual / linkedin / klient…') }}"></label>
+  </div>
+  <div id="local-extra" hidden>
+    <div class="grid2">
+      <label>{{ _('Kategoria') }}
+        <select name="local_category">
+          <option value="other_local">—</option>
+          {% for cid, lbl in LOCAL_CATEGORY_LABELS.items() %}
+          <option value="{{ cid }}">{{ _(lbl) }}</option>
+          {% endfor %}
+        </select>
+      </label>
+      <label>{{ _('Kodi postar / vendi') }}<input name="postcode" placeholder="{{ _('p.sh. 45127') }}"></label>
+      <label>{{ _('Paga €/orë') }}<input name="hourly_rate" type="number" step="0.5" min="0"></label>
+      <label>{{ _('Orari (tekst i lirë)') }}<input name="schedule" placeholder="{{ _('p.sh. të shtunë në mëngjes') }}"></label>
+    </div>
+  </div>
+  <div id="opp-extra" hidden>
+    <label>{{ _('Lloji i mundësisë') }}
+      <select name="opportunity_type">
+        <option value="">—</option>
+        <option value="Website">{{ _('Website') }}</option><option value="SaaS">{{ _('SaaS') }}</option><option value="White-label">{{ _('White-label') }}</option>
+        <option value="Automatizim">{{ _('Automatizim') }}</option><option value="Zgjidhje AI">{{ _('Zgjidhje AI') }}</option>
+        <option value="Software i personalizuar">{{ _('Software i personalizuar') }}</option><option value="Konsulencë">{{ _('Konsulencë') }}</option>
+      </select>
+    </label>
+  </div>
+  <label class="check"><input type="checkbox" name="remote" value="1"> {{ _('Remote') }}</label>
+  <label>{{ _('Përshkrimi') }}<textarea name="description" rows="8"></textarea></label>
+  <div class="form-foot"><button class="btn primary" type="submit">{{ _('Shto') }}</button></div>
+</form>
+{% endblock %}

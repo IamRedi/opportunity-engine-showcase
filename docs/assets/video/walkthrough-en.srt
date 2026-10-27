@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:04,000
+Find a relevant next step
+
+2
+00:00:04,000 --> 00:00:09,000
+Start with reviewed profile facts
+
+3
+00:00:09,000 --> 00:00:14,000
+Understand the evidence. Keep unknowns visible.
+
+4
+00:00:14,000 --> 00:00:19,000
+Edit a draft. Keep your own voice.
+
+5
+00:00:19,000 --> 00:00:23,000
+Approve the final version. Nothing is sent automatically.
+
+6
+00:00:23,000 --> 00:00:27,000
+Preview a CV from the same profile facts
+
+7
+00:00:27,000 --> 00:00:31,000
+Explore freelance opportunities in a separate workflow
+
+8
+00:00:31,000 --> 00:00:34,000
+Understand the match. Decide yourself.

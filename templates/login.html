@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block title %}{{ _('Kyçu ·') }} {{ APP_NAME }}{% endblock %}
+{% block content %}
+<div class="login-layout"><div class="login-story"><p class="eyebrow">{{ _('MË SHUMË MUNDËSI. MË SHUMË QARTËSI.') }}</p><h1>{{ _('Hapi yt i ardhshëm,') }}<br>{{ _('fillon këtu.') }}</h1><p>{{ _('Një vend për të gjetur punë, projekte dhe mundësi që lidhen me atë që di të bësh.') }}</p><div class="login-path"><span>{{ _('Gjej') }}</span><span>→</span><span>{{ _('Kupto') }}</span><span>→</span><span>{{ _('Vepro') }}</span></div></div>
+<form method="post" action="/api/auth/login" class="form login-form" id="login-form"><p class="eyebrow">{{ _('HAPËSIRA JOTE PERSONALE') }}</p><h2>{{ _('Mirë se erdhe.') }}</h2><p class="sub">{{ _('Kyçu për të vazhduar me mundësitë e tua.') }}</p><label>{{ _('Emri i përdoruesit') }}<input name="username" autocomplete="username" required autofocus></label><label>{{ _('Fjalëkalimi') }}<input type="password" name="password" autocomplete="current-password" required></label><p id="login-error" class="form-error" role="alert" hidden></p><button class="btn primary" type="submit">{{ _('Kyçu →') }}</button></form></div>
+{% endblock %}

@@ -1,0 +1,16 @@
+.git
+.venv
+.demo
+.env
+.env.*
+!.env.example
+__pycache__
+.pytest_cache
+*.db
+*.sqlite*
+*.log
+uploads
+backups
+.private
+.deploy
+docs/assets

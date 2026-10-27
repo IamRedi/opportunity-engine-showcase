@@ -1,0 +1,7 @@
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Synthetic session secret installed by the cloud unit test"
+paths = ['''tests/test_cloud_pilot\.py$''']
+regexes = ['''fixture\-reconciliation\-secret\-at\-least\-32''']

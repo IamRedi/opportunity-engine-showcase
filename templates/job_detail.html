@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block title %}{{ j.title }} · {{ APP_NAME }}{% endblock %}
+{% block content %}
+<div class="page-detail">
+  <a class="back" href="/">{{ _('← Kthehu te paneli') }}</a>
+  {% include "_panel.html" %}
+</div>
+{% endblock %}

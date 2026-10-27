@@ -1,0 +1,12 @@
+services:
+  showcase:
+    build: .
+    ports:
+      - "127.0.0.1:8765:8765"
+    tmpfs:
+      - /data:uid=1000,gid=1000,mode=0700
+    read_only: true
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL

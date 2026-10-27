@@ -1,0 +1,59 @@
+{% import "_macros.html" as m %}
+<div class="panelroot profileform" data-profile="{{ p.id if not is_new else '' }}">
+  <h2 class="panel-title">{{ _('Ndrysho profilin e kërkimit') if not is_new else _('Profil i ri kërkimi') }}</h2>
+  <p class="sub">{{ _('Profilet janë kërkime të ripërdorshme: filtra + burime, të ruajtura dhe të ekzekutueshme me një klik.') }}</p>
+
+  <form class="js-profile-form form" method="post" action="#">
+    <label>{{ _('Emri *') }}<input name="name" required value="{{ p.name or '' }}" placeholder="{{ _('p.sh. Remote Developer Germany') }}"></label>
+    <label class="check"><input type="checkbox" name="active" {{ 'checked' if p.active is not defined or p.active }}> {{ _('Aktiv') }}</label>
+
+    <fieldset>
+      <legend>{{ _('Llojet e mundësive') }}</legend>
+      {% for k, kl in kinds %}
+      <label class="check"><input type="checkbox" name="kinds" value="{{ k }}" {{ 'checked' if k in (p.kinds or ['job']) }}> {{ _(kl) }}</label>
+      {% endfor %}
+    </fieldset>
+
+    <div class="grid2">
+      <label>{{ _('Fjalë kyçe (një për rresht)') }}<textarea name="keywords" rows="3" placeholder="{{ _('developer backend') }}">{{ keywords_text }}</textarea></label>
+      <label>{{ _('Përjashto (një për rresht)') }}<textarea name="exclude_keywords" rows="3" placeholder="{{ _('senior unpaid') }}">{{ exclude_text }}</textarea></label>
+    </div>
+
+    <div class="grid2">
+      <label>{{ _('Vendndodhja') }}<input name="location" value="{{ p.location or '' }}" placeholder="{{ _('p.sh. Berlin') }}"></label>
+      <label>{{ _('Rrezja (km)') }}<input type="number" name="radius_km" min="0" value="{{ p.radius_km or '' }}" placeholder="{{ _('p.sh. 15') }}"></label>
+      <label>{{ _('Paga min €/vit') }}<input type="number" name="salary_min" min="0" step="1000" value="{{ p.salary_min or '' }}"></label>
+      <label>{{ _('Tarifa min €/orë') }}<input type="number" name="hourly_rate_min" min="0" step="0.5" value="{{ p.hourly_rate_min or '' }}"></label>
+      <label>{{ _('Buxheti min €') }}<input type="number" name="budget_min" min="0" value="{{ p.budget_min or '' }}"></label>
+      <label>{{ _('Përputhja minimale') }}
+        <input type="number" name="min_match" value="{{ p.min_match or 0 }}" min="0" max="100">
+      </label>
+    </div>
+
+    <fieldset>
+      <legend>{{ _('Mënyra e punës') }}</legend>
+      <label class="check"><input type="checkbox" name="remote_ok" {{ 'checked' if p.remote_ok is not defined or p.remote_ok }}> {{ _('Remote') }}</label>
+      <label class="check"><input type="checkbox" name="onsite_ok" {{ 'checked' if p.onsite_ok is not defined or p.onsite_ok }}> {{ _('Në zyrë') }}</label>
+      <label class="check"><input type="checkbox" name="hybrid_ok" {{ 'checked' if p.hybrid_ok is not defined or p.hybrid_ok }}> {{ _('Hybrid') }}</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>{{ _('Burimet (bosh = të gjitha aktive)') }}</legend>
+      {% for c in src_list %}
+      <label class="check">
+        <input type="checkbox" name="sources" value="{{ c.id }}" {{ 'checked' if c.id in (p.sources or []) }}>
+        {{ c.name }}
+        {% if c.requires_key and not c.ok %}<span class="sub">{{ _('(duhet celes)') }}</span>{% endif %}
+      </label>
+      {% endfor %}
+    </fieldset>
+
+    <div class="form-foot">
+      {% if not is_new %}
+      <button type="button" class="linklike js-prof-delete" data-id="{{ p.id }}">{{ _('Fshi profilin') }}</button>
+      {% endif %}
+      <button class="btn primary" type="submit">{{ _('Ruaj profilin') }}</button>
+    </div>
+  </form>
+{% if not is_new %}<details class="schedule-panel" data-schedule="{{ p.id }}"><summary>{{ _('Kërkim i planifikuar') }}</summary><p class="sub">{{ _('Kërko automatikisht dhe merr njoftime për përputhje të reja. Ekzekutimi kërkon që shërbimi i planifikimit të jetë aktiv.') }}</p><form class="form js-schedule-form"><label class="check"><input type="checkbox" name="enabled"> {{ _('Aktivizo planifikimin') }}</label><div class="grid2"><label>{{ _('Sa shpesh?') }}<select name="cadence"><option value="manual">{{ _('Vetëm manualisht') }}</option><option value="hourly">{{ _('Çdo orë') }}</option><option value="every_3h">{{ _('Çdo 3 orë') }}</option><option value="every_6h">{{ _('Çdo 6 orë') }}</option><option value="daily">{{ _('Çdo ditë') }}</option><option value="weekdays_daily">{{ _('Ditët e javës') }}</option></select></label><label>{{ _('Ora lokale') }}<input type="time" name="run_window_time" value="08:00"></label><label>{{ _('Zona kohore') }}<input name="timezone" value="Europe/Berlin"></label><label>{{ _('Përputhja minimale') }}<input name="min_match" type="number" min="0" max="100" value="50"></label></div><p class="schedule-state sub" aria-live="polite"></p><button class="btn primary" type="submit">{{ _('Ruaj planifikimin') }}</button></form></details>{% endif %}
+</div>
