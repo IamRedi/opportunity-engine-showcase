@@ -1,7 +1,9 @@
 # Verification record
 
 Reviewed on **27 October 2026**. This is an evaluation snapshot of a developed
-prototype, with a separate fictional offline demo. It is not a production launch.
+prototype, with a separate fictional offline demo. The owner approved publishing
+only this showcase repository on the review date. The original repository and
+personal pilot remain private and unchanged. This is not a production launch.
 
 | Check | Result and scope |
 |---|---|
@@ -12,15 +14,22 @@ prototype, with a separate fictional offline demo. It is not a production launch
 | Media | Eight actual application screenshots, WebP copies, two 34-second H.264 videos, animated preview and social card. Both MP4 files fully decoded without errors; English playback checked in a browser. |
 | Secret scan | Gitleaks 8.30.1 directory and fresh Git-history scans: **0 findings**. One narrowly scoped allowlist covers an explicit synthetic session-secret literal in a unit test. |
 | Publication surface | **200 tracked files; 0 issues.** Scan checks runtime data, environment files, personal pilot metadata and README links. |
-| GitHub CI | **Blocked before any job started** by GitHub account billing/spending restrictions. [First run and annotations](https://github.com/IamRedi/opportunity-engine-showcase/actions/runs/40530889018). The workflow is configured for full tests, dependency checks, offline smoke, publication-surface checks, full-history Gitleaks and Docker smoke; no remote pass is claimed. |
+| GitHub CI | **All three jobs passed** on tested revision `a7499d6`: [verified run](https://github.com/IamRedi/opportunity-engine-showcase/actions/runs/40532705940). CPython 3.14.8: **671 passed, 0 failed, 0 skipped**; dependency check, offline smoke and publication scan passed. Container image build and network-isolated smoke passed. Gitleaks scanned **4 commits / 1.77 MB with 0 findings**. |
 
 The Linux local regression run used a temporary SQLite workspace on tmpfs to
 avoid host filesystem latency. SQLite locking and transactions were retained;
 this is not evidence of persistent-disk performance. GitHub CI uses its normal
-runner filesystem. Docker Desktop failed during its local service startup, so
-the container build/smoke is **not verified**. Its dedicated CI job is configured
-but also blocked by the account billing restriction. No settings or billing
-changes were made to bypass either limitation.
+runner filesystem. Docker Desktop failed during its local service startup;
+the container was subsequently built and smoke-tested successfully in GitHub CI.
+Private-repository runs were initially blocked before execution by account
+billing/spending restrictions. After the approved visibility change, public CI
+ran without changing account billing settings.
+
+Inspection of an earlier container-based Gitleaks step revealed a Git ownership
+error that produced an empty scan despite a successful job. That result was not
+accepted. The corrected step uses the runner UID/GID, mounts the repository read
+only and rejects Git errors, zero-byte scans and zero-commit scans. The verified
+run above confirms that the actual history was scanned.
 
 The test run emitted 13 dependency/deprecation warnings, including Starlette's
 test-client transition, an XML element truthiness warning and a pytest fixture
