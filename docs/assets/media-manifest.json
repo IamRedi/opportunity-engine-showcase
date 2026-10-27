@@ -129,8 +129,8 @@
     },
     {
       "path": "docs/assets/video/transcript.md",
-      "sha256": "2ae0bd75d30c428531c89b4b1f18065f2375b8908671f41bb2064b07d80d66c1",
-      "bytes": 1102
+      "sha256": "6ccd7a43d8bac3adfdc8c5f311c3b7de486263db3a8bb72e8caad11b69bc1a57",
+      "bytes": 1080
     },
     {
       "path": "docs/assets/video/walkthrough-de.mp4",
@@ -139,8 +139,8 @@
     },
     {
       "path": "docs/assets/video/walkthrough-de.srt",
-      "sha256": "fe7c1d436b31d8051e2651eed09124666bf89bd51ddd1b4d9f16d7167d68d0e0",
-      "bytes": 678
+      "sha256": "4b984691442b26b00db84cd0e26163ed66c37bc26d31b546083b2c63f90474ae",
+      "bytes": 647
     },
     {
       "path": "docs/assets/video/walkthrough-en.mp4",
@@ -149,8 +149,8 @@
     },
     {
       "path": "docs/assets/video/walkthrough-en.srt",
-      "sha256": "2210ead9d51ea57e9842062c9bd2c3e7826dcde9dad6760b378e5910868f9f34",
-      "bytes": 630
+      "sha256": "832386466cb64814ff94ada39e1aa195ba690a4ac755ea2f98590cd40355b110",
+      "bytes": 599
     },
     {
       "path": "docs/assets/video/walkthrough-preview.webp",
@@ -160,6 +160,6 @@
       "height": 450
     }
   ],
-  "reviewed_application_sha256": "1407f3ded31d09390d9d28707e74f0c5701409887d47fc1a00371bd9b3df30ba",
-  "post_capture_change": "Translation catalog only: removed three redundant source-locale entries and registered the existing offline-provider error. Captured English and German screens unchanged."
+  "reviewed_application_sha256": "c8bad8f0b802adf23510721f2080cc01d7d7cdcbec1c3721950cb4b95bdd6eb9",
+  "post_capture_change": "Line endings normalized for the distributed source. Translation catalog only: removed three redundant source-locale entries and registered the existing offline-provider error. Captured English and German screens unchanged."
 }
