@@ -12,6 +12,9 @@ A personal workspace for jobs and freelance projects: reviewed profile facts bec
 
 **[Deutsch](README.md)** · **[Run locally](#run-locally)** · **[Verification record](EVIDENCE.md)** · **[Architecture](docs/ARCHITECTURE.md)**
 
+
+> **Evidence and limitations:** Developed prototype with an offline demonstration using fictional data only. Public sign-up, production recruitment services and automatic job-application submission are not part of this release; documented tests do not use real applicant data. [Verification record](EVIDENCE.md).
+
 ## The problem
 
 A list of vacancies, a CV and scattered notes do not explain which opportunity fits, what is still unknown, or what to do next.
