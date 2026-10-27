@@ -10,15 +10,17 @@ prototype, with a separate fictional offline demo. It is not a production launch
 | Real browser review | Workspace, fictional profile, matching factors, editable draft, manual approval, CV preview and freelance view checked against the running local application. Approved draft version 3; submission timestamp remains empty. |
 | External services | Demo AI disabled; inherited provider credentials removed; non-loopback DNS and connections blocked. Tests also install the network guard. No paid AI, real job ingestion, email delivery or application submission used for this review. |
 | Media | Eight actual application screenshots, WebP copies, two 34-second H.264 videos, animated preview and social card. Both MP4 files fully decoded without errors; English playback checked in a browser. |
-| Secret scan | Gitleaks 8.30.1 directory scan: **0 findings**. One narrowly scoped allowlist covers an explicit synthetic session-secret literal in a unit test. |
-| Publication surface | Tracked-file scan excludes private runtime data, environment files, personal pilot metadata and broken README links. Rechecked before push. |
-| GitHub CI | [CI workflow](https://github.com/IamRedi/opportunity-engine-showcase/actions/workflows/ci.yml) runs full tests, dependency checks, offline smoke, publication-surface checks, full-history Gitleaks and Docker smoke. See the run for the current commit. |
+| Secret scan | Gitleaks 8.30.1 directory and fresh Git-history scans: **0 findings**. One narrowly scoped allowlist covers an explicit synthetic session-secret literal in a unit test. |
+| Publication surface | **200 tracked files; 0 issues.** Scan checks runtime data, environment files, personal pilot metadata and README links. |
+| GitHub CI | **Blocked before any job started** by GitHub account billing/spending restrictions. [First run and annotations](https://github.com/IamRedi/opportunity-engine-showcase/actions/runs/40530889018). The workflow is configured for full tests, dependency checks, offline smoke, publication-surface checks, full-history Gitleaks and Docker smoke; no remote pass is claimed. |
 
 The Linux local regression run used a temporary SQLite workspace on tmpfs to
 avoid host filesystem latency. SQLite locking and transactions were retained;
 this is not evidence of persistent-disk performance. GitHub CI uses its normal
-runner filesystem. Local Docker was unavailable, so the container is verified
-by the dedicated CI job rather than claimed as a local test.
+runner filesystem. Docker Desktop failed during its local service startup, so
+the container build/smoke is **not verified**. Its dedicated CI job is configured
+but also blocked by the account billing restriction. No settings or billing
+changes were made to bypass either limitation.
 
 The test run emitted 13 dependency/deprecation warnings, including Starlette's
 test-client transition, an XML element truthiness warning and a pytest fixture
