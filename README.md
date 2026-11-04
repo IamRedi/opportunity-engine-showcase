@@ -12,6 +12,13 @@ Eine persönliche Arbeitsfläche für Jobs und Freelance: aus überprüften Prof
 
 **[English](README.en.md)** · **[Lokal ausprobieren](#lokal-ausprobieren)** · **[Prüfprotokoll](EVIDENCE.md)** · **[Architektur](docs/ARCHITECTURE.md)**
 
+<!-- PRESENTATION_FIRST_PUBLICATION_76F8B3EAC1CF -->
+## Öffentliche Produktwebsite · 4 November 2026
+
+Die [Produktwebsite](https://opportunity-engine-pilot-alpha.vercel.app/static/about/en.html) stellt die Plattform vor, bevor der bestehende App-Zugang geöffnet wird. Die Informationen sind öffentlich; private Netzwerk- oder Kontoberechtigungen gelten weiterhin nur für die Anwendung. Zweck, Funktionen und Bedienung sind in SQ/EN/DE/IT beschrieben.
+
+Verifiziert am 4. November 2026 mit Paket `76f8b3eac1cf` und [Portfolio PR29](https://github.com/IamRedi/redion-portfolio-/pull/29). App-Funktionsumfang, Medien, Stage und Readiness bleiben unverändert.
+
 ## Was das Produkt löst
 
 Stellenangebote, ein CV und Notizen allein beantworten noch nicht die Frage: *Welche Möglichkeit passt zu mir, welche Information fehlt und was mache ich als Nächstes?*
