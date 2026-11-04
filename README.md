@@ -12,6 +12,14 @@ Eine persönliche Arbeitsfläche für Jobs und Freelance: aus überprüften Prof
 
 **[English](README.en.md)** · **[Lokal ausprobieren](#lokal-ausprobieren)** · **[Prüfprotokoll](EVIDENCE.md)** · **[Architektur](docs/ARCHITECTURE.md)**
 
+## Native Produktpräsentation · 4. November 2026
+
+Opportunity Engine hat jetzt eine native Informationsseite in **SQ, EN, DE und IT** mit Zweck, belegten Funktionen, Ablauf und tatsächlichem App-Zugang. Im [Anwendungsverzeichnis](https://www.redioncekrezi.de/de) **Opportunity Engine → Über die App** öffnen.
+
+[SQ](https://www.redioncekrezi.de/sq) · [EN](https://www.redioncekrezi.de/en) · [DE](https://www.redioncekrezi.de/de) · [IT](https://www.redioncekrezi.de/it)
+
+Die Präsentation nutzt die bestehende Adresse und Zugriffskontrolle der Anwendung. Sie gewährt keinen Zugang zur privaten Installation und macht dieses öffentliche Offline-Showcase nicht zu einem offenen Dienst. Sprache der App-Oberfläche, Funktionen und Reifegrad bleiben unverändert. Die bestehenden Demo-Aufnahmen beschreiben weiterhin dieselbe Anwendung.
+
 ## Was das Produkt löst
 
 Stellenangebote, ein CV und Notizen allein beantworten noch nicht die Frage: *Welche Möglichkeit passt zu mir, welche Information fehlt und was mache ich als Nächstes?*

@@ -12,6 +12,14 @@ A personal workspace for jobs and freelance projects: reviewed profile facts bec
 
 **[Deutsch](README.md)** · **[Run locally](#run-locally)** · **[Verification record](EVIDENCE.md)** · **[Architecture](docs/ARCHITECTURE.md)**
 
+## Native product presentation · 4 November 2026
+
+Opportunity Engine now has a native information page in **SQ, EN, DE and IT**, with its purpose, verified capabilities, workflow and actual application entry. Open **Opportunity Engine → Overview** in the [application directory](https://www.redioncekrezi.de/en).
+
+[SQ](https://www.redioncekrezi.de/sq) · [EN](https://www.redioncekrezi.de/en) · [DE](https://www.redioncekrezi.de/de) · [IT](https://www.redioncekrezi.de/it)
+
+The presentation uses the application’s existing origin and access controls. It does not grant access to a private installation or turn this public offline showcase into an open service. The application UI language, implemented capabilities and readiness are unchanged. Existing demo screenshots still describe the same application.
+
 ## The problem
 
 A list of vacancies, a CV and scattered notes do not explain which opportunity fits, what is still unknown, or what to do next.
