@@ -12,13 +12,12 @@ A personal workspace for jobs and freelance projects: reviewed profile facts bec
 
 **[Deutsch](README.md)** · **[Run locally](#run-locally)** · **[Verification record](EVIDENCE.md)** · **[Architecture](docs/ARCHITECTURE.md)**
 
-## Native product presentation · 4 November 2026
+<!-- PRESENTATION_FIRST_PUBLICATION_76F8B3EAC1CF -->
+## Public product website · 4 November 2026
 
-Opportunity Engine now has a native information page in **SQ, EN, DE and IT**, with its purpose, verified capabilities, workflow and actual application entry. Open **Opportunity Engine → Overview** in the [application directory](https://www.redioncekrezi.de/en).
+The [product website](https://opportunity-engine-pilot-alpha.vercel.app/static/about/en.html) introduces the platform before opening the existing application entrance. Information is public; private-network or approved-account permissions still apply to the application. The overview is available in SQ/EN/DE/IT.
 
-[SQ](https://www.redioncekrezi.de/sq) · [EN](https://www.redioncekrezi.de/en) · [DE](https://www.redioncekrezi.de/de) · [IT](https://www.redioncekrezi.de/it)
-
-The presentation uses the application’s existing origin and access controls. It does not grant access to a private installation or turn this public offline showcase into an open service. The application UI language, implemented capabilities and readiness are unchanged. Existing demo screenshots still describe the same application.
+Verified on 4 November 2026 with packet `76f8b3eac1cf` and [portfolio PR29](https://github.com/IamRedi/redion-portfolio-/pull/29). Application capabilities, existing media, stage and readiness are unchanged.
 
 ## The problem
 
@@ -125,8 +124,3 @@ This is a developed prototype with reviewable core workflows, not a finished rec
 Built by **Redion Cekrezi / RediON**. Product decisions and acceptance remain human; AI tools support development and verification.
 
 You may read, clone and run the code locally for evaluation. Production, commercial use and redistribution require written permission. This is **source-available**, not Open Source. [License](LICENSE) · [Contact](https://github.com/IamRedi).
-
-<!-- PRESENTATION_FIRST_CANDIDATE_20261104 -->
-## Public website candidate · 4 November 2026
-
-The presentation-first update is prepared for review: [product website](https://opportunity-engine-pilot-alpha.vercel.app/static/about/en.html). Publication and anonymous online verification remain pending; this candidate does not raise application readiness. The product website explains the platform before app sign-in. Private-network or approved-account access remains separate.
